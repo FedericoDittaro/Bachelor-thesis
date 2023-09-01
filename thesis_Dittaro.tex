@@ -1,0 +1,182 @@
+\def\thudbabelopt{italian}
+%% Valori ammessi per target: bach (tesi triennale), mst (tesi magistrale), phd (tesi di dottorato).
+%% Valori ammessi per aauheader: '' (vuoto -> nessun header Alpen Adria Univeristat), aics (Department of Artificial Intelligence and Cybersecurity), informatics (Department of Informatics Systems). Il nome del dipartimento ? allineato con la versione inglese del logo UniUD.
+\documentclass[target=bach,aauheader=]{thud}
+
+%% --- Informazioni sulla tesi ---
+%% Per tutti i tipi di tesi
+% Scommentare quello di interesse, o mettete quello che vi pare
+\course{Informatica}
+\title{Sito web statico per gruppo di ricerca accademico: analisi e implementazione}
+\author{Federico Dittaro}
+\supervisor{Prof. Marino Miculan}
+%% Campi obbligatori: \title, \author e \course.
+%% Altri campi disponibili: \reviewer, \tutor, \chair, \date (anno accademico, calcolato in automatico), \rights
+%% Con \supervisor, \cosupervisor, \reviewer e \tutor si possono indicare pi? nomi separati da \and.
+%% Per le sole tesi di dottorato:
+\phdnumber{313}
+\cycle{XXVIII}
+\contacts{Via della Sintassi Astratta, 0/1\\65536 Gigatera --- Italia\\+39 0123 456789\\\texttt{http://www.example.com}\\\texttt{inbox@example.com}}
+
+%% --- Pacchetti consigliati ---
+%% pdfx: per generare il PDF/A per l'archiviazione. Necessario solo per la versione finale
+\usepackage[a-1b]{pdfx}
+%% hyperref: Regola le impostazioni della creazione del PDF... pi? tante altre cose. Ricordarsi di usare l'opzione pdfa.
+\usepackage[pdfa]{hyperref}
+%% tocbibind: Inserisce nell'indice anche la lista delle figure, la bibliografia, ecc.
+\usepackage{graphicx}
+%% --- Stili di pagina disponibili (comando \pagestyle) ---
+%% sfbig (predefinito): Apertura delle parti e dei capitoli col numero grande; titoli delle parti e dei capitoli e intestazioni di pagina in sans serif.
+%% big: Come "sfbig", solo serif.
+%% plain: Apertura delle parti e dei capitoli tradizionali di LaTeX; intestazioni di pagina come "big".
+
+\let\cleardoublepage=\clearpage
+
+\begin{document}
+\maketitle
+
+%% Dedica (opzionale)
+\begin{dedication}
+	
+\end{dedication}
+
+%% Ringraziamenti (opzionali)
+\acknowledgements
+
+%% Sommario (opzionale)
+\abstract
+
+%% Indice
+\tableofcontents
+
+%% Lista delle tabelle (se presenti)
+%\listoftables
+
+%% Lista delle figure (se presenti)
+%\listoffigures
+
+%% Corpo principale del documento
+\mainmatter
+
+%% Parte
+%% La suddivisione in parti ? opzionale; solitamente sono sufficienti i capitoli.
+%\part{Parte}
+
+%% Capitolo
+\chapter{Introduzione}
+In hac habitasse platea dictumst. Vestibulum consectetur dictum pellentesque. Suspendisse nunc neque, commodo ac imperdiet nec, sollicitudin vitae libero. Donec bibendum vel nunc vitae pharetra. In vel volutpat odio, et interdum dui. Duis mauris ligula, congue eget molestie at, tincidunt nec diam. Nam vitae eros nec arcu suscipit vehicula. Aliquam consectetur imperdiet elit, eget pretium arcu fringilla at. Maecenas \cite{Knu86} sed libero pulvinar, mattis tortor vel, fermentum enim.
+
+%% Capitolo
+\chapter{Analisi del software}
+
+%% Sezione
+\section{SSG}
+Gli SSG (in inglese, Static Site Generator) sono dei tool che permettono la creazione di tutti i contenuti presenti nei siti web a partire da file di configurazione e contenuti scritti in formati più generali (tipicamente markdown).
+La caratteristica principale di tali siti è che a fronte di una richiesta da parte dell'utente di visualizzare determinati contenuti del sito, il web server fornisce pagine statiche, delle quali l'utente non è in grado di modificare il contenuto né possiede alcun tipo di stato che ne permetta la personalizzazione. Non esiste quindi una elaborazione back-end sul lato server e non esistono database, qualsiasi funzionalità "dinamica" associata al sito statico viene eseguita sul lato client.
+I principali vantaggi riguardanti la scelta di utilizzo di un SSG sono:
+\begin{itemize}
+\item Ottimizzazione delle prestazioni: avendo poche o nessuna parte dinamica sono più facili da ottimizzare ed il caricamento è molto rapido;
+\item Richiesta di meno risorse al server: dato che non è richiesta nessuna elaborazione lato server, quest'ultimo svolge meno lavoro migliorando prestazioni e scalabilità;
+\item Servizio di hosting molto economico: possono essere utilizzati per la pubblicazione servizi di host completamente gratuiti come GitHub Pages (esattamente come nel caso di studio);
+\item Maggiore sicurezza: non utilizzando server o database sono molto sicuri da eventuali attacchi esterni.
+\end{itemize}
+
+%% Sezione
+\section{principali SSG}
+In questa sezione verranno menzionati i cinque principali SSG e discusse le principali differenze tra loro. 
+
+%% Sottosezione
+\subsection{Hugo}
+
+%% Sottosezione
+\subsection{Jekyll}
+\begin{figure}
+\centering
+\includegraphics[width = 0.6\textwidth]{images/jekyll_teaser.png}
+\caption{Jekyll logo}
+\end{figure}
+
+Jekyll è un generatore di siti statici, ideato da Tom Preston-werner, la prima versione del software risale al 2008 mentre l’ultima, la 4.1.0, è uscita il 27 maggio 2020.
+Jekyll si basa sul linguaggio Ruby, perciò richiede un’installazione ed una configurazione corretta e funzionante dell’ambiente Ruby sul computer dello sviluppatore.
+Successivamente bisogna scaricare la versione desiderata di Jekyll e seguire la procedura di installazione, così come descritta sulla documentazione.
+In Jekyll tutti i contenuti e i layout del sito vengono salvati localmente e vengono classificati in una struttura a cartelle, principalmente orientata alla costruzione di blog.
+Una volta creato il sito, la struttura che troveremo sarà la seguente:
+\begin{itemize}
+\item la cartella \textit{\_post} conterrà gli articoli del nostro sito (composti da file Markdown);
+\item i contenuti delle pagine, sempre composti da file Markdown, sono salvati nella cartella \textit{root} del sito, in alternativa lo sviluppatore può decidere di creare una gerarchia di sottocartelle per una migliore organizzazione dei contenuti;
+\item la cartella \textit{\_layouts} contiene i vari template del sito che decidono la grafica delle singole pagine e dei singoli articoli (questi file sono sempre di tipo HTML);
+\item la cartella \textit{\_site} conterrà tutte le informazioni necessarie per esportare il sito funzionante nel dominio del sito o in sistemi cloud;
+\item la cartella \textit{\_data} può essere creata per contenere dei file JSON in cui saranno costruiti dei database per immagazzinare stringhe, numeri e altri dati simili;
+\item la cartella \textit{assets} contiene immagini, pdf o altri file statici per il sito.
+\end{itemize}
+Come Hugo anche Jekyll mette a disposizione centinaia di temi prefabbricati per aiutare lo sviluppo del sito web, ed entrambi forniscono degli shortcode, ovvero funzioni che permettono la comunicazione tra i layout delle pagine con i loro contenuti.
+Una delle differenze principali di Hugo rispetto a Jekyll è che il primo non è legato ad ambienti esterni, infatti dopo aver scaricato la versione desiderata ed estratto il contenuto nella cartella prescelta il software è pronto per essere usato, mentre Jekyll si deve appoggiare a Ruby.
+Un’altra divergenza tra le due piattaforme è che Jekyll presenta una moltitudine di Plugin sviluppati da altri programmatori che possono essere integrati attraverso Ruby e che permettono di aggiungere e semplificare la costruzione di determinati servizi per il sito web.
+In conclusione, Jekyll è un’ottima scelta se si ha familiarità con l’ambiente Ruby o se si vuole costruire un sito complesso usando gli innumerevoli Plugin e template messi già a disposizione.
+Hugo, invece, è un ottimo generatore di siti statici per i siti web basati sui contenuti e sebbene non presenti Plugin, molti servizi sono gia` integrati.
+Infine, il team di Hugo rilascia con molta frequenza nuove versioni del software per tenerlo sempre aggiornato. 
+
+
+%% Sezione
+\subsection{Gridsome}
+
+%% Sezione
+\subsection{Eleventy}
+
+%% Sezione
+\subsection{Pelican}
+
+%% Fine dei capitoli normali, inizio dei capitoli-appendice (opzionali)
+\appendix
+
+%\part{Appendici}
+
+\chapter{Glossario}
+
+
+%% Parte conclusiva del documento; tipicamente per riassunto, bibliografia e/o indice analitico.
+\backmatter
+
+%% Riassunto (opzionale)
+%\summary
+%Maecenas tempor elit sed arcu commodo, dapibus sagittis leo egestas. Praesent at ultrices urna. Integer et nibh in augue mollis facilisis sit amet eget magna. Fusce at porttitor sapien. Phasellus imperdiet, felis et molestie vulputate, mauris sapien tincidunt justo, in lacinia velit nisi nec ipsum. Duis elementum pharetra lorem, ut pellentesque nulla congue et. Sed eu venenatis tellus, pharetra cursus felis. Sed et luctus nunc. Aenean commodo, neque a aliquam bibendum, mauris augue fringilla justo, et scelerisque odio mi sit amet diam. Nulla at placerat nibh, nec rutrum urna. Donec ut egestas magna. Aliquam erat volutpat. Phasellus vestibulum justo sed purus mattis, vitae lacinia magna viverra. Nulla rutrum diam dui, vel semper mi mattis ac. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec id vestibulum lectus, eget tristique est.
+
+%% Bibliografia (praticamente obbligatoria)
+\bibliographystyle{plain_\languagename}%% Carica l'omonimo file .bst, dove \languagename ? la lingua attiva.
+%% Nel caso in cui si usi un file .bib (consigliato)
+\bibliography{thud}
+%% Nel caso di bibliografia manuale, usare l'environment thebibliography.
+
+%% Per l'indice analitico, usare il pacchetto makeidx (o analogo).
+
+\end{document}
+
+--- Istruzioni per l'aggiunta di nuove lingue ---
+Per ogni nuova lingua utilizzata aggiungere nel preambolo il seguente spezzone:
+    \addto\captionsitalian{%
+        \def\abstractname{Sommario}%
+        \def\acknowledgementsname{Ringraziamenti}%
+        \def\authorcontactsname{Contatti dell'autore}%
+        \def\candidatename{Candidato}%
+        \def\chairname{Direttore}%
+        \def\conclusionsname{Conclusioni}%
+        \def\cosupervisorname{Co-relatore}%
+        \def\cosupervisorsname{Co-relatori}%
+        \def\cyclename{Ciclo}%
+        \def\datename{Anno accademico}%
+        \def\indexname{Indice analitico}%
+        \def\institutecontactsname{Contatti dell'Istituto}%
+        \def\introductionname{Introduzione}%
+        \def\prefacename{Prefazione}%
+        \def\reviewername{Controrelatore}%
+        \def\reviewersname{Controrelatori}%
+        %% Anno accademico
+        \def\shortdatename{A.A.}%
+        \def\summaryname{Riassunto}%
+        \def\supervisorname{Relatore}%
+        \def\supervisorsname{Relatori}%
+        \def\thesisname{Tesi di \expandafter\ifcase\csname thud@target\endcsname Laurea\or Laurea Magistrale\or Dottorato\fi}%
+        \def\tutorname{Tutor aziendale%
+        \def\tutorsname{Tutor aziendali}%
+    }
+sostituendo a "italian" (nella 1a riga) il nome della lingua e traducendo le varie voci.
