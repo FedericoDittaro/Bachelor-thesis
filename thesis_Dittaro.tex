@@ -1,22 +1,13 @@
 \def\thudbabelopt{italian}
-%% Valori ammessi per target: bach (tesi triennale), mst (tesi magistrale), phd (tesi di dottorato).
-%% Valori ammessi per aauheader: '' (vuoto -> nessun header Alpen Adria Univeristat), aics (Department of Artificial Intelligence and Cybersecurity), informatics (Department of Informatics Systems). Il nome del dipartimento ? allineato con la versione inglese del logo UniUD.
 \documentclass[target=bach,aauheader=]{thud}
 
 %% --- Informazioni sulla tesi ---
 %% Per tutti i tipi di tesi
-% Scommentare quello di interesse, o mettete quello che vi pare
 \course{Informatica}
 \title{Sito web statico per gruppo di ricerca accademico: analisi e implementazione}
 \author{Federico Dittaro}
 \supervisor{Prof. Marino Miculan}
-%% Campi obbligatori: \title, \author e \course.
-%% Altri campi disponibili: \reviewer, \tutor, \chair, \date (anno accademico, calcolato in automatico), \rights
-%% Con \supervisor, \cosupervisor, \reviewer e \tutor si possono indicare pi? nomi separati da \and.
-%% Per le sole tesi di dottorato:
-\phdnumber{313}
-\cycle{XXVIII}
-\contacts{Via della Sintassi Astratta, 0/1\\65536 Gigatera --- Italia\\+39 0123 456789\\\texttt{http://www.example.com}\\\texttt{inbox@example.com}}
+\cosupervisor{Dott.\ Matteo Paier}
 
 %% --- Pacchetti consigliati ---
 %% pdfx: per generare il PDF/A per l'archiviazione. Necessario solo per la versione finale
@@ -30,7 +21,7 @@
 %% big: Come "sfbig", solo serif.
 %% plain: Apertura delle parti e dei capitoli tradizionali di LaTeX; intestazioni di pagina come "big".
 
-\let\cleardoublepage=\clearpage
+\usepackage[capitalise]{cleveref}
 
 \begin{document}
 \maketitle
@@ -66,7 +57,7 @@
 \chapter{Introduzione}
 In hac habitasse platea dictumst. Vestibulum consectetur dictum pellentesque. Suspendisse nunc neque, commodo ac imperdiet nec, sollicitudin vitae libero. Donec bibendum vel nunc vitae pharetra. In vel volutpat odio, et interdum dui. Duis mauris ligula, congue eget molestie at, tincidunt nec diam. Nam vitae eros nec arcu suscipit vehicula. Aliquam consectetur imperdiet elit, eget pretium arcu fringilla at. Maecenas \cite{Knu86} sed libero pulvinar, mattis tortor vel, fermentum enim.
 
-%% Capitolo
+%% Capitolo  
 \chapter{Analisi del software}
 
 %% Sezione
@@ -87,44 +78,111 @@ In questa sezione verranno menzionati i cinque principali SSG e discusse le prin
 
 %% Sottosezione
 \subsection{Hugo}
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.6\textwidth]{images/Hugo_logo.png}
+    \caption{Hugo logo}
+\end{figure}
+
+Hugo è un generatore di siti web statici scritto in Go ideato inizialmente da Steve Francia nel 2013 e successivamente sviluppato da Bjørn Erik. L'ultima versione è stata rilasciata a Luglio 2023.
+Per utilizzare Hugo non è necessario conoscere Go in quanto il sito web viene creato attraverso file HTML e CSS, inoltre c'è una separazione tra il contenuto e la presentazione permettendo così di modificare l'aspetto senza modificarne il contenuto. 
+Oltre ai tipi di file citati precedentemente, Hugo supporta anche file di tipo javascript, Markdown, TOML, YAML e JSON. 
+Le informazioni necessarie per creare, modificare, stilizzare o eliminare pagine e/o contenuti sono racchiuse all'interno di specifiche cartelle che possono essere successivamente estese. La struttura generale è la seguente:
+\begin{itemize}
+    \item la cartella \textit{archetypes} contiene i file che vengono utilizzati come template per la creazione di nuovi contenuti del sito in modo da standardizzare la struttura ed il formato;
+    \item la cartella \textit{content} è forse la più importante in quanto contiene tutto il contenuto del sito. Al suo interno tutti i file sono in formato Markdown;
+    \item la cartella \textit{data} contiene esclusivamente file di tipo JSON, TOML, YAML o XML utilizzati per aggiungere strutture specifiche al sito;
+    \item la cartella \textit{layouts} contiene file HTML usati per creare l'aspetto visivo del sito;
+    \item la cartella \textit{static} contiene file statici come ad esempio immagini, file CSS, file Javascript;
+    \item la cartella \textit{themes} contiene i file che definsicono il tema del sito ed il suo aspetto visivo;
+    \item il file \textit{config.toml} oppure \textit{config.yaml} è fondamentale in quanto rappresenta il file di configurazione e contiene informazioni globali come il titolo del sito, la sua descrzione e molto altro.
+\end{itemize}
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.15\textwidth]{images/Hugo-directory.png}
+    \caption{Struttura delle cartelle di Hugo}
+\end{figure}
+
+Hugo è noto per la sua velocità ed inoltre supporta una grande varietà di temi scaricabili direttamente dal sito ufficiale. A differenza di altri SSG, Hugo non è indicato solamente per la creazione di blog
+ma anche per la creazione di siti generici come ad esempio siti aziendali o, come nel caso di studio, per siti accademici. 
+Hugo mette inoltre a disposizione una grande verietà di Plugin molto utili come ad esempio il servizio per la rappresentazione delle icone social o il supporto multilingua. 
 
 %% Sottosezione
 \subsection{Jekyll}
 \begin{figure}
-\centering
-\includegraphics[width = 0.6\textwidth]{images/jekyll_teaser.png}
-\caption{Jekyll logo}
+    \centering
+    \includegraphics[width = 0.6\textwidth]{images/jekyll_teaser.png}
+    \caption{Jekyll logo}
 \end{figure}
 
-Jekyll è un generatore di siti statici, ideato da Tom Preston-werner, la prima versione del software risale al 2008 mentre l’ultima, la 4.1.0, è uscita il 27 maggio 2020.
-Jekyll si basa sul linguaggio Ruby, perciò richiede un’installazione ed una configurazione corretta e funzionante dell’ambiente Ruby sul computer dello sviluppatore.
-Successivamente bisogna scaricare la versione desiderata di Jekyll e seguire la procedura di installazione, così come descritta sulla documentazione.
+Jekyll è un generatore di siti web statici, ideato da Tom Preston-werner, la prima versione del software risale al 2008 mentre l'ultima, la 4.1.0, è uscita il 27 maggio 2020.
+Jekyll si basa sul linguaggio Ruby, perciò richiede un'installazione ed una configurazione corretta e funzionante di tale ambiente.
+Successivamente si scarica la versione desiderata di Jekyll e si segue la procedura di installazione, così come descritta sulla documentazione.
 In Jekyll tutti i contenuti e i layout del sito vengono salvati localmente e vengono classificati in una struttura a cartelle, principalmente orientata alla costruzione di blog.
-Una volta creato il sito, la struttura che troveremo sarà la seguente:
+Una volta creato il sito, la struttura trovata sarà la seguente:
 \begin{itemize}
-\item la cartella \textit{\_post} conterrà gli articoli del nostro sito (composti da file Markdown);
-\item i contenuti delle pagine, sempre composti da file Markdown, sono salvati nella cartella \textit{root} del sito, in alternativa lo sviluppatore può decidere di creare una gerarchia di sottocartelle per una migliore organizzazione dei contenuti;
-\item la cartella \textit{\_layouts} contiene i vari template del sito che decidono la grafica delle singole pagine e dei singoli articoli (questi file sono sempre di tipo HTML);
-\item la cartella \textit{\_site} conterrà tutte le informazioni necessarie per esportare il sito funzionante nel dominio del sito o in sistemi cloud;
-\item la cartella \textit{\_data} può essere creata per contenere dei file JSON in cui saranno costruiti dei database per immagazzinare stringhe, numeri e altri dati simili;
-\item la cartella \textit{assets} contiene immagini, pdf o altri file statici per il sito.
+    \item la cartella \textit{\_post} contiene gli articoli del sito (composti da file Markdown);
+    \item i contenuti delle pagine, sempre composti da file Markdown, sono salvati nella cartella \textit{root} del sito, in alternativa si può decidere di creare una gerarchia di sottocartelle per una migliore organizzazione dei contenuti;
+    \item la cartella \textit{\_layouts} contiene i vari template del sito che decidono la grafica delle singole pagine e dei singoli articoli (questi file sono sempre di tipo HTML);
+    \item la cartella \textit{\_site} contiene tutte le informazioni necessarie per esportare il sito funzionante nel dominio del sito o in sistemi cloud;
+    \item la cartella \textit{\_data} può essere creata per contenere dei file JSON in cui saranno costruiti dei database per immagazzinare stringhe, numeri e altri dati simili;
+    \item la cartella \textit{assets} contiene immagini, pdf o altri file statici per il sito.
 \end{itemize}
-Come Hugo anche Jekyll mette a disposizione centinaia di temi prefabbricati per aiutare lo sviluppo del sito web, ed entrambi forniscono degli shortcode, ovvero funzioni che permettono la comunicazione tra i layout delle pagine con i loro contenuti.
+Come Hugo anche Jekyll mette a disposizione centinaia di temi prefabbricati per aiutare lo sviluppo del sito web, ed entrambi forniscono degli shortcode, ovvero funzioni che permettono la comunicazione tra i layout delle pagine con i loro contenuti (ad esempio le template actions per Hugo).
+Anche Jekyll presenta una moltitudine di Plugin che possono essere integrati attraverso Ruby, permettendo di aggiungere e semplificare la costruzione di determinati servizi per il sito web.
 Una delle differenze principali di Hugo rispetto a Jekyll è che il primo non è legato ad ambienti esterni, infatti dopo aver scaricato la versione desiderata ed estratto il contenuto nella cartella prescelta il software è pronto per essere usato, mentre Jekyll si deve appoggiare a Ruby.
-Un’altra divergenza tra le due piattaforme è che Jekyll presenta una moltitudine di Plugin sviluppati da altri programmatori che possono essere integrati attraverso Ruby e che permettono di aggiungere e semplificare la costruzione di determinati servizi per il sito web.
-In conclusione, Jekyll è un’ottima scelta se si ha familiarità con l’ambiente Ruby o se si vuole costruire un sito complesso usando gli innumerevoli Plugin e template messi già a disposizione.
-Hugo, invece, è un ottimo generatore di siti statici per i siti web basati sui contenuti e sebbene non presenti Plugin, molti servizi sono gia` integrati.
-Infine, il team di Hugo rilascia con molta frequenza nuove versioni del software per tenerlo sempre aggiornato. 
+In conclusione, Jekyll è un'ottima scelta se si ha familiarità con l'ambiente Ruby o se si vuole costruire un sito complesso usando gli innumerevoli Plugin e template messi già a disposizione. 
 
-
-%% Sezione
+%% Sottosezione
 \subsection{Gridsome}
+Gridsome è un SSG molto recente, è stato infatti ideato da Johannes Schickling nel 2018 subendo poi miglioramenti negli anni successivi fino all'ultima versione disponibile, la 0.7.23, rilasciata a settembre 2021.
+Si tratta di un framework basato su Vue.js e GraphQL che permette di creare una configurazione "headless", consentendo così di sfruttare la separazione dei contenuti dalla loro presentazione.
+Le cartelle di lavoro possono variare in base alla configurazione specifica di un progetto, ma in generale sono strutturate nel modo seguente:
+Come si vede in \cref{fig:gridsome_logo}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 0.6\textwidth]{images/Gridsome-logo.png}
+    \caption{Gridsome logo}
+    \label{fig:gridsome_logo}
+\end{figure}
 
-%% Sezione
+\begin{itemize}
+    \item \textit{src} è la cartella principale al cui interno si trova il contenuto sorgente. È suddivisa in sottocartelle come \textit{assets} per file statici, \textit{components} per componenti Vue.js, \textit{layouts} per i layout del sito, \textit{pages} per le pagine principali e \textit{templates} per i template utilizzati per la generazione di pagine dinamiche;
+    \item \textit{static} è la cartella utilizzata per i file statici che verranno serviti direttamente, come immagini, file CSS o JavaScript;
+    \item \textit{.gridsome} è la cartella che contiene le configurazioni specifiche di Gridsome. Include i file di configurazione e i dati temporanei generati durante la compilazione del sito;
+    \item \textit{gridsome.config.js} è il file di configurazione principale, definisce le impostazioni globali e le opzioni del progetto.
+    \item \textit{package.json} è il file che definisce le dipendenze del progetto e gli script personalizzati.
+\end{itemize}
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.15\textwidth]{images/Gridsome-directory.png}
+    \caption{Struttura delle cartelle di Gridsome}
+\end{figure}
+
+Anche Gridsome offre una vasta raccolta di plugin che possono essere utilizzati per estendere le funzionalità del generatore ma a differenza degli altri SSG presentati non è così adatto ai principianti, necessita infatti di una certa esperienza nello sviluppo web per poter riuscire a trarre il massimo da questo software.
+
+%% Sottosezione
 \subsection{Eleventy}
 
-%% Sezione
+%% Sottosezione
 \subsection{Pelican}
+
+%% Sezione
+\section{Differenze tra siti statici e dinamici}
+
+%% Sezione
+\section{Hugo}\label{sec:hugo}
+
+%% Capitolo  
+\chapter{Realizzazione di un sito web}
+
+%% Capitolo  
+\chapter{Caso di studio}
+
+%% Capitolo  
+\chapter{Conclusioni}
 
 %% Fine dei capitoli normali, inizio dei capitoli-appendice (opzionali)
 \appendix
@@ -150,33 +208,3 @@ Infine, il team di Hugo rilascia con molta frequenza nuove versioni del software
 %% Per l'indice analitico, usare il pacchetto makeidx (o analogo).
 
 \end{document}
-
---- Istruzioni per l'aggiunta di nuove lingue ---
-Per ogni nuova lingua utilizzata aggiungere nel preambolo il seguente spezzone:
-    \addto\captionsitalian{%
-        \def\abstractname{Sommario}%
-        \def\acknowledgementsname{Ringraziamenti}%
-        \def\authorcontactsname{Contatti dell'autore}%
-        \def\candidatename{Candidato}%
-        \def\chairname{Direttore}%
-        \def\conclusionsname{Conclusioni}%
-        \def\cosupervisorname{Co-relatore}%
-        \def\cosupervisorsname{Co-relatori}%
-        \def\cyclename{Ciclo}%
-        \def\datename{Anno accademico}%
-        \def\indexname{Indice analitico}%
-        \def\institutecontactsname{Contatti dell'Istituto}%
-        \def\introductionname{Introduzione}%
-        \def\prefacename{Prefazione}%
-        \def\reviewername{Controrelatore}%
-        \def\reviewersname{Controrelatori}%
-        %% Anno accademico
-        \def\shortdatename{A.A.}%
-        \def\summaryname{Riassunto}%
-        \def\supervisorname{Relatore}%
-        \def\supervisorsname{Relatori}%
-        \def\thesisname{Tesi di \expandafter\ifcase\csname thud@target\endcsname Laurea\or Laurea Magistrale\or Dottorato\fi}%
-        \def\tutorname{Tutor aziendale%
-        \def\tutorsname{Tutor aziendali}%
-    }
-sostituendo a "italian" (nella 1a riga) il nome della lingua e traducendo le varie voci.
