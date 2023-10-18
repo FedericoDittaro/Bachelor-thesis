@@ -16,6 +16,7 @@
 \usepackage[pdfa]{hyperref}
 %% tocbibind: Inserisce nell'indice anche la lista delle figure, la bibliografia, ecc.
 \usepackage{graphicx}
+\usepackage{float}
 %% --- Stili di pagina disponibili (comando \pagestyle) ---
 %% sfbig (predefinito): Apertura delle parti e dei capitoli col numero grande; titoli delle parti e dei capitoli e intestazioni di pagina in sans serif.
 %% big: Come "sfbig", solo serif.
@@ -63,7 +64,7 @@ In hac habitasse platea dictumst. Vestibulum consectetur dictum pellentesque. Su
 %% Sezione
 \section{SSG}
 Gli SSG (in inglese, Static Site Generator) sono dei tool che permettono la creazione di tutti i contenuti presenti nei siti web a partire da file di configurazione e contenuti scritti in formati più generali (tipicamente markdown).
-La caratteristica principale di tali siti è che a fronte di una richiesta da parte dell'utente di visualizzare determinati contenuti del sito, il web server fornisce pagine statiche, delle quali l'utente non è in grado di modificare il contenuto né possiede alcun tipo di stato che ne permetta la personalizzazione. Non esiste quindi una elaborazione back-end sul lato server e non esistono database, qualsiasi funzionalità "dinamica" associata al sito statico viene eseguita sul lato client.
+La caratteristica principale di tali siti è che a fronte di una richiesta da parte dell'utente di visualizzare determinati contenuti del sito, il web server fornisce pagine statiche, delle quali l'utente non è in grado di modificare il contenuto né possiede alcun tipo di stato che ne permetta la personalizzazione. Non esiste quindi una elaborazione back-end sul lato server e non esistono database, qualsiasi funzionalità "dinamica" associata al sito statico viene eseguita sul lato client. \newline
 I principali vantaggi riguardanti la scelta di utilizzo di un SSG sono:
 \begin{itemize}
 \item Ottimizzazione delle prestazioni: avendo poche o nessuna parte dinamica sono più facili da ottimizzare ed il caricamento è molto rapido;
@@ -80,13 +81,14 @@ In questa sezione verranno menzionati i cinque principali SSG e discusse le prin
 \subsection{Hugo}
 \begin{figure}
     \centering
-    \includegraphics[width = 0.6\textwidth]{images/Hugo_logo.png}
+    \includegraphics[width = 0.3\textwidth]{images/Hugo_logo.png}
     \caption{Hugo logo}
 \end{figure}
 
-Hugo è un generatore di siti web statici scritto in Go ideato inizialmente da Steve Francia nel 2013 e successivamente sviluppato da Bjørn Erik. L'ultima versione è stata rilasciata a Luglio 2023.
+Hugo verrà brevemente presentato in modo da poterlo confrontare con gli altri principali SSG, per poi essere ripreso più approfonditamente nella \cref{sec:hugo} dato che si tratta del framework scelto per sviluppare il progetto. \newline
+Hugo è un generatore di siti web statici scritto in Go ideato inizialmente da Steve Francia nel 2013 e successivamente sviluppato da Bjørn Erik. L'ultima versione, la 0.119.0 è stata rilasciata a settembre 2023.
 Per utilizzare Hugo non è necessario conoscere Go in quanto il sito web viene creato attraverso file HTML e CSS, inoltre c'è una separazione tra il contenuto e la presentazione permettendo così di modificare l'aspetto senza modificarne il contenuto. 
-Oltre ai tipi di file citati precedentemente, Hugo supporta anche file di tipo javascript, Markdown, TOML, YAML e JSON. 
+Oltre ai tipi di file citati precedentemente, Hugo supporta anche file di tipo javascript, Markdown, TOML, YAML e JSON. \newline
 Le informazioni necessarie per creare, modificare, stilizzare o eliminare pagine e/o contenuti sono racchiuse all'interno di specifiche cartelle che possono essere successivamente estese. La struttura generale è la seguente:
 \begin{itemize}
     \item la cartella \textit{archetypes} contiene i file che vengono utilizzati come template per la creazione di nuovi contenuti del sito in modo da standardizzare la struttura ed il formato;
@@ -98,11 +100,6 @@ Le informazioni necessarie per creare, modificare, stilizzare o eliminare pagine
     \item il file \textit{config.toml} oppure \textit{config.yaml} è fondamentale in quanto rappresenta il file di configurazione e contiene informazioni globali come il titolo del sito, la sua descrzione e molto altro.
 \end{itemize}
 
-\begin{figure}
-    \centering
-    \includegraphics[width = 0.15\textwidth]{images/Hugo-directory.png}
-    \caption{Struttura delle cartelle di Hugo}
-\end{figure}
 
 Hugo è noto per la sua velocità ed inoltre supporta una grande varietà di temi scaricabili direttamente dal sito ufficiale. A differenza di altri SSG, Hugo non è indicato solamente per la creazione di blog
 ma anche per la creazione di siti generici come ad esempio siti aziendali o, come nel caso di studio, per siti accademici. 
@@ -112,40 +109,48 @@ Hugo mette inoltre a disposizione una grande verietà di Plugin molto utili come
 \subsection{Jekyll}
 \begin{figure}
     \centering
-    \includegraphics[width = 0.6\textwidth]{images/jekyll_teaser.png}
+    \includegraphics[width = 0.3\textwidth]{images/jekyll_teaser.png}
     \caption{Jekyll logo}
 \end{figure}
 
-Jekyll è un generatore di siti web statici, ideato da Tom Preston-werner, la prima versione del software risale al 2008 mentre l'ultima, la 4.1.0, è uscita il 27 maggio 2020.
+Jekyll è un generatore di siti web statici, ideato da Tom Preston-werner, la prima versione del software risale al 2008 mentre l'ultima, la 3.9.3, è uscita a gennaio 2023.
 Jekyll si basa sul linguaggio Ruby, perciò richiede un'installazione ed una configurazione corretta e funzionante di tale ambiente.
 Successivamente si scarica la versione desiderata di Jekyll e si segue la procedura di installazione, così come descritta sulla documentazione.
-In Jekyll tutti i contenuti e i layout del sito vengono salvati localmente e vengono classificati in una struttura a cartelle, principalmente orientata alla costruzione di blog.
+In Jekyll tutti i contenuti e i layout del sito vengono salvati localmente e vengono classificati in una struttura a cartelle, principalmente orientata alla costruzione di blog. \newline
 Una volta creato il sito, la struttura trovata sarà la seguente:
 \begin{itemize}
     \item la cartella \textit{\_post} contiene gli articoli del sito (composti da file Markdown);
-    \item i contenuti delle pagine, sempre composti da file Markdown, sono salvati nella cartella \textit{root} del sito, in alternativa si può decidere di creare una gerarchia di sottocartelle per una migliore organizzazione dei contenuti;
+    \item i contenuti delle pagine, sempre composti da file Markdown, sono salvati nella cartella \textit{root}, in alternativa si può decidere di creare una gerarchia di sottocartelle per una migliore organizzazione dei contenuti;
     \item la cartella \textit{\_layouts} contiene i vari template del sito che decidono la grafica delle singole pagine e dei singoli articoli (questi file sono sempre di tipo HTML);
-    \item la cartella \textit{\_site} contiene tutte le informazioni necessarie per esportare il sito funzionante nel dominio del sito o in sistemi cloud;
+    \item la cartella \textit{\_site} contiene tutte le informazioni necessarie per esportare il sito funzionante nel dominio o in sistemi cloud;
     \item la cartella \textit{\_data} può essere creata per contenere dei file JSON in cui saranno costruiti dei database per immagazzinare stringhe, numeri e altri dati simili;
     \item la cartella \textit{assets} contiene immagini, pdf o altri file statici per il sito.
 \end{itemize}
 Come Hugo anche Jekyll mette a disposizione centinaia di temi prefabbricati per aiutare lo sviluppo del sito web, ed entrambi forniscono degli shortcode, ovvero funzioni che permettono la comunicazione tra i layout delle pagine con i loro contenuti (ad esempio le template actions per Hugo).
-Anche Jekyll presenta una moltitudine di Plugin che possono essere integrati attraverso Ruby, permettendo di aggiungere e semplificare la costruzione di determinati servizi per il sito web.
+Anche Jekyll presenta una moltitudine di Plugin che possono essere integrati attraverso Ruby, permettendo di aggiungere e semplificare la costruzione di determinati servizi per il sito web. \newline
 Una delle differenze principali di Hugo rispetto a Jekyll è che il primo non è legato ad ambienti esterni, infatti dopo aver scaricato la versione desiderata ed estratto il contenuto nella cartella prescelta il software è pronto per essere usato, mentre Jekyll si deve appoggiare a Ruby.
 In conclusione, Jekyll è un'ottima scelta se si ha familiarità con l'ambiente Ruby o se si vuole costruire un sito complesso usando gli innumerevoli Plugin e template messi già a disposizione. 
 
 %% Sottosezione
+
+\begin{figure}[t]
+    \begin{minipage}[t]{0.3\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{images/Gridsome-logo.png}
+      \caption{Gridsome logo}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{0.3\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{images/Eleventy_logo.png}
+      \caption{Eleventy logo}
+    \end{minipage}
+\end{figure}
+
 \subsection{Gridsome}
 Gridsome è un SSG molto recente, è stato infatti ideato da Johannes Schickling nel 2018 subendo poi miglioramenti negli anni successivi fino all'ultima versione disponibile, la 0.7.23, rilasciata a settembre 2021.
 Si tratta di un framework basato su Vue.js e GraphQL che permette di creare una configurazione "headless", consentendo così di sfruttare la separazione dei contenuti dalla loro presentazione.
 Le cartelle di lavoro possono variare in base alla configurazione specifica di un progetto, ma in generale sono strutturate nel modo seguente:
-Come si vede in \cref{fig:gridsome_logo}
-\begin{figure}[h]
-    \centering
-    \includegraphics[width = 0.6\textwidth]{images/Gridsome-logo.png}
-    \caption{Gridsome logo}
-    \label{fig:gridsome_logo}
-\end{figure}
 
 \begin{itemize}
     \item \textit{src} è la cartella principale al cui interno si trova il contenuto sorgente. È suddivisa in sottocartelle come \textit{assets} per file statici, \textit{components} per componenti Vue.js, \textit{layouts} per i layout del sito, \textit{pages} per le pagine principali e \textit{templates} per i template utilizzati per la generazione di pagine dinamiche;
@@ -155,19 +160,79 @@ Come si vede in \cref{fig:gridsome_logo}
     \item \textit{package.json} è il file che definisce le dipendenze del progetto e gli script personalizzati.
 \end{itemize}
 
-\begin{figure}
-    \centering
-    \includegraphics[width = 0.15\textwidth]{images/Gridsome-directory.png}
-    \caption{Struttura delle cartelle di Gridsome}
-\end{figure}
-
 Anche Gridsome offre una vasta raccolta di plugin che possono essere utilizzati per estendere le funzionalità del generatore ma a differenza degli altri SSG presentati non è così adatto ai principianti, necessita infatti di una certa esperienza nello sviluppo web per poter riuscire a trarre il massimo da questo software.
 
 %% Sottosezione
 \subsection{Eleventy}
 
+Eleventy (chiamato anche 11ty), come Gridsome, è un SSG molto recente ideato da Zach Leatherman nel 2018 e migliorato fino alla versione 2.0.0, rilasciata a febbraio 2023. 
+La sua crescita è dovuta sia alla sua flessibilià e potenza ma anche al sempre maggior utilizzo delle piattaforme di hosting come "Chrome Developers" e "Netlify". \newline
+Questo software si base su Node.js e javascript, il che richiede una buona conoscenza di quest'ultimo linguaggio per poter sfruttare a pieno la sua potenzialità. Eleventy supporta molteplici linguaggi di modello ma fondamentalmente si base su Liquid, il che lo rende simie a Jekyll.
+Come tutti gli altri SSG supporta diversi linguaggi come ad esempio Markdown, JSON, YAML. \newline 
+La struttura di base contiene almeno le seguenti cartelle:
+
+\begin{itemize}
+    \item \textit{\_includes}: in questa cartella possono essere messi frammenti di codice HTML o template come ad esempio intestazioni o piè di pagina;
+    \item \textit{\_layouts}: questa cartella contiene i layout dei template come ad esempio un layout principale che include un'intestazione, piè di pagina e altri layout specifici;
+    \item \textit{\_data}: questa cartella è utilizzata per i file di dati, come file JSON o YAML, che vengono utilizzati per fornire dati dinamici alle pagine del sito;
+    \item \textit{\_pages}: in questa cartella vengono collocate le pagine del sito, utilizzando file che verranno convertiti in pagine HTML;
+    \item \textit{\_posts}: questa cartella viene utilizzata per i post del blog o altri contenuti dinamici;
+    \item \textit{\_assets}: questa cartella può essere utilizzata per archiviare i file statici come fogli di stile CSS, immagini e JavaScript. Tali file verranno copiati direttamente nella cartella \_site durante la generazione del sito;
+    \item \textit{.eleventy.js}: questo è il file di configurazione principale di Eleventy, in cui è possibile personalizzare il comportamento del generatore, definire i percorsi delle cartelle e altro ancora.
+\end{itemize}
+
+Eleventy non è sicuramente il miglior SSG per iniziare a lavorare in questo campo, sia per la necessità di conoscere un linguaggio come javascript sia per la documentazione poco esaustiva e ancora in fase di sviluppo, tuttavia lo sforzo viene guadagnato in termini di velocità e prestazioni.   
 %% Sottosezione
 \subsection{Pelican}
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.2\textwidth]{images/pelican_logo.png}
+    \caption{Pelican logo}
+\end{figure}
+
+Pelican è meno conosciuto e utilizzato rispetto agli altri presenti in questa sezione, ma si tratta comunque di una valida alternativa data la sua flessibilità e la possibilità di importare siti già esistenti creati con altre piattforme come ad esempio Wordpress.
+Questo SSG è stato creato da Justin Mayer nel 2010, l'ultima versione disponibile è la 4.8.0 rilasciata a luglio 2023 ed è stato principalmente sviluppato per la creazione di blog.  
+A differenza degli altri ruota completamente attorno a python, creando pagine statiche attraverso file markdown e reStructuredText. \newline
+la struttura generale delle cartelle è la seguente: 
+\begin{itemize}
+    \item \textit{content}: è la cartella principale in cui verranno collocati articoli, pagine e contenuti del blog;
+    \item \textit{output}: questa cartella contien l'output generato da Pelican, ovvero il sito web statico completo con tutti i file HTML, CSS, JavaScript e le altre risorse pronte per la pubblicazione;
+    \item \textit{settings}: in questa cartella possono essere collocati file di configurazione specifici per il progetto, utilizzati per personalizzare il comportamento di Pelican;
+    \item \textit{themes}: qui si possono collocare i temi o modelli per il sito web;
+    \item \textit{plugins}: utilizzata per estendere le funzionalità di Pelican. I plugin possono essere utilizzati per eseguire varie azioni, come la generazione automatica di mappe del sito o l'integrazione con servizi di terze parti;
+    \item \textit{media}: questa cartella può essere utilizzata per archiviare file multimediali, come immagini o video, che verranno inclusi nel sito web;
+    \item \textit{pages}: In questa cartella vengono collocate le pagine statiche che non sono articoli del blog;
+    \item \textit{archives}: questa cartella può essere utilizzata per archiviare articoli o pagine che non sono attualmente pubblici ma potrebbero essere utilizzati in futuro;
+    \item \textit{lib}: contiene script personalizzati o strumenti per il progetto Pelican.
+\end{itemize}
+
+Pelican offre inoltre una vasta serie di temi e plugin per estendere le funzionalità di base del generatore, come il supporto multilingua o la possibilità di importare dati di terze parti (es. Wordpress, feed RSS).
+
+%% Sottosezione
+\subsection{Tabella riassuntiva}
+La seguente tabella riassume le caratteristche dei cinque principali SSG visti nelle sezioni precedenti.
+
+\begin{table}[h]
+    \centering
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+     & Anno creazione & Ultima versione & Linguaggio di base \\
+    \hline
+    Hugo & 2013 & 0.119.0 settmbre 2023 & Go \\
+    \hline
+    Jekyll & 2008 & 3.9.3 gennaio 2023 & Ruby \\
+    \hline
+    Gridsome & 2018 & 0.7.23 settembre 2021 & Vue.js, GraphQL \\
+    \hline
+    Eleventy & 2018 & 2.0.0 febbraio 2023 & Node.js, javascript \\
+    \hline
+    Pelican & 2010 & 4.8.0 luglio 2023 & Python \\
+    \hline
+    \end{tabular}
+    \caption{Tabella riassuntiva SSG.}
+    \end{table}
 
 %% Sezione
 \section{Differenze tra siti statici e dinamici}

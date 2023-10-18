@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.7)  16 OCT 2023 16:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.7)  18 OCT 2023 15:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -269,7 +269,14 @@ Using XMP template file: pdfa.xmp
 \xmpinclRead=\read3
 \openout3 = `pdfa.xmpi'.
 
-<<pdfa.xmpi>>) (C:\Users\feded\AppData\Local\Programs\MiKTeX\tex/latex/cleveref\cleveref.sty
+<<pdfa.xmpi>>) (C:\Users\feded\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count282
+\float@exts=\toks23
+\float@box=\box52
+\@float@everytoks=\toks24
+\@floatcapt=\box53
+) (C:\Users\feded\AppData\Local\Programs\MiKTeX\tex/latex/cleveref\cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2370.
 LaTeX Info: Redefining \cref on input line 2370.
@@ -286,42 +293,42 @@ Package cleveref Info: always capitalise cross-reference names on input line 782
 Package cleveref Info: always capitalise cross-reference names on input line 7852.
 ) (C:\Users\feded\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count282
-\l__pdf_internal_box=\box52
+\l__color_backend_stack_int=\count283
+\l__pdf_internal_box=\box54
 ) (thesis_Dittaro.aux)
 \openout1 = `thesis_Dittaro.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
  (C:\Users\feded\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count283
+\scratchcounter=\count284
 \scratchdimen=\dimen156
-\scratchbox=\box53
-\nofMPsegments=\count284
-\nofMParguments=\count285
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count286
+\scratchbox=\box55
+\nofMPsegments=\count285
+\nofMParguments=\count286
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count287
 \MPscratchDim=\dimen157
-\MPnumerator=\count287
-\makeMPintoPDFobject=\count288
-\everyMPtoPDFconversion=\toks24
+\MPnumerator=\count288
+\makeMPintoPDFobject=\count289
+\everyMPtoPDFconversion=\toks26
 ) (C:\Users\feded\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
  (C:\Users\feded\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
@@ -334,8 +341,8 @@ Package grfext Info: Graphics extension search list:
  (C:\Users\feded\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \it@ocap on input line 26.
-LaTeX Info: Redefining \it@ccap on input line 26.
+LaTeX Info: Redefining \it@ocap on input line 27.
+LaTeX Info: Redefining \it@ccap on input line 27.
 
 
 File italian.ldf warning: 
@@ -343,7 +350,7 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 26.
+italian.ldf    on input line 27.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -381,22 +388,22 @@ italian.ldf    on input line 26.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 26.
+Package hyperref Info: Link coloring OFF on input line 27.
 (thesis_Dittaro.out) (thesis_Dittaro.out)
 \@outlinefile=\write4
 \openout4 = `thesis_Dittaro.out'.
 
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 28.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 29.
  (C:\Users\feded\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
-<banners/banner_uniud_italian.pdf, id=66, 540.60269pt x 62.59605pt>
+<banners/banner_uniud_italian.pdf, id=70, 540.60269pt x 62.59605pt>
 File: banners/banner_uniud_italian.pdf Graphic file (type pdf)
 <use banners/banner_uniud_italian.pdf>
-Package pdftex.def Info: banners/banner_uniud_italian.pdf  used on input line 28.
+Package pdftex.def Info: banners/banner_uniud_italian.pdf  used on input line 29.
 (pdftex.def)             Requested size: 488.02449pt x 56.50879pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--28
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
 
  []
 
@@ -406,11 +413,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--28
 
 {C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./banners/banner_uniud_italian.pdf>]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 28.
+(Font)              <10.95> on input line 29.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 28.
+(Font)              <8> on input line 29.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 28.
+(Font)              <6> on input line 29.
  [2] [3
 
 ] [4
@@ -431,37 +438,67 @@ Capitolo 1.
 
 ] [2]
 Capitolo 2.
-<images/Hugo_logo.png, id=152, 567.11874pt x 151.56625pt>
+<images/Hugo_logo.png, id=157, 567.11874pt x 151.56625pt>
 File: images/Hugo_logo.png Graphic file (type png)
 <use images/Hugo_logo.png>
-Package pdftex.def Info: images/Hugo_logo.png  used on input line 83.
-(pdftex.def)             Requested size: 295.77379pt x 79.04848pt.
+Package pdftex.def Info: images/Hugo_logo.png  used on input line 84.
+(pdftex.def)             Requested size: 147.88689pt x 39.52423pt.
 [3
 
 ]
-<images/Hugo-directory.png, id=159, 119.69719pt x 155.83218pt>
-File: images/Hugo-directory.png Graphic file (type png)
-<use images/Hugo-directory.png>
-Package pdftex.def Info: images/Hugo-directory.png  used on input line 103.
-(pdftex.def)             Requested size: 73.93968pt x 96.26065pt.
-<images/jekyll_teaser.png, id=161, 276.03125pt x 190.7125pt>
+<images/jekyll_teaser.png, id=165, 276.03125pt x 190.7125pt>
 File: images/jekyll_teaser.png Graphic file (type png)
 <use images/jekyll_teaser.png>
-Package pdftex.def Info: images/jekyll_teaser.png  used on input line 115.
-(pdftex.def)             Requested size: 295.77379pt x 204.37462pt.
- [4 <./images/Hugo_logo.png> <./images/Hugo-directory.png>] [5 <./images/jekyll_teaser.png>]
-<images/Gridsome-logo.png, id=178, 738.76pt x 738.76pt>
+Package pdftex.def Info: images/jekyll_teaser.png  used on input line 112.
+(pdftex.def)             Requested size: 147.88689pt x 102.18004pt.
+ [4
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.122     \item l
+                 a cartella \textit{\_post} contiene gli articoli del sito (... <./images/Hugo_logo.png>]
+<images/Gridsome-logo.png, id=174, 738.76pt x 738.76pt>
 File: images/Gridsome-logo.png Graphic file (type png)
 <use images/Gridsome-logo.png>
-Package pdftex.def Info: images/Gridsome-logo.png  used on input line 145.
-(pdftex.def)             Requested size: 295.77379pt x 295.7693pt.
- [6 <./images/Gridsome-logo.png>]
-<images/Gridsome-directory.png, id=184, 146.04562pt x 262.73157pt>
-File: images/Gridsome-directory.png Graphic file (type png)
-<use images/Gridsome-directory.png>
-Package pdftex.def Info: images/Gridsome-directory.png  used on input line 160.
-(pdftex.def)             Requested size: 73.93968pt x 133.01714pt.
- [7 <./images/Gridsome-directory.png>] [8]
+Package pdftex.def Info: images/Gridsome-logo.png  used on input line 139.
+(pdftex.def)             Requested size: 147.88689pt x 147.88464pt.
+<images/Eleventy_logo.png, id=175, 1100.11pt x 803.0pt>
+File: images/Eleventy_logo.png Graphic file (type png)
+<use images/Eleventy_logo.png>
+Package pdftex.def Info: images/Eleventy_logo.png  used on input line 145.
+(pdftex.def)             Requested size: 147.88689pt x 107.94696pt.
+ [5
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.156     \item \textit
+                       {src} è la cartella principale al cui interno si tro... <./images/jekyll_teaser.png>] [6
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.176     \item \textit
+                       {\_layouts}: questa cartella contiene i layout dei te...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.176     \item \textit
+                       {\_layouts}: questa cartella contiene i layout dei te... <./images/Gridsome-logo.png> <./images/Eleventy_logo.png>]
+<images/pelican_logo.png, id=189, 200.75pt x 200.75pt>
+File: images/pelican_logo.png Graphic file (type png)
+<use images/pelican_logo.png>
+Package pdftex.def Info: images/pelican_logo.png  used on input line 190.
+(pdftex.def)             Requested size: 98.58875pt x 98.59196pt.
+ [7
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.202     \item \textit
+                       {themes}: qui si possono collocare i temi o modelli p... <./images/pelican_logo.png (PNG copy)>] [8
+pdfTeX warning (ext4): destination with the same identifier (name{table.2.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.244 \chapter{
+               Realizzazione di un sito web}]
 Capitolo 3.
 [9
 
@@ -485,21 +522,21 @@ LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `thesis_Dittaro.out' has not changed.
-(rerunfilecheck)             Checksum: 323BA11DE3113576C0A9EF3D7CD7C528;898.
+(rerunfilecheck)             Checksum: C3423B8BB17029D65A0A79C9742D08A6;974.
  )
 (\end occurred when \ifx on line 3 was incomplete) 
 Here is how much of TeX's memory you used:
- 16279 strings out of 475248
- 265437 string characters out of 5757814
- 1927801 words of memory out of 5000000
- 37529 multiletter control sequences out of 15000+600000
+ 16352 strings out of 475248
+ 266592 string characters out of 5757814
+ 1929801 words of memory out of 5000000
+ 37596 multiletter control sequences out of 15000+600000
  577601 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,7n,83p,948b,2380s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,8n,83p,948b,2380s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\feded\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis_Dittaro.pdf (27 pages, 270305 bytes).
+Output written on thesis_Dittaro.pdf (27 pages, 618958 bytes).
 PDF statistics:
- 288 PDF objects out of 1000 (max. 8388607)
- 53 named destinations out of 1000 (max. 500000)
- 163 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 294 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 
