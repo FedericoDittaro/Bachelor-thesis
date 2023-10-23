@@ -27,16 +27,8 @@
 \begin{document}
 \maketitle
 
-%% Dedica (opzionale)
-\begin{dedication}
-	
-\end{dedication}
-
-%% Ringraziamenti (opzionali)
-\acknowledgements
-
-%% Sommario (opzionale)
-\abstract
+\newpage 
+Dedica da scrivere 
 
 %% Indice
 \tableofcontents
@@ -62,7 +54,7 @@ In hac habitasse platea dictumst. Vestibulum consectetur dictum pellentesque. Su
 \chapter{Analisi del software}
 
 %% Sezione
-\section{SSG}
+\section{SSG}\label{sec:SSG}
 Gli SSG (in inglese, Static Site Generator) sono dei tool che permettono la creazione di tutti i contenuti presenti nei siti web a partire da file di configurazione e contenuti scritti in formati più generali (tipicamente markdown).
 La caratteristica principale di tali siti è che a fronte di una richiesta da parte dell'utente di visualizzare determinati contenuti del sito, il web server fornisce pagine statiche, delle quali l'utente non è in grado di modificare il contenuto né possiede alcun tipo di stato che ne permetta la personalizzazione. Non esiste quindi una elaborazione back-end sul lato server e non esistono database, qualsiasi funzionalità "dinamica" associata al sito statico viene eseguita sul lato client. \newline
 I principali vantaggi riguardanti la scelta di utilizzo di un SSG sono:
@@ -75,10 +67,10 @@ I principali vantaggi riguardanti la scelta di utilizzo di un SSG sono:
 
 %% Sezione
 \section{principali SSG}
-In questa sezione verranno menzionati i cinque principali SSG e discusse le principali differenze tra loro. 
+In questa sezione verranno menzionati i cinque principali SSG e discusse le loro differenze più significative. 
 
 %% Sottosezione
-\subsection{Hugo}
+\subsection{Hugo}\label{subsec:shugo}
 \begin{figure}
     \centering
     \includegraphics[width = 0.3\textwidth]{images/Hugo_logo.png}
@@ -99,8 +91,6 @@ Le informazioni necessarie per creare, modificare, stilizzare o eliminare pagine
     \item la cartella \textit{themes} contiene i file che definsicono il tema del sito ed il suo aspetto visivo;
     \item il file \textit{config.toml} oppure \textit{config.yaml} è fondamentale in quanto rappresenta il file di configurazione e contiene informazioni globali come il titolo del sito, la sua descrzione e molto altro.
 \end{itemize}
-
-
 Hugo è noto per la sua velocità ed inoltre supporta una grande varietà di temi scaricabili direttamente dal sito ufficiale. A differenza di altri SSG, Hugo non è indicato solamente per la creazione di blog
 ma anche per la creazione di siti generici come ad esempio siti aziendali o, come nel caso di studio, per siti accademici. 
 Hugo mette inoltre a disposizione una grande verietà di Plugin molto utili come ad esempio il servizio per la rappresentazione delle icone social o il supporto multilingua. 
@@ -113,7 +103,7 @@ Hugo mette inoltre a disposizione una grande verietà di Plugin molto utili come
     \caption{Jekyll logo}
 \end{figure}
 
-Jekyll è un generatore di siti web statici, ideato da Tom Preston-werner, la prima versione del software risale al 2008 mentre l'ultima, la 3.9.3, è uscita a gennaio 2023.
+Jekyll è un generatore di siti web statici, ideato da Tom Preston-Werner, la prima versione del software risale al 2008 mentre l'ultima, la 3.9.3, è uscita a gennaio 2023.
 Jekyll si basa sul linguaggio Ruby, perciò richiede un'installazione ed una configurazione corretta e funzionante di tale ambiente.
 Successivamente si scarica la versione desiderata di Jekyll e si segue la procedura di installazione, così come descritta sulla documentazione.
 In Jekyll tutti i contenuti e i layout del sito vengono salvati localmente e vengono classificati in una struttura a cartelle, principalmente orientata alla costruzione di blog. \newline
@@ -129,20 +119,21 @@ Una volta creato il sito, la struttura trovata sarà la seguente:
 Come Hugo anche Jekyll mette a disposizione centinaia di temi prefabbricati per aiutare lo sviluppo del sito web, ed entrambi forniscono degli shortcode, ovvero funzioni che permettono la comunicazione tra i layout delle pagine con i loro contenuti (ad esempio le template actions per Hugo).
 Anche Jekyll presenta una moltitudine di Plugin che possono essere integrati attraverso Ruby, permettendo di aggiungere e semplificare la costruzione di determinati servizi per il sito web. \newline
 Una delle differenze principali di Hugo rispetto a Jekyll è che il primo non è legato ad ambienti esterni, infatti dopo aver scaricato la versione desiderata ed estratto il contenuto nella cartella prescelta il software è pronto per essere usato, mentre Jekyll si deve appoggiare a Ruby.
+\newline
 In conclusione, Jekyll è un'ottima scelta se si ha familiarità con l'ambiente Ruby o se si vuole costruire un sito complesso usando gli innumerevoli Plugin e template messi già a disposizione. 
 
 %% Sottosezione
 
 \begin{figure}[t]
-    \begin{minipage}[t]{0.3\textwidth}
+    \begin{minipage}[t]{0.5\textwidth}
       \centering
-      \includegraphics[width=\textwidth]{images/Gridsome-logo.png}
+      \includegraphics[width=0.5\textwidth]{images/Gridsome-logo.png}
       \caption{Gridsome logo}
     \end{minipage}%
     \hfill
-    \begin{minipage}[t]{0.3\textwidth}
+    \begin{minipage}[t]{0.5\textwidth}
       \centering
-      \includegraphics[width=\textwidth]{images/Eleventy_logo.png}
+      \includegraphics[width=0.5\textwidth]{images/Eleventy_logo.png}
       \caption{Eleventy logo}
     \end{minipage}
 \end{figure}
@@ -159,7 +150,6 @@ Le cartelle di lavoro possono variare in base alla configurazione specifica di u
     \item \textit{gridsome.config.js} è il file di configurazione principale, definisce le impostazioni globali e le opzioni del progetto.
     \item \textit{package.json} è il file che definisce le dipendenze del progetto e gli script personalizzati.
 \end{itemize}
-
 Anche Gridsome offre una vasta raccolta di plugin che possono essere utilizzati per estendere le funzionalità del generatore ma a differenza degli altri SSG presentati non è così adatto ai principianti, necessita infatti di una certa esperienza nello sviluppo web per poter riuscire a trarre il massimo da questo software.
 
 %% Sottosezione
@@ -187,7 +177,7 @@ Eleventy non è sicuramente il miglior SSG per iniziare a lavorare in questo cam
 
 \begin{figure}
     \centering
-    \includegraphics[width = 0.2\textwidth]{images/pelican_logo.png}
+    \includegraphics[width = 0.15\textwidth]{images/pelican_logo.png}
     \caption{Pelican logo}
 \end{figure}
 
@@ -236,15 +226,210 @@ La seguente tabella riassume le caratteristche dei cinque principali SSG visti n
 
 %% Sezione
 \section{Differenze tra siti statici e dinamici}
+Riprendendo la \cref{sec:SSG}, un'ulteriore differenza che si può notare tra siti statici e dinamici riguarda l'architettura client/server utilizzata. \newline
+Per quanto riguarda i siti dinamici, l'architettura adottata prende il nome di WAMP/LAMP, l'acronimo è composto dalle seguenti parole: la W/L riguarda il sistema operativo utilizzato (rispettivamente Windows oppure Linux),
+la A sta per Apache ovvero il server http impiegato per eseguire il server web, la M per il DBMS MySQL e la P per PHP. Alcune architetture utilizzano al posto di MySQL il DBMS MariaDB e al posto del PHP i linguaggi Python oppure Pearl (l'acronimo rimane comunque invariato). \newline
+WAMP è quindi la piattaforma di sviluppo web grazie a cui è possibile realizzare dei siti web dinamici attraverso la programmazione con il linguaggio PHP, permettendo così la creazione dei siti direttamente sul computer. 
+Utilizzare questa architettura attraverso il PHP offre diversi vantaggi in quanto si tratta di uno dei linguaggi più frequentemente utilizzati in rete ed inoltre è il linguaggio di riferimento per WordPress, la principale piattaforma software per lo sviluppo di siti dinamici. 
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.6\textwidth]{images/WAMP_LAMP.png}
+    \caption{Architettura WAMP/LAMP}
+\end{figure}
+\newline
+Per quanto riguarda i siti statici invece, una volta generato il sito è sufficiente caricare i file su qualsiasi web server o servizio di hosting, non avendo infatti la necessità di eseguire codice dinamico (es. PHP) e di interfacciarsi con un database, la struttura risultante è molto più snella. 
+Avere un'architettura di questo tipo permette di ottenere delle ottimizzazioni delle prestazioni e della velocità necessaria per servire la pagina richiesta. 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 0.25\textwidth]{images/static.png}
+    \caption{Architettura client/server SSG}
+\end{figure}
 
 %% Sezione
 \section{Hugo}\label{sec:hugo}
+In questa sezione verrà ripreso ed ampliato il contenuto della \cref{subsec:shugo} in quanto Hugo rappresenta l'SSG scelto per la realizzazione del caso di studio.
 
+%% Sottosezione
+\subsection{Formati supportati}
+Hugo supporta una grande varietà di formati, i principali sono i seguenti:
+
+\begin{itemize}
+    \item MARKDOWN: formato di markup contenente esclusivamente il contenuto informativo, in questi file non viene definito nessun tipo di stile;
+    \item HTML: formato utilizzato per definire l'organizzazione e la struttura delle pagine;
+    \item CSS: formato utilizzato per definire lo stile delle pagine (es. colore, sfondo, dimensioni e tipo di carattere, ...);
+    \item JavaScript: questi file vengono utilizzati principalmente per l'esecuzione di script, sono fondamentali per l'esecuzione di specifici task.
+    \item JSON: vengono utilizzati per definire metadati e contenuti strutturati all'interno del sito web; 
+    \item TOML, YAML: questi file vengono utilizzati per definire o aggiungere dettagli strutturali o globali del sito e delle singole pagine. 
+\end{itemize}
+
+Vengono inoltre supportati formati più specifici come reStructuredText, un formato markup utilizzato ad esempio per la documentazione tecnica, oppure AsciiDoc, anch'esso un formato markup spesso utilizzato in ambienti di sviluppo.
+
+%% Sottosezione
+\subsection{Template actions}
+Le Template actions, scritte in Go Template, si riferiscono a una serie di azioni o comandi disponibili nei modelli (templates) di Hugo, che vengono utilizzati per manipolare e visualizzare i dati all'interno dei contenuti. 
+Le template actions consentono di eseguire operazioni come l'iterazione attraverso gli elenchi, il controllo di flusso condizionale e l'estrazione di valori dai dati dei contenuti. Vengono utilizzate direttamente all'interno dei file HTML all'interno delle doppie graffe. \newline
+Alcune delle template actions più comuni in Hugo includono:
+\begin{itemize}
+    \item \textbf{range}: utilizzata per iterare all'interno di un'elenco, permette ad esempio di creare dei cicli.
+    \item \textbf{if, with}: consentono di aggiungere logica condizionale nei modelli. Possono essere utilizzati per visualizzare o nascondere parti del contenuto in base a condizioni specifiche;
+    \item \textbf{index}: utilizzata per accedere a elementi specifici all'interno di elenchi o dizionari;
+    \item \textbf{partial}: per includere modelli o contenuti da altri file. 
+\end{itemize}
+
+La \cref{img:if} mostra un'esempio di utilizzo del controllo di flusso attraverso il costrutto "if", nello specifico verifica se nei parametri che descrivono la persona è presente un'immagine: in caso positivo mostra l'immagine corrispondente altrimenti un'immagine di default.
+La \cref{img:partial} mostra invece l'utilizzo della template action "partial", permettendo così di includere il file \textit{recent.html}. \newline 
+Nell template actions è possibile anche selezionare specifici parametri come ad esempio \{\{ .Title \}\} che permette di inserire il titolo della pagina corrente. Allo stesso modo si può ottenere la descrizione (\{\{ .Description \}\}) o il sommario (\{\{ .Summary \}\}).
+
+\begin{figure}[b]
+    \centering
+    \begin{minipage}{0.8\textwidth}
+      \centering
+      \includegraphics[width=0.8\textwidth]{images/if-template-actions.png}
+      \caption{Esempio di utilizzo della template action "if"}
+      \label{img:if}
+    \end{minipage}
+    \hspace{1cm}
+    \hfill
+    \begin{minipage}{0.5\textwidth}
+      \centering
+      \includegraphics[width=0.8\textwidth]{images/partial-template-actions.png}
+      \caption{Esempio di utilizzo della template action "partial"}
+      \label{img:partial}
+    \end{minipage}
+\end{figure}
+
+%% Sottosezione
+\subsection{Plugin}
+Hugo supporta una grande varietà di Plugin che permettono di esetendere le funzionalità di base, in questa sezione ne verranno presentati due tra i più utilizzati.
+\newline 
+\newline 
+\textbf{{\fontsize{12}{14}\selectfont Hugo-authors}}
+\newline \newline
+Il plugin "hugo-authors" è progettato per semplificare la gestione dei dati degli autori. Consente di definire e visualizzare le informazioni sugli autori come nome, biografia, immagine del profilo e collegamenti ai social media, in modo più strutturato.
+\newline
+Per poter utilizzare questo plugin è necessario prima installarlo attraverso il modulo Hugo o includendolo nel file di configurazione (config.toml oppure config.yaml).
+Successivamente è possibile creare dei nuovi autori attraverso la seguente sintassi:
+\newline \newline
+[author]
+\newline
+[[author.authors]]
+\newline
+name = "author name"
+\newline 
+bio = "author bio"
+\newline 
+image = "author.jpg"
+\newline
+social = [
+\newline
+\qquad    \{ name = "Twitter", link = "link" \},
+\newline
+\qquad    \{ name = "LinkedIn", link = "link" \}
+\newline
+]
+\newline \newline
+A questo punto è possibile associare gli autori al rispettivo contenuto specificando nel \textit{front-matter} del file markdown il nome corrispondente. Il nome svolge quindi la funzione di ID. Ad esempio:
+\newline \newline
++++
+\newline title = "Il mio articolo"
+\newline author = "author name"
+\newline 
++++
+\newline \newline
+Sfruttando infine le Template actions è possibile accedere alle carattersitiche dell'autore, ad esempio si può ricavare il nome scrivendo \{\{ .Params.author \}\} oppure 
+applicando la stessa logica si possono ricavare le varie informazioni inserite (ad esempio la biografia).
+\newline
+\newline
+\textbf{{\fontsize{12}{14}\selectfont Servizio delle icone social}}
+\newline \newline
+Questo plug-in non necessita di installazione e permette di visualizzare facilmente icone e collegamenti ai profili social. Per poterlo utilizzare bisogna aggiungere le seguenti righe di codice al file di configurazione 
+\newline \newline [social]
+\newline platforms = [
+\newline    { name = "Twitter", icon = "twitter" },
+\newline    { name = "LinkedIn", icon = "linkedin" },
+\newline    { name = "GitHub", icon = "github" },
+\newline    \# Altre piattaforme social
+\newline ]
+\newline
+\newline icons = [
+\newline    { name = "twitter", link = "https://example.com/twitter-icon.svg" },
+\newline    { name = "linkedin", link = "https://example.com/linkedin-icon.svg" },
+\newline    { name = "github", link = "https://example.com/github-icon.svg" },
+\newline    \# Altre icone social
+\newline ]
+\newline \newline
+Solo successivamente possono essere specificate all'interno della definzione degli autori (sezione precedente) o nel front matter di un contenuto.
+Allo stesso modo del plugin precendente, le informazioni possono essere richiamate all'interno dei file HTML sfruttando le Template actions (in questo caso tramite \{\{ .Site.Data.social.icons \}\}).
+%% Sottosezione
+\subsection{Creazione del sito}
+Dopo l'installazione di Hugo, per creare un nuovo sito è suffciente digitare da terminale il seguente comando \textbf{hugo new site NOME\_SITO}. 
+In seguito a questo comando verrà costruita la struttura delle cartelle così come descritto nella \cref{subsec:shugo} che può essere modificata secondo le esigenze.
+\newline
+Per poter visualizzare in locale il sito che si sta creando, è necessario lanciare da terminale il comando \textbf{hugo server} oppure \textbf{npm run start} (se è stato installato npm), in seguito il sito sarà visibile all'indirizzo localhost:1313 (127.0.0.1:1313).
+\newline
+Altri comandi utili per la creazione del sito sono \textbf{hugo server -D} che, a differenza del comando precedente, permette di visualizzare anche i contenuti classificati come bozze ed il comando \textbf{hugo}, necessario per la costruzione del sito. Quest'ultimo comando verrà discusso nella sezione successiva.
+%% Sottosezione
+\subsection{Costruzione del sito}
+La costruzione del sito è divisa in due fasi principali: la fase di generazione e la fase di compilazione.
+\newline
+\newline
+\textbf{{\fontsize{12}{14}\selectfont Fase di generazione}}
+\newline \newline
+Il processo di generazione viene avviato attraverso il comando \textbf{hugo}, il quale genera un unico file CSS combinando i dati di file di template dei temi con eventuali fogli di stile personalizzati, unendo successivamente anche il contenuto dei file Markdown.
+\newline \newline
+\textbf{{\fontsize{12}{14}\selectfont Fase di compilazione}}
+\newline \newline
+Terminata la fase di generazione, Hugo applica i temi e genera il codice HTML e CSS per ogni pagina del sito. L'ultima fase prima di poter rendere le pagine distribuibili e visualizzabili consiste nel produrre un insieme di fogli di stile CSS, immagini e
+altri file statici, ciascuno rappresentante una pagina del sito. 
+Una variante più efficiente è il comando \textbf{hugo - -minify} che ottimizza il caricamento delle pagine minimizzando la dimensione dei file attraverso l'eliminazione di spazi vuoti, commenti e caratteri non necessari.
+\newline
+Il risulato del processo di compilazione è la creazione di due cartelle:
+\begin{itemize}
+    \item public: contiene il sito costruito ed è organizzata a sua volta in sottocartelle ognuna delle quali contiene una pagina singola oppure un gruppo di pagine correlate. Ogni sottocartella comprende un file HTML, i fogli di stile e i file JavaScript;
+    \item resources: contiene le cache di output del processo di generazione; nello specifico, contiene risorse come immagini, file CSS, file JavaScript e altri assets statici utilizzati nel sito.
+\end{itemize}
+%% Sottosezione
+\subsection{Hosting e distribuzione}
+In seguito alla generazione e compilazione, il sito può essere caricato su qualsiasi web server o servizio di hosting. Come detto precedentemente, non è necessario eseguire elaborazioni lato server oppure richieste ad un database, pertanto è possibile utilizzare servizi di hosting completamente gratuiti.
+\newline
+Un'esempio di questi servizi è \textit{Github Pages}, offerto da GitHub. Quest'ultimo è uno dei servizi di hosting di repository Git più popolari al mondo che offre servizi per il controllo di versione, la collaborazione e l'hosting di progetti software (attrverso appunto Github Pages).
+Alcune delle principali funzionalità di GitHub includono il controllo di versione distribuito, il tracciamento delle modifiche, la collaborazione tra sviluppatori e molto altro.
+GitHub Pages è uno dei servizi offerti da Github che consente di pubblicare siti web statici direttamente da una repository GitHub, in particolare utilizza uno specifico branch chiamato "gh-pages" dal quale preleva il contenuto che viene poi pubblicato.
+Di default, l'indirizzo che viene assegnato è \textit{"https://NOME\_UTENTE.github.io/NOME\_REPOSITORY/"} ma supporta anche domini personalizzati. 
+\newline 
+GitHub Pages tuttavia presenta dei limiti sulla dimensione dei siti che consente di hostare:
+\begin{itemize}
+    \item Le dimensioni della repository utilizzata per creare il sito web non deve essere superiore ad un 1GB;
+    \item Le risorse messe a disposizione sono limitate a 100GB di banda e 100.000 richieste al mese;
+    \item Non si dovrebbero eseguire più di dieci "build" per ora, per evitare di sovraccaricare i server e mantenerli performanti per tutti gli utenti.
+\end{itemize}
+I limiti appena citati possono essere superati attraverso un piano di pagamento del servizio.
+\newline
+Altri limiti imposti e non superabili riguardano il contenuto del sito web, GitHub infatti non consente di utilizzare questo servizio per gestire attività online e servizi di software commerciale, inoltre l'utilizzo della pagine è soggetto ai Termini di servizio di Github,
+per cui sono vietati contenuti sessuali oppure violenti/minacciosi. 
+%% Sottosezione
+\subsection{Web Analytics}
+Le web analytics sono il processo di raccolta, misurazione, analisi e reporting dei dati relativi all'uso di un sito web al fine di comprendere il comportamento degli utenti, valutare le prestazioni del sito e trarre informazioni utili per  migliorare l'esperienza degli utenti. 
+Le web analytics sono fondamentali per il miglioramento dell'usabilità, l'ottimizzazione dei motori di ricerca e l'analisi delle conversioni.
+\begin{itemize}
+    \item \textbf{Raccolta dei Dati}: la raccolta dei dati inizia con l'implementazione di strumenti di analisi web che tracciano il comportamento degli utenti sul sito. Questi strumenti registrano dati come il numero di visite, il tempo trascorso sul sito, le pagine visitate e molto altro;
+    \item \textbf{Misurazione delle Metriche Chiave}: le web analytics misurano una vasta gamma di metriche, tra cui il traffico del sito, l'origine del traffico, il tasso di rimbalzo, il tempo medio sulla pagina, le conversioni e altro ancora. Queste metriche consentono di valutare le prestazioni del sito;
+    \item \textbf{Analisi dei Dati}: l'analisi dei dati comporta l'interpretazione delle metriche raccolte per comprendere i modelli e le tendenze. Ad esempio, analizzare quale fonte di traffico genera più conversioni o quali pagine del sito hanno un alto tasso di rimbalzo;
+    \item \textbf{Reporting}: la creazione di report è un passaggio importante nelle web analytics. I report consentono di comunicare i risultati dell'analisi in modo chiaro e comprensibile per poter essere condivisi con i membri del team, i responsabili decisionali o i clienti;
+    \item \textbf{Ottimizzazione}: le web analytics sono utilizzate per prendere decisioni sull'ottimizzazione del sito. Ciò può includere l'ottimizzazione del contenuto, delle conversioni, del carico delle pagine e altro ancora al fine di migliorare l'esperienza dell'utente e raggiungere gli obiettivi stabiliti;
+    \item \textbf{Segmentazione degli Utenti}: le web analytics consentono di suddividere gli utenti in segmenti in base a criteri come la provenienza geografica, il comportamento di navigazione, il dispositivo utilizzato e altro ancora. Questa segmentazione aiuta a comprendere meglio il pubblico e a personalizzare l'esperienza dell'utente.
+\end{itemize}
+Uno delle più famose piattaforme di analisi web è sicuramente \textit{Google Analytics} che utilizza come strumento di analitica i cookies. 
+Nel sito web che si è realizzato con questo progetto, viene utilizzata come piattafroma di analisi uno strumento meno conosciuto di Google Analytics: \textit{umami}. 
+Si tratta di un'applicazione open-source compatibile con il GDPR che a differenza di Google Analytics non utilizza cookie di tracciamento ma allo stesso tempo permette di ottenere informazioni come le pagine visitate, il browser, il sistema operativo ed il dispositivo utilizzati, nonchè il paese di provenienza. Queste informazioni di base possono poi essere ampliate comprendendo ad esempio specifici eventi di interesse per l'analisi del sito web.
+Umami mette inoltre a disposizione una dashboard per la presentazione del numero di visite nel corso del tempo, permettendo di visualizzare gli accessi nella giornata, nell'ultima settimana, nell'ultimo mese oppure nell'anno corrente. 
+\newline 
+L'utilizzo e l'implementazione di umami verranno riprese nel \cref{cap:casostudio}.
 %% Capitolo  
 \chapter{Realizzazione di un sito web}
 
 %% Capitolo  
-\chapter{Caso di studio}
+\chapter{Caso di studio}\label{cap:casostudio}
 
 %% Capitolo  
 \chapter{Conclusioni}

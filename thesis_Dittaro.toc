@@ -11,8 +11,15 @@
 \contentsline {subsection}{\numberline {2.2.5}Pelican}{7}{subsection.2.2.5}%
 \contentsline {subsection}{\numberline {2.2.6}Tabella riassuntiva}{8}{subsection.2.2.6}%
 \contentsline {section}{\numberline {2.3}Differenze tra siti statici e dinamici}{8}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Hugo}{8}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Realizzazione di un sito web}{9}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Caso di studio}{11}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Conclusioni}{13}{chapter.5}%
-\contentsline {chapter}{\numberline {A}Glossario}{15}{appendix.Alph1}%
+\contentsline {section}{\numberline {2.4}Hugo}{9}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Formati supportati}{9}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Template actions}{10}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Plugin}{10}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Creazione del sito}{12}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Costruzione del sito}{13}{subsection.2.4.5}%
+\contentsline {subsection}{\numberline {2.4.6}Hosting e distribuzione}{13}{subsection.2.4.6}%
+\contentsline {subsection}{\numberline {2.4.7}Web Analytics}{14}{subsection.2.4.7}%
+\contentsline {chapter}{\numberline {3}Realizzazione di un sito web}{17}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Caso di studio}{19}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Conclusioni}{21}{chapter.5}%
+\contentsline {chapter}{\numberline {A}Glossario}{23}{appendix.Alph1}%
