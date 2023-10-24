@@ -361,7 +361,7 @@ Questo plug-in non necessita di installazione e permette di visualizzare facilme
 Solo successivamente possono essere specificate all'interno della definzione degli autori (sezione precedente) o nel front matter di un contenuto.
 Allo stesso modo del plugin precendente, le informazioni possono essere richiamate all'interno dei file HTML sfruttando le Template actions (in questo caso tramite \{\{ .Site.Data.social.icons \}\}).
 %% Sottosezione
-\subsection{Creazione del sito}
+\subsection{Creazione del sito}\label{sec:creazione}
 Dopo l'installazione di Hugo, per creare un nuovo sito è suffciente digitare da terminale il seguente comando \textbf{hugo new site NOME\_SITO}. 
 In seguito a questo comando verrà costruita la struttura delle cartelle così come descritto nella \cref{subsec:shugo} che può essere modificata secondo le esigenze.
 \newline
@@ -425,9 +425,63 @@ Si tratta di un'applicazione open-source compatibile con il GDPR che a differenz
 Umami mette inoltre a disposizione una dashboard per la presentazione del numero di visite nel corso del tempo, permettendo di visualizzare gli accessi nella giornata, nell'ultima settimana, nell'ultimo mese oppure nell'anno corrente. 
 \newline 
 L'utilizzo e l'implementazione di umami verranno riprese nel \cref{cap:casostudio}.
+
+
 %% Capitolo  
 \chapter{Realizzazione di un sito web}
-
+%% Sottosezione
+\section{Analisi dei requisiti}
+Nella realizzazione di un sito web bisogna tenere in considerazione diversi aspetti che possono influenzare la buona riuscita del progetto, come ad esempio l'usabilità, l'accesibilità, l'organizzazione dei contenuti e molto altro.
+Per questo motivo esistono delle linee guida e degli approcci cosolidati che permettono di creare siti web di buona qualità. Queste "best practice" si basano sull'esperienza e su ricerche condotte nel campo della progettazione web, le più comuni sono:
+\begin{itemize}
+    \item \textbf{Usabilità}: il sito deve essere intuitivo da utilizzare, la navigazione deve essere chiara e gli utenti dovrebbero essere in grado di trovare facilmente ciò di cui hanno bisogno;
+    \item \textbf{Responsive Design}: il sito deve essere ottimizzato per dispositivi desktop, tablet e smartphone. Deve quindi adattarsi a diverse dimensioni di schermo;
+    \item \textbf{Velocità di caricamento}: I siti web devono caricarsi rapidamente, riducendo al minimo il tempo di caricamento delle pagine e dele immagini;
+    \item \textbf{Struttura delle informazioni}: organizzare il contenuto in modo logico utilizzando una struttura di navigazione chiara con menu, sottosezioni e collegamenti interni;
+    \item \textbf{Chiarezza e semplicità}: mantienere il design pulito e senza distrazioni, l'utente dovrebbe poter comprendere facilmente il messaggio e la struttura del sito.
+\end{itemize}
+La loro applicazione dipenderà ovviamente dalle esigenze specifiche del sito e dal pubblico di destinazione, devono perciò essere adattate in base alle esigenze.
+\newline Queste linee guida verranno poi riprese ed implementate nel \cref{cap:casostudio}.
+%% Sottosezione
+\section{User Experience}
+Il fattore forse più importante da tenere in considerazione nella realizzazione di un sito web è l'espereinza dell'utente (UX), questo termine si riferisce a quello che prova una persona quando interagisce o immagina di interagire con un prototipo, un prodotto finito, un sistema od un servizio.
+L'UX oltrepassa i limiti di altri termini come "interfaccia utente" e "usabilità" in quanto comprende tutti gli aspetti dell'esperienza che le persone hanno con i sistemi interattivi.
+\newline 
+Sono stati identificati tre livelli di esperienza basati sulle risorse fisiologiche e psicologiche mobilitate dall'utente durante l'interazione:
+\begin{itemize}
+    \item \textit{viscerale}: ricevere e interpretare gli stimoli che provengono dal mondo esterno in modo automatico ed immediato;
+    \item \textit{comportamentale}: viene analizzato l'uso del sistema, la prestazione;
+    \item \textit{riflessivo}: considera gli aspetti culturali e il significato dell'uso di un prodotto.
+\end{itemize}
+L'esperienza dell'utente ha inizio prima dell'effettivo utilizzo, in quanto una tecnologia, o l'immagine che vediamo di essa, può incuriosire, emozionare ed indurre risposte “viscerali”, lasciando immaginare le cose che faremmo avendola a nostra disposizione.
+Durante l'interazione si possono identificare la soddisfazione dell'utente, ovvero il grado con cui gli utenti giudicano quanto le tecnologie incontrano le loro esigenze, e la piacevolezza, considerata una componente rilevante della soddisfazione e provata dalle persone durante l'uso di un prodotto.
+Quest'ultima non è legata a a termini funzionali ma all'esperienza sensoriale e le emozioni positive suscitate. 
+\newline
+La user experience è ormai diventata una condizione necessaria per la sopravvivenza e la crescita di qualsiasi prodotto o servizio, una UX insoddisfacente può portare ad un calo dei guadagni e della visibilità generale.
+%% Sottosezione
+\section{Scelta del tema}
+La scelta di un tema è una decisione importante nel processo di sviluppo di un sito web, la cui scelta dipende ovviamente del tipo di progetto che si sta realizzando. 
+La sua importanza non è dovuta solo all'aspetto visivo ma soprattutto all'organizzazione dei contenuti e alle funzionalità che offre.
+\newline
+Hugo mette a disposizione sul sito ufficiale una grande varietà di temi suddivisi in categorie (Blog, Company, Minimal, ...) che facilitano quindi la scelta in base a ciò che si vuole realizzare. 
+Inoltre per la maggior parte dei temi è possibile provare una demo che permette di visualizzare l'aspetto generale e navigare nelle varie sezioni in modo da poterne analizzare la struttura. Sono poi generalamente presenti la documentazione del tema stesso, le specifiche per scaricarlo, il collegamento alla repository di GitHub
+ed informazioni più specifiche come la versione di Hugo necessaria per eseguire il tema e l'ultimo aggiornamneto disponibile.
+\newline
+In seguito alla procedura di installazione, avendo a disposizione i file sorgenti, è possibile modificare il comportamento o aggiungere funzionalità al tema scelto. Allo stesso modo, se nessun tema soddisfa le esigenze richieste, è possibile creare un tema partendo da zero, per farlo si deve creare una sottocartella \textit{layouts} all'interno della directory \textit{themes}
+e caricare al suo interno i vari file HTML, CSS e JS.
+\subsection{Tipologie di temi}
+Un'altra distinzione degna di nota in Hugo riguarda la possibilità di installare "temi standard" e "temi non standard". I primi si riferiscono ai temi precdentemente descritti mentre i secondi sono più complessi in quanto offrono delle funzionalità e dell'estetica superiore, rendendo necessariamnete più complesso e costoso lo sviluppo ed il mantenimento.
+\newline \newline
+\textbf{{\fontsize{12}{14}\selectfont Installazione temi standard}}
+\newline \newline
+La configurazione di un tema standard è relativamente semplice, una volta inizializzato un nuovo sito (così come descritto nella \cref{sec:creazione}), il nuovo tema va scaricato seguendo le istruzioni all'interno della cartella \textit{themes}. 
+A questo punto l'ultimo passaggio è collegare il sito creato con il tema appena scaricato, per farlo è necessario modificare il file di configurazione (config.toml oppure config.yml) aggiungendo la riga \textbf{theme="NOME\_TEMA"}.
+\newline
+Se successivamente si desidera cambiare il tema, è necessario scaricarlo all'interno della stessa cartella del precedente e modificare il nome nel file di configurazione (NB: i temi possono coesistere all'interno della cartella \textit{themes}, non è necessario cancellare il precedente).
+\newline \newline
+\textbf{{\fontsize{12}{14}\selectfont Installazione temi non standard}}
+\newline \newline
+I temi non standard modificano significativamente la struttura dei siti in cui vengono utilizzati, generalmente hanno più file di configurazione e modificano anche altre cartelle (ad esempio la cartella \textit{content}) e per questo necessitano la creazione di altre cartelle per il salvataggio di determinati contenuti.
 %% Capitolo  
 \chapter{Caso di studio}\label{cap:casostudio}
 
