@@ -464,11 +464,31 @@ La scelta di un tema è una decisione importante nel processo di sviluppo di un 
 La sua importanza non è dovuta solo all'aspetto visivo ma soprattutto all'organizzazione dei contenuti e alle funzionalità che offre.
 \newline
 Hugo mette a disposizione sul sito ufficiale una grande varietà di temi suddivisi in categorie (Blog, Company, Minimal, ...) che facilitano quindi la scelta in base a ciò che si vuole realizzare. 
-Inoltre per la maggior parte dei temi è possibile provare una demo che permette di visualizzare l'aspetto generale e navigare nelle varie sezioni in modo da poterne analizzare la struttura. Sono poi generalamente presenti la documentazione del tema stesso, le specifiche per scaricarlo, il collegamento alla repository di GitHub
+Inoltre per la maggior parte dei temi è possibile provare una demo che permette la visualizzazione dell'aspetto generale e la navigazione nelle varie sezioni in modo da poterne analizzare la struttura. Sono poi generalamente presenti la documentazione del tema stesso, le specifiche per scaricarlo, il collegamento alla repository di GitHub
 ed informazioni più specifiche come la versione di Hugo necessaria per eseguire il tema e l'ultimo aggiornamneto disponibile.
 \newline
 In seguito alla procedura di installazione, avendo a disposizione i file sorgenti, è possibile modificare il comportamento o aggiungere funzionalità al tema scelto. Allo stesso modo, se nessun tema soddisfa le esigenze richieste, è possibile creare un tema partendo da zero, per farlo si deve creare una sottocartella \textit{layouts} all'interno della directory \textit{themes}
 e caricare al suo interno i vari file HTML, CSS e JS.
+\newline
+Il progetto implementato in questa tesi prevede la realizzazione di un sito web accademico, pertanto la scelta del tema non è casuale. Osservando altri siti accademici di varie università italiane si può vedere una struttura comune.
+In linea genarale si può notare infatti un menù orizzontale posto nella parte superiore dello schermo che fornisce i link interni alle varie informazioni presenti.
+Un ulteriore problema che si pone è la scelta del numero di voci, questa problematica verrà ripresa nel \cref{cap:casostudio} 
+\begin{figure}
+    \centering
+    \begin{minipage}{1\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{images/ARC-menu.png}
+      \caption{Menù laboratorio ARC Roma}
+    \end{minipage}
+    \hspace{1cm}
+    \hfill
+    \begin{minipage}{1\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{images/MADS-menu.png}
+      \caption{Menù MADS Uniud}
+      \label{img:partial}
+    \end{minipage}
+\end{figure}
 \subsection{Tipologie di temi}
 Un'altra distinzione degna di nota in Hugo riguarda la possibilità di installare "temi standard" e "temi non standard". I primi si riferiscono ai temi precdentemente descritti mentre i secondi sono più complessi in quanto offrono delle funzionalità e dell'estetica superiore, rendendo necessariamnete più complesso e costoso lo sviluppo ed il mantenimento.
 \newline \newline

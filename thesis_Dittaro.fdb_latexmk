@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex thesis_Dittaro"] 1698153767 "thesis_Dittaro.aux" "thesis_Dittaro.bbl" "thesis_Dittaro" 1698153819 0
+["bibtex thesis_Dittaro"] 1698229244 "thesis_Dittaro.aux" "thesis_Dittaro.bbl" "thesis_Dittaro" 1698229314 0
   "./plain_italian.bst" 1693059152 21772 b9f53fc1e71a9c29c62ec7586a3d5fef ""
   "./thud.bib" 1693059152 572 73f492a4f63f45d4cbbf003dbc69cd28 ""
-  "thesis_Dittaro.aux" 1698153818 6753 087662912aae1b085711da27f6d71fdd "pdflatex"
+  "thesis_Dittaro.aux" 1698229313 7155 f8d04efb402da0f152c3360484955eeb "pdflatex"
   (generated)
   "thesis_Dittaro.bbl"
   "thesis_Dittaro.blg"
   (rewritten before read)
-["pdflatex"] 1698153815 "c:/Users/feded/OneDrive/Documenti/thud/thesis_Dittaro.tex" "thesis_Dittaro.pdf" "thesis_Dittaro" 1698153819 0
-  "<pdfa.xmpi" 1698153817 5042 0 ""
+["pdflatex"] 1698229311 "c:/Users/feded/OneDrive/Documenti/thud/thesis_Dittaro.tex" "thesis_Dittaro.pdf" "thesis_Dittaro" 1698229314 0
+  "<pdfa.xmpi" 1698229312 5042 0 ""
   "C:/Users/feded/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1697544568 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/feded/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1693059519 12668 3ccaf0f9d6e2f8afa2409fbf5345587b ""
   "C:/Users/feded/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1694096127 24142035 1296f7a0f7b55f9926df71a64f17482e ""
@@ -133,22 +133,24 @@
   "C:/Users/feded/AppData/Local/Programs/MiKTeX/tex/latex/xmpincl/xmpincl.sty" 1633254124 2832 d498c59e94b7dfa3b4bcf74380ad6348 ""
   "banners/banner_uniud_italian.pdf" 1693059152 41062 b0aa8b86c9a2ce10c6e0830c80f88f1d ""
   "book.thud.tex" 1693059152 8518 ad4f4ec56a8d1eaaab360c919f880ca0 ""
-  "c:/Users/feded/OneDrive/Documenti/thud/thesis_Dittaro.tex" 1698153814 42896 09427e1b3ecf63b9769772975614772f ""
+  "c:/Users/feded/OneDrive/Documenti/thud/thesis_Dittaro.tex" 1698229308 43888 414e0cd0191b31984cdba2a0a9d87b07 ""
+  "images/ARC-menu.png" 1698229099 350911 ddc64ce502f61222b85683b1c9c69b92 ""
   "images/Eleventy_logo.png" 1697550486 422844 c6ed0987d3f07029a239dbad7d6d9579 ""
   "images/Gridsome-logo.png" 1696950290 12032 174294edd55b0f4712865b91bad280e5 ""
   "images/Hugo_logo.png" 1696944952 6542 b7e3c97b5251c0e8cc4ce3955605ab18 ""
+  "images/MADS-menu.png" 1698229269 25227 badec8736af6c466c6e4bb93980e2870 ""
   "images/WAMP_LAMP.png" 1697700337 100321 39784753b1fc7ce36c96640d192099e4 ""
   "images/if-template-actions.png" 1697705562 7852 abd818134d24cb1087cfd3345a9308b2 ""
   "images/jekyll_teaser.png" 1693213418 56513 c5fd0c571e353883c0058adb212fbeac ""
   "images/partial-template-actions.png" 1697705684 6540 d093b8b1482ba2758c362c51c11a4f28 ""
   "images/pelican_logo.png" 1697550602 8634 c5570b7525addcbab63bc2e0e3102852 ""
   "images/static.png" 1697701682 17199 1c5baa02da20e610faf1c2866870edd2 ""
-  "pdfa.xmpi" 1698153817 5042 65039ca1aef3e856ec45b6fc1ab5b5df "pdflatex"
-  "thesis_Dittaro.aux" 1698153818 6753 087662912aae1b085711da27f6d71fdd "pdflatex"
-  "thesis_Dittaro.bbl" 1698153767 153 b42ce0bf5f40421ff8ae005c427f75c6 "bibtex thesis_Dittaro"
-  "thesis_Dittaro.out" 1698153818 1777 8c988d51af0b5d5f33d2cec1c3ceba9a "pdflatex"
-  "thesis_Dittaro.tex" 1698153814 42896 09427e1b3ecf63b9769772975614772f ""
-  "thesis_Dittaro.toc" 1698153818 2202 0012ec0330b25ff1fc2fc897b2c539bd "pdflatex"
+  "pdfa.xmpi" 1698229312 5042 9cdeee6a7e7659ad02b9983cd2b87d03 "pdflatex"
+  "thesis_Dittaro.aux" 1698229313 7155 f8d04efb402da0f152c3360484955eeb "pdflatex"
+  "thesis_Dittaro.bbl" 1698229245 153 b42ce0bf5f40421ff8ae005c427f75c6 "bibtex thesis_Dittaro"
+  "thesis_Dittaro.out" 1698229313 1777 8c988d51af0b5d5f33d2cec1c3ceba9a "pdflatex"
+  "thesis_Dittaro.tex" 1698229308 43888 414e0cd0191b31984cdba2a0a9d87b07 ""
+  "thesis_Dittaro.toc" 1698229313 2202 d3903e17f0f50cbf5e2aeebd36370975 "pdflatex"
   "thud.cls" 1693059152 6840 eed6da3f8af95a50dc922bd509f364dd ""
   (generated)
   "pdfa.xmpi"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.7)  24 OCT 2023 15:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.7)  25 OCT 2023 12:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -295,7 +295,14 @@ Package cleveref Info: always capitalise cross-reference names on input line 785
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count283
 \l__pdf_internal_box=\box54
-) (thesis_Dittaro.aux)
+) (thesis_Dittaro.aux
+
+LaTeX Warning: Label `img:partial' multiply defined.
+
+
+LaTeX Warning: Label `img:partial@cref' multiply defined.
+
+)
 \openout1 = `thesis_Dittaro.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
@@ -623,26 +630,47 @@ Capitolo 3.
 [17
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 473--486
+<images/ARC-menu.png, id=296, 970.3753pt x 249.18094pt>
+File: images/ARC-menu.png Graphic file (type png)
+<use images/ARC-menu.png>
+Package pdftex.def Info: images/ARC-menu.png  used on input line 480.
+(pdftex.def)             Requested size: 492.95131pt x 126.5863pt.
+<images/MADS-menu.png, id=297, 950.80219pt x 113.67468pt>
+File: images/MADS-menu.png Graphic file (type png)
+<use images/MADS-menu.png>
+Package pdftex.def Info: images/MADS-menu.png  used on input line 487.
+(pdftex.def)             Requested size: 492.95131pt x 58.93597pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 493--506
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 473--486
+Underfull \hbox (badness 10000) in paragraph at lines 493--506
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 473--486
+Underfull \hbox (badness 10000) in paragraph at lines 493--506
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 473--486
+Underfull \hbox (badness 10000) in paragraph at lines 493--506
 
  []
 
-[18] [19] [20
+[18] [19
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.506 \chapter{
+               Caso di studio}\label{cap:casostudio}
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.506 \chapter{
+               Caso di studio}\label{cap:casostudio} <./images/ARC-menu.png> <./images/MADS-menu.png>] [20
 
 ]
 Capitolo 4.
@@ -661,22 +689,26 @@ Appendice A.
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `thesis_Dittaro.out' has not changed.
 (rerunfilecheck)             Checksum: 8C988D51AF0B5D5F33D2CEC1C3CEBA9A;1777.
  )
 (\end occurred when \ifx on line 3 was incomplete) 
 Here is how much of TeX's memory you used:
- 16437 strings out of 475248
- 268290 string characters out of 5757814
+ 16453 strings out of 475248
+ 268679 string characters out of 5757814
  1932801 words of memory out of 5000000
- 37659 multiletter control sequences out of 15000+600000
+ 37673 multiletter control sequences out of 15000+600000
  577601 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,8n,83p,948b,2380s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,9n,83p,948b,2380s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\feded\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis_Dittaro.pdf (33 pages, 801634 bytes).
+Output written on thesis_Dittaro.pdf (33 pages, 1149720 bytes).
 PDF statistics:
- 401 PDF objects out of 1000 (max. 8388607)
- 74 named destinations out of 1000 (max. 500000)
- 279 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 408 PDF objects out of 1000 (max. 8388607)
+ 76 named destinations out of 1000 (max. 500000)
+ 289 words of extra memory for PDF output out of 10000 (max. 10000000)
 
