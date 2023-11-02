@@ -46,6 +46,8 @@ Dedica da scrivere
 %% La suddivisione in parti ? opzionale; solitamente sono sufficienti i capitoli.
 %\part{Parte}
 
+%% -------------------------------------------------------------------------------------------------------------------------------
+
 %% Capitolo
 \chapter{Introduzione}
 In hac habitasse platea dictumst. Vestibulum consectetur dictum pellentesque. Suspendisse nunc neque, commodo ac imperdiet nec, sollicitudin vitae libero. Donec bibendum vel nunc vitae pharetra. In vel volutpat odio, et interdum dui. Duis mauris ligula, congue eget molestie at, tincidunt nec diam. Nam vitae eros nec arcu suscipit vehicula. Aliquam consectetur imperdiet elit, eget pretium arcu fringilla at. Maecenas \cite{Knu86} sed libero pulvinar, mattis tortor vel, fermentum enim.
@@ -79,12 +81,12 @@ In questa sezione verranno menzionati i cinque principali SSG e discusse le loro
 
 Hugo verrà brevemente presentato in modo da poterlo confrontare con gli altri principali SSG, per poi essere ripreso più approfonditamente nella \cref{sec:hugo} dato che si tratta del framework scelto per sviluppare il progetto. \newline
 Hugo è un generatore di siti web statici scritto in Go ideato inizialmente da Steve Francia nel 2013 e successivamente sviluppato da Bjørn Erik. L'ultima versione, la 0.119.0 è stata rilasciata a settembre 2023.
-Per utilizzare Hugo non è necessario conoscere Go in quanto il sito web viene creato attraverso file HTML e CSS, inoltre c'è una separazione tra il contenuto e la presentazione permettendo così di modificare l'aspetto senza modificarne il contenuto. 
+Per utilizzare Hugo non è necessario conoscere Go in quanto il sito web viene creato attraverso file HTML e CSS, inoltre c'è una separazione tra il contenuto e la presentazione permettendo così di modificare l'aspetto senza modificare l'informazione presente. 
 Oltre ai tipi di file citati precedentemente, Hugo supporta anche file di tipo javascript, Markdown, TOML, YAML e JSON. \newline
 Le informazioni necessarie per creare, modificare, stilizzare o eliminare pagine e/o contenuti sono racchiuse all'interno di specifiche cartelle che possono essere successivamente estese. La struttura generale è la seguente:
 \begin{itemize}
     \item la cartella \textit{archetypes} contiene i file che vengono utilizzati come template per la creazione di nuovi contenuti del sito in modo da standardizzare la struttura ed il formato;
-    \item la cartella \textit{content} è forse la più importante in quanto contiene tutto il contenuto del sito. Al suo interno tutti i file sono in formato Markdown;
+    \item la cartella \textit{content} è forse la più importante in quanto racchiude tutto il contenuto del sito. Al suo interno tutti i file sono in formato Markdown;
     \item la cartella \textit{data} contiene esclusivamente file di tipo JSON, TOML, YAML o XML utilizzati per aggiungere strutture specifiche al sito;
     \item la cartella \textit{layouts} contiene file HTML usati per creare l'aspetto visivo del sito;
     \item la cartella \textit{static} contiene file statici come ad esempio immagini, file CSS, file Javascript;
@@ -118,11 +120,9 @@ Una volta creato il sito, la struttura trovata sarà la seguente:
 \end{itemize}
 Come Hugo anche Jekyll mette a disposizione centinaia di temi prefabbricati per aiutare lo sviluppo del sito web, ed entrambi forniscono degli shortcode, ovvero funzioni che permettono la comunicazione tra i layout delle pagine con i loro contenuti (ad esempio le template actions per Hugo).
 Anche Jekyll presenta una moltitudine di Plugin che possono essere integrati attraverso Ruby, permettendo di aggiungere e semplificare la costruzione di determinati servizi per il sito web. \newline
-Una delle differenze principali di Hugo rispetto a Jekyll è che il primo non è legato ad ambienti esterni, infatti dopo aver scaricato la versione desiderata ed estratto il contenuto nella cartella prescelta il software è pronto per essere usato, mentre Jekyll si deve appoggiare a Ruby.
+Una delle differenze principali di Hugo rispetto a Jekyll è che il primo non è legato ad ambienti esterni, infatti dopo aver scaricato la versione desiderata ed estratto il contenuto nella cartella prescelta, il software è pronto per essere usato, mentre Jekyll si deve appoggiare a Ruby.
 \newline
 In conclusione, Jekyll è un'ottima scelta se si ha familiarità con l'ambiente Ruby o se si vuole costruire un sito complesso usando gli innumerevoli Plugin e template messi già a disposizione. 
-
-%% Sottosezione
 
 \begin{figure}[t]
     \begin{minipage}[t]{0.5\textwidth}
@@ -138,6 +138,7 @@ In conclusione, Jekyll è un'ottima scelta se si ha familiarità con l'ambiente 
     \end{minipage}
 \end{figure}
 
+%% Sottosezione
 \subsection{Gridsome}
 Gridsome è un SSG molto recente, è stato infatti ideato da Johannes Schickling nel 2018 subendo poi miglioramenti negli anni successivi fino all'ultima versione disponibile, la 0.7.23, rilasciata a settembre 2021.
 Si tratta di un framework basato su Vue.js e GraphQL che permette di creare una configurazione "headless", consentendo così di sfruttare la separazione dei contenuti dalla loro presentazione.
@@ -172,6 +173,7 @@ La struttura di base contiene almeno le seguenti cartelle:
 \end{itemize}
 
 Eleventy non è sicuramente il miglior SSG per iniziare a lavorare in questo campo, sia per la necessità di conoscere un linguaggio come javascript sia per la documentazione poco esaustiva e ancora in fase di sviluppo, tuttavia lo sforzo viene guadagnato in termini di velocità e prestazioni.   
+
 %% Sottosezione
 \subsection{Pelican}
 
@@ -243,6 +245,7 @@ Avere un'architettura di questo tipo permette di ottenere delle ottimizzazioni d
     \centering
     \includegraphics[width = 0.25\textwidth]{images/static.png}
     \caption{Architettura client/server SSG}
+    \label{img:architettura}
 \end{figure}
 
 %% Sezione
@@ -265,18 +268,18 @@ Hugo supporta una grande varietà di formati, i principali sono i seguenti:
 Vengono inoltre supportati formati più specifici come reStructuredText, un formato markup utilizzato ad esempio per la documentazione tecnica, oppure AsciiDoc, anch'esso un formato markup spesso utilizzato in ambienti di sviluppo.
 
 %% Sottosezione
-\subsection{Template actions}
+\subsection{Template actions}\label{sec:tactions}
 Le Template actions, scritte in Go Template, si riferiscono a una serie di azioni o comandi disponibili nei modelli (templates) di Hugo, che vengono utilizzati per manipolare e visualizzare i dati all'interno dei contenuti. 
 Le template actions consentono di eseguire operazioni come l'iterazione attraverso gli elenchi, il controllo di flusso condizionale e l'estrazione di valori dai dati dei contenuti. Vengono utilizzate direttamente all'interno dei file HTML all'interno delle doppie graffe. \newline
 Alcune delle template actions più comuni in Hugo includono:
 \begin{itemize}
-    \item \textbf{range}: utilizzata per iterare all'interno di un'elenco, permette ad esempio di creare dei cicli.
+    \item \textbf{range}: utilizzata per iterare all'interno di un elenco, permette ad esempio di creare dei cicli.
     \item \textbf{if, with}: consentono di aggiungere logica condizionale nei modelli. Possono essere utilizzati per visualizzare o nascondere parti del contenuto in base a condizioni specifiche;
     \item \textbf{index}: utilizzata per accedere a elementi specifici all'interno di elenchi o dizionari;
     \item \textbf{partial}: per includere modelli o contenuti da altri file. 
 \end{itemize}
 
-La \cref{img:if} mostra un'esempio di utilizzo del controllo di flusso attraverso il costrutto "if", nello specifico verifica se nei parametri che descrivono la persona è presente un'immagine: in caso positivo mostra l'immagine corrispondente altrimenti un'immagine di default.
+La \cref{img:if} mostra un esempio di utilizzo del controllo di flusso attraverso il costrutto "if", nello specifico verifica se nei parametri che descrivono la persona è presente un'immagine: in caso positivo mostra l'immagine corrispondente altrimenti un'immagine di default.
 La \cref{img:partial} mostra invece l'utilizzo della template action "partial", permettendo così di includere il file \textit{recent.html}. \newline 
 Nell template actions è possibile anche selezionare specifici parametri come ad esempio \{\{ .Title \}\} che permette di inserire il titolo della pagina corrente. Allo stesso modo si può ottenere la descrizione (\{\{ .Description \}\}) o il sommario (\{\{ .Summary \}\}).
 
@@ -360,6 +363,7 @@ Questo plug-in non necessita di installazione e permette di visualizzare facilme
 \newline \newline
 Solo successivamente possono essere specificate all'interno della definzione degli autori (sezione precedente) o nel front matter di un contenuto.
 Allo stesso modo del plugin precendente, le informazioni possono essere richiamate all'interno dei file HTML sfruttando le Template actions (in questo caso tramite \{\{ .Site.Data.social.icons \}\}).
+
 %% Sottosezione
 \subsection{Creazione del sito}\label{sec:creazione}
 Dopo l'installazione di Hugo, per creare un nuovo sito è suffciente digitare da terminale il seguente comando \textbf{hugo new site NOME\_SITO}. 
@@ -368,6 +372,7 @@ In seguito a questo comando verrà costruita la struttura delle cartelle così c
 Per poter visualizzare in locale il sito che si sta creando, è necessario lanciare da terminale il comando \textbf{hugo server} oppure \textbf{npm run start} (se è stato installato npm), in seguito il sito sarà visibile all'indirizzo localhost:1313 (127.0.0.1:1313).
 \newline
 Altri comandi utili per la creazione del sito sono \textbf{hugo server -D} che, a differenza del comando precedente, permette di visualizzare anche i contenuti classificati come bozze ed il comando \textbf{hugo}, necessario per la costruzione del sito. Quest'ultimo comando verrà discusso nella sezione successiva.
+
 %% Sottosezione
 \subsection{Costruzione del sito}
 La costruzione del sito è divisa in due fasi principali: la fase di generazione e la fase di compilazione.
@@ -388,11 +393,12 @@ Il risulato del processo di compilazione è la creazione di due cartelle:
     \item public: contiene il sito costruito ed è organizzata a sua volta in sottocartelle ognuna delle quali contiene una pagina singola oppure un gruppo di pagine correlate. Ogni sottocartella comprende un file HTML, i fogli di stile e i file JavaScript;
     \item resources: contiene le cache di output del processo di generazione; nello specifico, contiene risorse come immagini, file CSS, file JavaScript e altri assets statici utilizzati nel sito.
 \end{itemize}
+
 %% Sottosezione
 \subsection{Hosting e distribuzione}
 In seguito alla generazione e compilazione, il sito può essere caricato su qualsiasi web server o servizio di hosting. Come detto precedentemente, non è necessario eseguire elaborazioni lato server oppure richieste ad un database, pertanto è possibile utilizzare servizi di hosting completamente gratuiti.
 \newline
-Un'esempio di questi servizi è \textit{Github Pages}, offerto da GitHub. Quest'ultimo è uno dei servizi di hosting di repository Git più popolari al mondo che offre servizi per il controllo di versione, la collaborazione e l'hosting di progetti software (attrverso appunto Github Pages).
+Un esempio di questi servizi è \textit{Github Pages}, offerto da GitHub. Quest'ultimo è uno dei servizi di hosting di repository Git più popolari al mondo che offre servizi per il controllo di versione, la collaborazione e l'hosting di progetti software (attrverso appunto Github Pages).
 Alcune delle principali funzionalità di GitHub includono il controllo di versione distribuito, il tracciamento delle modifiche, la collaborazione tra sviluppatori e molto altro.
 GitHub Pages è uno dei servizi offerti da Github che consente di pubblicare siti web statici direttamente da una repository GitHub, in particolare utilizza uno specifico branch chiamato "gh-pages" dal quale preleva il contenuto che viene poi pubblicato.
 Di default, l'indirizzo che viene assegnato è \textit{"https://NOME\_UTENTE.github.io/NOME\_REPOSITORY/"} ma supporta anche domini personalizzati. 
@@ -407,8 +413,9 @@ I limiti appena citati possono essere superati attraverso un piano di pagamento 
 \newline
 Altri limiti imposti e non superabili riguardano il contenuto del sito web, GitHub infatti non consente di utilizzare questo servizio per gestire attività online e servizi di software commerciale, inoltre l'utilizzo della pagine è soggetto ai Termini di servizio di Github,
 per cui sono vietati contenuti sessuali oppure violenti/minacciosi. 
+
 %% Sottosezione
-\subsection{Web Analytics}
+\subsection{Web Analytics}\label{subsec:umami}
 Le web analytics sono il processo di raccolta, misurazione, analisi e reporting dei dati relativi all'uso di un sito web al fine di comprendere il comportamento degli utenti, valutare le prestazioni del sito e trarre informazioni utili per  migliorare l'esperienza degli utenti. 
 Le web analytics sono fondamentali per il miglioramento dell'usabilità, l'ottimizzazione dei motori di ricerca e l'analisi delle conversioni.
 \begin{itemize}
@@ -426,13 +433,15 @@ Umami mette inoltre a disposizione una dashboard per la presentazione del numero
 \newline 
 L'utilizzo e l'implementazione di umami verranno riprese nel \cref{cap:casostudio}.
 
+%% ------------------------------------------------------------------------------------------------------------------------------
 
 %% Capitolo  
 \chapter{Realizzazione di un sito web}
-%% Sottosezione
+
+%% Sezione
 \section{Analisi dei requisiti}
 Nella realizzazione di un sito web bisogna tenere in considerazione diversi aspetti che possono influenzare la buona riuscita del progetto, come ad esempio l'usabilità, l'accesibilità, l'organizzazione dei contenuti e molto altro.
-Per questo motivo esistono delle linee guida e degli approcci cosolidati che permettono di creare siti web di buona qualità. Queste "best practice" si basano sull'esperienza e su ricerche condotte nel campo della progettazione web, le più comuni sono:
+Per questo motivo esistono delle linee guida e degli approcci consolidati che permettono di creare siti web di buona qualità. Queste "best practice" si basano sull'esperienza e su ricerche condotte nel campo della progettazione web, le più comuni sono:
 \begin{itemize}
     \item \textbf{Usabilità}: il sito deve essere intuitivo da utilizzare, la navigazione deve essere chiara e gli utenti dovrebbero essere in grado di trovare facilmente ciò di cui hanno bisogno;
     \item \textbf{Responsive Design}: il sito deve essere ottimizzato per dispositivi desktop, tablet e smartphone. Deve quindi adattarsi a diverse dimensioni di schermo;
@@ -442,32 +451,34 @@ Per questo motivo esistono delle linee guida e degli approcci cosolidati che per
 \end{itemize}
 La loro applicazione dipenderà ovviamente dalle esigenze specifiche del sito e dal pubblico di destinazione, devono perciò essere adattate in base alle esigenze.
 \newline Queste linee guida verranno poi riprese ed implementate nel \cref{cap:casostudio}.
-%% Sottosezione
+
+%% Sezione
 \section{User Experience}
-Il fattore forse più importante da tenere in considerazione nella realizzazione di un sito web è l'espereinza dell'utente (UX), questo termine si riferisce a quello che prova una persona quando interagisce o immagina di interagire con un prototipo, un prodotto finito, un sistema od un servizio.
+Il fattore forse più importante da tenere in considerazione nella realizzazione di un sito web è l'esperienza dell'utente (UX), questo termine si riferisce a quello che prova una persona quando interagisce o immagina di interagire con un prototipo, un prodotto finito, un sistema od un servizio.
 L'UX oltrepassa i limiti di altri termini come "interfaccia utente" e "usabilità" in quanto comprende tutti gli aspetti dell'esperienza che le persone hanno con i sistemi interattivi.
 \newline 
-Sono stati identificati tre livelli di esperienza basati sulle risorse fisiologiche e psicologiche mobilitate dall'utente durante l'interazione:
+Sono stati identificati tre livelli, basati sulle risorse fisiologiche e psicologiche mobilitate dall'utente durante l'interazione:
 \begin{itemize}
     \item \textit{viscerale}: ricevere e interpretare gli stimoli che provengono dal mondo esterno in modo automatico ed immediato;
     \item \textit{comportamentale}: viene analizzato l'uso del sistema, la prestazione;
     \item \textit{riflessivo}: considera gli aspetti culturali e il significato dell'uso di un prodotto.
 \end{itemize}
-L'esperienza dell'utente ha inizio prima dell'effettivo utilizzo, in quanto una tecnologia, o l'immagine che vediamo di essa, può incuriosire, emozionare ed indurre risposte “viscerali”, lasciando immaginare le cose che faremmo avendola a nostra disposizione.
+L'esperienza dell'utente ha inizio prima dell'effettivo utilizzo in quanto, una tecnologia o l'immagine che vediamo di essa, può incuriosire, emozionare ed indurre risposte “viscerali”, lasciando immaginare quello che potremmo fare avendola a nostra disposizione.
 Durante l'interazione si possono identificare la soddisfazione dell'utente, ovvero il grado con cui gli utenti giudicano quanto le tecnologie incontrano le loro esigenze, e la piacevolezza, considerata una componente rilevante della soddisfazione e provata dalle persone durante l'uso di un prodotto.
-Quest'ultima non è legata a a termini funzionali ma all'esperienza sensoriale e le emozioni positive suscitate. 
+Quest'ultima non è legata a termini funzionali ma all'esperienza sensoriale e alle emozioni positive suscitate. 
 \newline
 La user experience è ormai diventata una condizione necessaria per la sopravvivenza e la crescita di qualsiasi prodotto o servizio, una UX insoddisfacente può portare ad un calo dei guadagni e della visibilità generale.
-%% Sottosezione
-\section{Scelta del tema}
-La scelta di un tema è una decisione importante nel processo di sviluppo di un sito web, la cui scelta dipende ovviamente del tipo di progetto che si sta realizzando. 
+
+%% Sezione
+\section{Scelta del tema}\label{sec:tema}
+La scelta di un tema è una decisione importante nel processo di sviluppo di un sito web, la cui decisione dipende ovviamente del tipo di progetto che si sta realizzando. 
 La sua importanza non è dovuta solo all'aspetto visivo ma soprattutto all'organizzazione dei contenuti e alle funzionalità che offre.
 \newline
 Hugo mette a disposizione sul sito ufficiale una grande varietà di temi suddivisi in categorie (Blog, Company, Minimal, ...) che facilitano quindi la scelta in base a ciò che si vuole realizzare. 
-Inoltre per la maggior parte dei temi è possibile provare una demo che permette la visualizzazione dell'aspetto generale e la navigazione nelle varie sezioni in modo da poterne analizzare la struttura. Sono poi generalamente presenti la documentazione del tema stesso, le specifiche per scaricarlo, il collegamento alla repository di GitHub
+Inoltre per la maggior parte dei temi è possibile provare una demo che permette la visualizzazione dell'aspetto generale e la navigazione nelle varie sezioni in modo da poterne analizzare la struttura. Sono poi generalmente presenti la documentazione del tema stesso, le specifiche per scaricarlo, il collegamento alla repository di GitHub
 ed informazioni più specifiche come la versione di Hugo necessaria per eseguire il tema e l'ultimo aggiornamneto disponibile.
 \newline
-In seguito alla procedura di installazione, avendo a disposizione i file sorgenti, è possibile modificare il comportamento o aggiungere funzionalità al tema scelto. Allo stesso modo, se nessun tema soddisfa le esigenze richieste, è possibile creare un tema partendo da zero, per farlo si deve creare una sottocartella \textit{layouts} all'interno della directory \textit{themes}
+In seguito alla procedura di installazione, avendo a disposizione i file sorgenti, è possibile modificare il comportamento o aggiungere funzionalità al tema scelto. Allo stesso modo, se nessun tema dovesse soddisfare le esigenze richieste, è possibile realizzare un tema personalizzato creando una sottocartella \textit{layouts} all'interno della directory \textit{themes}
 e caricare al suo interno i vari file HTML, CSS e JS.
 \newline
 Il progetto implementato in questa tesi prevede la realizzazione di un sito web accademico, pertanto la scelta del tema non è casuale. Osservando altri siti accademici di varie università italiane si può vedere una struttura comune.
@@ -486,7 +497,6 @@ Un ulteriore problema che si pone è la scelta del numero di voci, questa proble
       \centering
       \includegraphics[width=1\textwidth]{images/MADS-menu.png}
       \caption{Menù MADS Uniud}
-      \label{img:partial}
     \end{minipage}
 \end{figure}
 \subsection{Tipologie di temi}
@@ -502,8 +512,404 @@ Se successivamente si desidera cambiare il tema, è necessario scaricarlo all'in
 \textbf{{\fontsize{12}{14}\selectfont Installazione temi non standard}}
 \newline \newline
 I temi non standard modificano significativamente la struttura dei siti in cui vengono utilizzati, generalmente hanno più file di configurazione e modificano anche altre cartelle (ad esempio la cartella \textit{content}) e per questo necessitano la creazione di altre cartelle per il salvataggio di determinati contenuti.
+
+%% ------------------------------------------------------------------------------------------------------------------------------
+
 %% Capitolo  
 \chapter{Caso di studio}\label{cap:casostudio}
+
+%% Sezione
+\section{Tema utilizzato}
+Nel caso di studio sono state prese in cosiderazione le assunzioni e le regole generali della \cref{sec:tema}, per questo motivo il tema che è stato scelto è \textbf{Tella}.
+La pagina di presentazione presente sul sito ufficiale di Hugo mostra alcune informazioni generali come l'autore, l'ultimo update rilasciato ed il collegamento alla repository di GitHub.
+\newline
+Nella stessa pagina è poi disponibile la possibilità di provare la demo e sono inoltre presenti le varie modalità di installazione ed inizializzazione. Questi passaggi verranno ripresi ed utilizzati nelle sezioni successive.
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 1\textwidth]{images/Tella.png}
+    \caption{Pagina di presentazione Tella}
+\end{figure}
+
+
+%% Sottosezione
+\subsection{Struttura di Tella}
+Sebbene Tella sia stato utilizzato per la realizzazione di un sito accademico, nel sito di Hugo viene classifcato nel gruppo "Company". Tuttavia possiede alcune caratteristche riconducibili ad un sito adatto per un'università, soprattutto se vengo effettuati alcuni accorgimenti
+e rimosse alcune sezioni. 
+In particolare si può sfruttare la presenza del menù orizzonatale, in quanto rappresenta proprio una delle caratteristiche cercate. 
+\newline
+Il file di configurazione generale \textit{config.toml} è presente all'interno della cartella \textit{themes/tella/exampleSite} e permette di modificare le configurazioni globali del sito come il logo, la struttura della pagina di index e del menù orizzontale.
+%% Sottosezione
+\subsection{Implementazione di Tella}
+Prima di poter installare il tema scelto è necessario creare un nuovo sito da terminale attraverso il comando \textbf{hugo new site NOME\_SITO}, a questo punto si seguono le istruzioni riportate sulla pagina di presentazione di Tella (è richiesta l'installazione di Git):
+\begin{enumerate}
+    \item Dalla cartella creata attraverso il comando precedente, digitare \newline \textbf{git clone https://github.com/opera7133/tella themes/tella}, il risultato sarà la creazione di una nuova cartella "Tella" all'interno di "Themes" dove sarà presente tutto il contenuto della repository clonata;
+    \item Il seguente comando è necessario per aggiornare il tema in caso di modifiche alla repository di Github, alla prima creazione non è pertanto necessario. Per farlo bisogna prima spostarsi all'interno della cartella "Tella" attraverso il comando \textbf{cd tella}, a questo punto si può eseguire \textbf{git pull};
+    \item Installazione delle dipendenze: seguendo i passi elencati nel sito ufficiale è necessario copiare i file "package.json", "tailwind.config.js" e "postcss.config.js" dalla cartella \textit{exampleSite} alla cartella radice del progetto;
+    \item L'ultimo passo prima di poter visualizzare il sito è quelo di installare npm attraverso il comando \textbf{npm install};
+    \item Una volta installato, npm permette di visualizzare il sito digitando \textbf{npm run start} (equivalente a \textbf{hugo server}) all'indirizzo 127.0.0.1:1313.
+\end{enumerate}
+
+%% Sezione
+\begin{figure}[b]
+    \centering
+    \includegraphics[width = 1\textwidth]{images/Tella-menu.png}
+    \caption{Voci presenti nel menù}
+    \label{img:menu}
+\end{figure}
+
+\section{Personalizzazione del tema}
+In questa sezione verranno descritte le modifche iniziali apportate al tema per renderlo compatibile con il risultato cercato. Saranno illustrate le soluzioni adottate e le scelte effettuate. 
+\newline \newline
+\textbf{{\fontsize{12}{14}\selectfont Personalizzazione del menù orizzontale}}
+\newline \newline
+Come detto precedentemente, il menù orizzonatale già presente può essere modificato e adattato in modo da essere funzionale alle specifiche. 
+Una considerazione importante riguarda la scelta del numero di voci, troppe possono infatti rendere la visualizzazione confusa ma la ricerca di informazioni più efficiente, mentre troppo poche rendono la ricerca di contenuti più complicata ma permettono una visulazzazione più compatta. 
+Analizzando siti accadamici già esistenti si è scelto di utilizzare sei voci, organizzate come illustrato in \cref{img:menu}.
+\newline \newline
+\textbf{{\fontsize{12}{14}\selectfont Modifica della pagina iniziale}}
+\newline \newline
+La pagina iniziale, come si puo vedere nelle \cref{img:indexin} e \cref{img:indexfi}, è stata modificata rispetto all'originale, sono stati infatti rimossi e modificati diversi elementi: 
+\begin{itemize}
+    \item Le scritte presenti nelle immagini sono state cancellate attraverso l'eliminazione di parte del contenuto presente nel file \textit{slide.json} all'interno della cartella \textit{data};
+    \item Il blocco intermedio posto sotto le foto scorrevoli è stato rimosso eliminando il file \textit{features.json} nella stessa cartella del punto precedente; 
+    \item Parte del menù posto in fondo alla pagina è stato cancellato con l'eliminazione del contenuto del file \textit{footer.html} all'interno della cartella \textit{themes/tella/layouts/partials}
+\end{itemize}
+È stata poi creata una sezione di "About us" immediatamente sotto le immagini, la quale conterrà una descrizione del lavoro svolto dal specifico gruppo di ricerca. Si è scelto di assegnare un colore di sfondo diverso dal resto della pagina per risaltarne la posizione ed il contenuto.
+\newline
+L'ultima modifica effetuata riguarda l'informazione ed il collegamento interno presente nella pagina di index. Si è scelto di riservare questo spazio per l'elencazione delle news in modo tale che vengano presentate le tre più recenti
+mentre l'elenco completo è reso disponibile sia attraverso la voce nel menù orizzontale sia attraverso il tasto \textbf{"All news"} in fondo alla pagina. 
+Per realizzare questa idea sono state sfruttare le Template actions descritte nella \cref{sec:tactions}, la pagina di index include infatti il file \textit{recent.html} posto all'interno della cartella \textit{partials} che attraverso la funzione di range (in questo caso impostata al valore 3) permette di realizzare l'obbiettivo. 
+Questo file richiama a sua volta \textit{summary.html}, utilizzato per rappresentare il titolo, la breve descrizione e la data presenti in ogni news. 
+\begin{figure}
+    \begin{minipage}{0.5\textwidth}
+      \centering
+      \includegraphics[width=0.8\textwidth]{images/index-iniziale.png}
+      \caption{Pagina di index originale}
+      \label{img:indexin}
+    \end{minipage}
+    \begin{minipage}{0.5\textwidth}
+      \centering
+      \includegraphics[width=0.99\textwidth]{images/index-finale.jpeg}
+      \caption{Pagina di index modificata}
+      \label{img:indexfi}
+    \end{minipage}
+\end{figure}
+
+%% Sezione
+\section{Implementazione di funzionalità aggiuntive} 
+Nella sezione precedente sono state elencate le modifiche e le cancellazioni rispetto all'origninale. 
+Verranno ora trattate le aggiunte più sigificative non presenti nella versione iniziale ed adottate in quanto necessarie ad un generale sito web accademico. 
+
+%% Sottosezione
+\subsection{Barra di ricerca}
+\begin{figure}[b]
+    \centering
+    \includegraphics[width = 0.4\textwidth]{images/list-html.png}
+    \caption{Contenuto del file \textit{list.html}}
+    \label{img:list}
+\end{figure}
+L'implementazione della barra di ricerca è stata svolta utilizzando la libreria \textit{Lunr.js} ed utilizza una serie di file organizzati in una struttura non banale, la quale verrà descritta nella pagine successive.
+La soluzione è ispirata da \textbf{link}.
+\newline
+Dato che nell'architettura di un sito web statico (descritta in \cref{img:architettura}) non è presente un'elaborazione lato server, in quanto non ci sono database per eseguire le computazioni, l'operazione di ricerca verrà gestita completamente nel lato client.
+In particolare la libreria permette di effettuare staticamente delle ricerche e di indicizzare i contenuti. 
+I passi seguiti per la realizzazione della barra di ricerca sono i seguenti:
+\begin{enumerate}
+    \item Creazione della pagina Markdown per la visualizzazione dei risultati: è necessario creare una cartella "search" all'interno della cartella \textit{content}, questa cartella conterrà il file "\_index.md" il quale racchiude solamente il front-matter con la riga \textbf{{\selectfont title: Search}};
+    \item Ogni file markdown necessita la creazione di un file HTML di template per la presentazione dei contenuti. Tale file, chiamato \textit{list.html} è contenuto all'interno della cartella \textit{layouts/search}.
+    \newline \newline
+    La \cref{img:list} mostra l'organizzazione della pagina di visualizzazione dei risultati. Il file è organizzato in due parti importanti, la prima riguarda la sezione \textbf{<h2>} dove l'id "search-title" verrà utilizzato come titolo della pagina, in quanto viene salvato e richiamato dalla template action \{\{ .Name \}\}. 
+    La seconda parte riguarda il tag \textbf{<ul>} che verrà utilizzato per elencare i risultati di ricerca.
+    \item Costruzione della struttura dati: questo avviene attraverso il file "search-index.html" posto all'interno della cartella \textit{themes/tella/layouts/partials}. Il file contiene il seguente codice:
+    \newline \newline <script> 
+    \newline window.store = \{ 
+        \newline \{\{ range .Site.RegularPages\}\}
+        \newline "\{\{ .Permalink \}\}": \{
+        \newline    "title": "\{\{ .Title  \}\}",
+        \newline    "content": \{\{ .Content | plainify \}\}, // Strip out HTML tags
+        \newline    "url": "\{\{ .Permalink \}\}"
+        \newline \},
+        \newline \{\{ end \}\}
+    \newline \};
+    \newline </script>
+    \newline \newline
+    \textit{window.store} è una variabile JavaScript definita nell'ambiente del browser web, l'oggetto \textit{window} rappresenta appunto la finestra del browser mentre \textit{.store} è un meccanisomo di archiviazione dei dati in locale 
+    che risulta fondamentale nella realizzazione della barra di ricerca in quanto questo archivio verrà successivamente utilizzato da Lunr.js.
+    \newline 
+    Lo script processa ciclicamente tutte le RegularPages, ovvero quelle pagine che nel front matter hanno la voce \textbf{draft: false} (se la voce non è presente viene considerata come se fosse false) ed il Permalink viene utlizzato come identificatore dell'oggetto creato da \textit{window.store}.
+    \item Creazione della parte grafica: questa fase riguarda la realizzazione delle lente di ingrandimento così come visibile in \cref{img:menu}, la dimensione e la visualizzazione sono state scelte in base allo spazio disponibile ma possono essere modificati in base alle esigenze.
+    \newline
+    \begin{figure}
+        \centering
+        \includegraphics[width = 0.8\textwidth]{images/search-form.png}
+        \caption{Contenuto del file \textit{search-form.html}}
+        \label{img:form}
+    \end{figure}
+    \newline
+    La realizzazione avviene attraverso il file "search-form.html" contenuto nella cartella 
+    \newline \textit{themes/tella/layouts/partials}, il codice è rappresentato in \cref{img:form}.
+    Il tag form contiene l'aspetto grafico della funzione di ricerca. All'interno di questo tag, viene richiamato tramite una template action il file \textit{list.html} citato precedentemente (\cref{img:list}), Hugo utlizzerà questo template in combinazione con il file \textit{\_index.md} per generare la pagina finale. 
+    \newline \newline 
+    Una nota importante riguarda la creazione della cartella "search" all'interno di "content", questa è necessaria in quanto Hugo usa lo stesso percorso del template HTML selezionato con “GetPage” per trovare il file Markdown da renderizzare. 
+    Risulta poi pratico includere il file \textit{search-form.html} all'interno di \textit{search-index.html} in modo da includere entrambi i file ogni volta che il primo di essi verrà richiamato. 
+    \newline
+    Affinchè la funzione di ricerca sia visibile nel menù, il file \textit{search-form.html} è stato incluso all'interno del file "header.html", presente nella cartella \textit{themes/tella/layouts/partials}.
+    \item Creazione dello script di ricerca: in questa fase verrà sfruttata la libreria Lunr.js e la funzione di ricerca verrà svolta da un codice javascript, è neccessario pertanto creare il file "search.js" all'interno della cartella \textit{themes/tella/static/js}.
+    \newline \newline 
+    Il primo compito che viene svolto è quello di prelevare la stringa inserita come ricerca, questo viene fatto dalle seguenti righe di codice:
+    \newline \newline
+    \textbf{const params = new URLSearchParams(window.location.search)}
+    \newline
+    \textbf{const query = params.get('query')}
+    \newline \newline
+    La prima riga permette di ottenere l'URL della ricerca che è rappresentato nel modo seguente: \textit{/PERCORSO/search/?query=STRINGA CERCATA}.
+    \newline
+    Nella seconda riga viene poi prelevato, tramite il metodo "params.get", solo il contenuto di interesse (rappresentato nell'esempio da \textit{STRINGA CERCATA}) che viene salvato all'interno della variabile "query".
+    \newline \newline
+    La parte seguente del codice riguarda il contenuto della condizione di \textbf{if} (\cref{img:ifpart}) che viene eseguita solo se la query non è vuota. La riga immediatamente successiva è molto importante in quanto mantiene la query nel modulo di ricerca dopo il reindirizzamento della pagina, senza questa funzione non sarebbe infatti possibile svolgere alcuna funzione su di essa.
+    \newline
+    Viene successivamente creata la variabile \textbf{idx} che rappresenta l'indice creato dalla funzione lunr, necessario per definire come le pagine del sito web verranno indicizzate e pesate durante la ricerca.
+    \newline
+    All'interno della stessa funzione, l'indice è diviso in più field e comprende anche il comando \textit{boost}, il quale assegna ai campi "title" e "content" una priorità di ricerca più alta, in modo da essere analizzati per primi.  
+    \newline
+    A questo punto l'indice viene popolato attraverso la struttura dati \textbf{windows.store} che, essendo utilizzato dentro un ciclo for, permette di concludere la fase di riempimento.
+    \newline \newline
+    La stesura del codice prosegue poi con la definizione delle seguenti due variabili:
+    \begin{itemize}
+        \item sringQuery: questa variabile è necessaria per evitare che i risultati di ricerca includano solamente la stringa cercata e non i suoi prefissi e suffissi. Ad esempio se la parola inserita è "computer", l'assenza di questa variabile non mostrerebbe tra i risultati la parola "computers";
+        \item results: questa variabile contiene sia i risultati parziali che i risultati esatti.
+    \end{itemize}
+    Al termine di questi assegnamenti viene eseguita la funzione \textbf{displayResults} a cui vengono passati come argomenti i risultati di ricerca e le pagine salvate nello store. Viene poi sostituito il titolo della pagina facendo riferimento all'identificativo "search-title", definito all'interno del template \textit{list.html}. 
+    \newline \newline
+    La funzione di stampa dei risultati (\cref{img:results}), nel caso in cui ce ne siano, crea una lista (\textit{resultList}) che viene popolata dal ciclo for immediatamente successivo. Il ciclo ne incrementa la dimensione ad ogni iterazione utilizzando la variabile \textbf{item} che prende dallo store il valore dei campi sulla base del \textbf{ref} del risultato. 
+    Questo permette la stampa a video del titolo, l'URL e il contenuto della pagina. Nel caso in cui non vengano trovati risultati, viene stampata la stringa "No results found".
+    \newline \newline
+    Un'altra funzione ausiliaria molto utile per la qualità del risulato è \textbf{highlightSearchTerm}, la quale evidenzia i risultati trovati, facilitando l'utente nella distinzione e nel riconscimento di essi. 
+    \newline
+    Un'altra idea sviluppata per facilitare l'utente riguarda l'organizzazione e la colorazione della pagina. Il codice CSS in \cref{img:cssres}, permette di applicare un colore di sfondo diverso rispetto al contenuto ad ogni pagina contenente un risulato di ricerca. 
+    \newline \newline
+    I risultati vengono infine stampati dall'ultimo comando: \textbf{searchResults.innerHTML = resultList}.
+    \item L'ultimo passo è quello di includere il file \textit{search.js} e la libreria \textit{Lunr.js} nel sito. Per fare questo si deve creare un nuovo file "search-lunr.html" all'interno della cartella \textit{themes/tella/layouts/partials}. 
+    Questo file contiene due script che permettono di importare, e quindi di utilizzare il file javascript. Il suo contenuto è il seguente:
+    \newline \newline
+    \textbf{
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js">} \textbf{</script>
+        \newline
+        <script src="{{ "js/search.js" | relURL }}"></script>
+    }
+\end{enumerate}
+
+La scelta di questo metodo come implementazione della funzione di ricerca risulta inefficiente per siti web di grandi dimensioni che potrebbero influenzare significativamente il salvatggio in locale di tutte le pagine. 
+\newline
+Il caso di studio preso in considerazione, non soffre di questo problema in quanto il numero di pagine totali è un numero accettabile e la ricerca avviene pressochè immediatamente. 
+\newline
+È importante anche notare che la fase di salvatggio delle pagine all'interno della struttura dati \textit{window.store} avviene solo alla prima ricerca. 
+\newline 
+Un esempio del risultato che si ottiene è mostrato in \cref{img:exres}
+\begin{figure}
+    \begin{minipage}{0.5\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{images/if-part.png}
+      \caption{Sezione del codice \textit{search.js}}
+      \label{img:ifpart}
+    \end{minipage}
+    \begin{minipage}{0.5\textwidth}
+      \centering
+      \includegraphics[width=1.18\textwidth]{images/displayResults.png}
+      \caption{Funzione \textit{displayResults.png}}
+      \label{img:results}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}
+    \begin{minipage}{0.5\textwidth}
+      \centering
+      \includegraphics[width=0.6\textwidth]{images/css-results.png}
+      \caption{Codice CSS per la visualizzazione dei risultati}
+      \label{img:cssres}
+    \end{minipage}
+    \begin{minipage}{0.5\textwidth}
+      \centering
+      \includegraphics[width = 0.8\textwidth]{images/ex-research.png}
+      \caption{Risultato della ricerca "text"}
+      \label{img:exres}
+    \end{minipage}
+\end{figure}
+
+%% Sottosezione
+\subsection{Gestione delle pubblicazioni}
+Una sezione indispensabile in un sito accademico riguarda la pubblicazione dei progetti, i quali generalmente vengono scritti in formato BibTex.
+\newline
+I file BibTeX sono file di testo utilizzati per memorizzare e gestire le informazioni bibliografiche in modo strutturato e standardizzato. 
+Sono ampiamente utilizzati dagli scrittori accademici, ricercatori e professionisti nel campo della ricerca scientifica e della pubblicazione per organizzare e citare le fonti bibliografiche nei documenti scientifici, come articoli, tesi, rapporti di ricerca e presentazioni. 
+Un esempio semplificato di un file BibTeX è il seguente:
+\newline \newline
+@book\{Smith2000,
+\newline  author = "John Smith",
+\newline  title = "Introduction to LaTeX",
+\newline  year = 2000,
+\newline  publisher = "Acme Publishing",
+\newline \}
+\newline \newline
+In questo caso \textbf{@book} è il tipo di voce (nell'esempio è un libro), \textbf{Smith2000} è l'etichetta univoca o la chiave di citazione e gli altri campi contengono informazioni bibliografiche. 
+\newline
+I file bibtex sono privi di qualsiasi informazione riguardante lo stile di presentazione, è necessario pertanto ricorrere ad altre soluzioni. Piattaforme di sviluppo di siti web dinamici permettono la conversione di questi file grazie all'installazione di plugin (è ad esempio il caso di \textit{WordPress}), mentre gli SSG necessitano di altri accorgimenti.
+\newline
+La soluzione adottata in questa tesi, considera un unico file bibtex contente le varie pubblicazioni. Verrà utilizzato "Pandoc", "Pybtex" e un codice Python per la conversione in file Markdown e per la successiva pubblicazione. Il funzionamento verrà illustrato nelle pagine successive. 
+\newline \newline
+\textbf{{\fontsize{12}{14}\selectfont Pandoc}}
+\newline \newline
+Pandoc è un convertitore di documenti open-source che ne consente la converisone da un formato all'altro. Ad esempio, si possono convertire documenti da Markdown a HTML, da HTML a PDF, da LaTeX a Word, e viceversa.
+Pandoc è ampiamente utilizzato per la conversione tra formati di markup e documenti, rendendo più facile la creazione e la pubblicazione di contenuti in diversi formati.
+\newline
+La soluzione utilizzerà in particolare anche Pandoc-citeproc, un filtro aggiuntivo per Pandoc che gestisce le citazioni bibliografiche nei documenti.
+\newline
+Pandoc necessita di essere installato, la procedura necessaria è disponibile nel sito ufficiale.
+\newline \newline
+\textbf{{\fontsize{12}{14}\selectfont Pybtex}}
+\newline \newline
+Pybtex è una libreria open-source di Python, utilizzata per la gestione di dati in formato BibTeX. È ampiamente utilizzata in applicazioni e script per la gestione dei riferimenti bibliografici in campo accademico e scientifico.
+\newline
+Fornisce un set di strumenti per analizzare, manipolare e generare dati BibTeX. Le sue principali funzionalità includono generazione di citazioni formatatte, analisi, manipolazione ed esportazione dei dati. 
+\newline
+Essendo una libreria di python, necessita di essere installata. Il caso di studio è stato svolto su un sistema operativo windows, l'installazione di pybtex è stata fatta con il comando da terminale \textbf{pip install pybtex}.
+\newline \newline
+\textbf{{\fontsize{12}{14}\selectfont Implementazione del codice Python}}
+\newline \newline
+Il codice sviluppato, oltre alla libreria pybtex, necessita di una seconda estensione. Per formattare la data in uno specifico formato deve essere infatti installata anche la libreria "python-dateutil", per farlo il comando da eseguire è \textbf{pip install python-dateutil}.
+\newline
+Come detto precedentemente, tutti i file bibtex sono contenuti all'interno di un unico file che in questo caso è stato chiamato \textit{pubs.bib}. Il codice python \textit{process\_bibliography.py} riceve come argomento "pubs.bib", sul quale svolge le seguenti operazioni:
+\begin{enumerate}
+    \item Controllo dell'installazione di pandoc: prima di poter iniziare qualsiasi fase di conversione e formattazione, viene eseguita una verifica dell'installazione di pandoc. 
+    \newline
+    Nel main viene richiamata la funzione \textbf{pandoc\_version\_check()} la quale attraverso il comando "pandoc - -version" ne verifica l'installazione. 
+    Nel caso in cui il controllo fallisca, viene generato un messaggio di errore, altrimenti si procede con i passaggi successivi.
+    \item La prima funzione utilizzata è \textit{gen\_refs()} (\cref{img:genrefs}) la quale riceve come argomento dal main il file sorgente "pubs.bib". Le operazioni svolte sono:
+    \begin{itemize}
+        \item Generazione di una variabile \textit{target}, dentro la quale viene estratto il nome del file bibtex (senza estensione) e generato il file di destinazione aggiungendo al nome ottenuto l'estensione \textbf{.yml}. A questo punto la varaibile "target" contiene il file \textit{pubs.yml};
+        \item Chiamata al filtro citeproc, al quale vengono passati il file iniziale ed il file target. Questa funzione è responsabile della conversione dei dati bibliografici dal formato BibTeX al formato YAML;
+        \item La variabile \textbf{bib} utilizza pybtex per analizzare il file BibTeX sorgente, al termine conterrà i dati bibliografici;
+        \item Apertura del file di destinazione \textit{target} e successivamente caricati i dati YAML all'interno della variabile \textbf{ybib};
+        \item Attraverso un ciclo vengono attraversati gli elementi di \textit{ybib} e per ciascuno di essi viene cercato il corrispondente elemento nel file BibTeX. Vengono poi uniti attraverso la funzione di merge; 
+        \item Il contenuto di \textit{ybib} viene scritto all'interno di un nuovo file, \textit{publications.yml} 
+    \end{itemize}
+    \item Successiviamente viene richiamata la funzione \textit{gen\_items} (\cref{img:genitems1} e \cref{img:genitems2}) attraverso la quale sarà possibile ottenere un file Markdown per ogni singola pubblicazione. Il risultato viene ottenuto dai seguenti passaggi:
+    \begin{itemize}
+        \item La variabile \textit{output\_keys} rappresenta una lista di chiavi che vengono utilizzate per estrarre specifici campi dai dati bibliografici, come ad esempio DOI, URL, abstract;
+        \item Viene verificata l'esistenza della cartella "content", la quale viene creata nel caso in cui non sia presente. Nella \cref{subsec:shugo} viene spiegata l'importanza di questa cartella, contiene infatti tutto il contenuto del sito in file di formato Markdown;
+        \item Successivamente il codice svolge un ciclo su ciascun elemento nei dati bibliografici, su ognuno di essi esegue una serie di controlli e manipolazioni dei dati, inclusi cambiamenti di chiavi, formattazione e pulizia dei dati.
+        \newline
+        Viene creata una variabile \textit{header\_items} contenente solo le informazioni specificate in \textit{output\_keys}, e viene aggiunto un campo \textit{id}.
+        \newline
+        Verifica l'esistenza di un campo "url" nelle informazioni bibliografiche. Se presente, il codice verifica la presenza di un campo "doi". In caso contrario, viene elaborato l'URL, rimuovendo eventuali proxy istituzionali dal hostname.
+        Se esistono campi "preprint" o "ssrn" nelle informazioni bibliografiche, vengono aggiunti al file di pubblicazione.
+        \newline 
+        Infine viene aperto un file di output con estensione ".md" nel percorso "content" e vengono scritti i dati bibliografici e l'eventuale abstract.
+    \end{itemize}
+    \item L'ultimo passaggio consiste nel spostare i file Markdown appena creati all'interno della cartella \textit{content/publications}. Solo in seguito a questo passaggio i file saranno visibili da Hugo. 
+\end{enumerate}
+
+\textbf{{\fontsize{12}{14}\selectfont Creazione dei file di template}}
+\newline \newline
+Al termine dell'esecuzione del codice python appena descritto, il contenuto dei file markdown sarà visibile da Hugo. Si tratta ora di formattarli in modo da organizzare le pubblicazioni in un certo modo e facilitare l'utente nella distinzione dei contenuti.
+\newline
+Si è scelto di organizzare le pubblicazioni raggruppandole per anno, dalla più recente alla meno recente. Inoltre sarà disponibile un badge per ogni link disponibile (abstract, DOI, SSRN, ...). Il risultato è stato ottenuto attraverso i seguenti file:
+\begin{itemize}
+    \item \textit{publications.html}: contenuto all'interno della cartella \textit{themes/tella/layouts/section}, elenca le pubblicazioni in ordine cronologico inverso, per ogni anno viene emesso un item HTML ed elencato il suo contenuto. 
+    \newline
+    Per ogni pubblicazione viene visualizzato il sommario attraverso il file \textit{pub-summary.html} contenuto all'interno della cartella \textit{partials} e richiamato grazie alle template actions.
+    \item Il file \textit{pub-summary.html} citato nel punto precedente è un file involucro, richiama infatti una lista di file (ognuno di essi richiama poi a sua volta i partial authors, article title, journal title, book title, volume, page numbers):
+    \begin{itemize}
+        \item \textit{layouts/partials/pub-icon.html}: necessario per impostare l'icona corretta;
+        \item \textit{layouts/partials/pub\_fmt/doi.html}: posiziona, se esiste, un badge con il link DOI;
+        \item \textit{layouts/partials/pub\_fmt/ssrn.html}: posiziona, se esiste, un badge con il link SSRN;
+        \item \textit{layouts/partials/publication.htm}l: al suo interno avviene la formattazione principale, rileva il tipo di pubblicazione e richiama il partial corretto.
+    \end{itemize}
+    \item I seguenti tre file si occupano dell'elencazione degli autori: 
+    \begin{itemize}
+        \item \textit{layouts/partials/pub\_fmt/author\_list.html}: crea la lista degli autori, di default è 3, se ce ne sono di più questi vengono abbreviati;
+        \item \textit{layouts/partials/pub\_fmt/author\_list\_full.html}: elenca tutti gli autori per nome e cognome, indipendentemente dal numero;
+        \item \textit{layouts/partials/pub\_fmt/et\_al.html}: verifica la lunghezza della lista degli autori ed aggiunge un carattere “\&” prima dell'ultimo.
+    \end{itemize}
+\end{itemize}
+Il risulato finale è quello mostrato in \cref{img:pub}
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.8\textwidth]{images/gen-items-1.png}
+    \caption{Parte del codice della funzione \textit{gen\_items()}}
+    \label{img:genitems1}
+\end{figure}
+
+\begin{figure}
+    \begin{minipage}{0.5\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{images/gen-items-2.png}
+      \caption{Parte del codice della funzione \textit{gen\_items()}}
+      \label{img:genitems2}
+    \end{minipage}
+    \begin{minipage}{0.5\textwidth}
+      \centering
+      \includegraphics[width = 1.1\textwidth]{images/gen-refs.png}
+      \caption{Codice della funzione \textit{gen\_refs()}} 
+      \label{img:genrefs}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.8\textwidth]{images/publications.png}
+    \caption{Risultato del processo di pubblicazione}
+    \label{img:pub}
+\end{figure}
+
+%% Sottosezione
+\subsection{Umami}
+Nella \cref{subsec:umami} è stato introdotto il concetto delle web analytics con particolare riferimento ad Umami. In questa sezione verrà mostrata l'implementazione di questo servizio. 
+\newline \newline
+L'intera procedura di inizializzazione e di visualizzazione dei risultati può essere fatta sul sito ufficiale (previa registrazione ed autenticazione). I passaggi da seguire sono i seguenti:
+\begin{enumerate}
+    \item Aggiunta di un nuovo sito web: attraverso il tasto "Add website" è possibile iniziare la procedura di collegamento di un nuovo sito. 
+          Verrà richiesta la compilazione di due campi: un nome arbitrario che identifica il nuovo collegamento e l'URL del sito;
+    \item Inserimento del tracking code: l'ultimo passaggio consiste nel copiare il tracking code all'interno del file \textit{head.html}. Lo script è disponibile cliccando su "Edit" e successivamente su "Tracking code".
+          A qiesto punto umami inizierà a rilevare le informazioni di base: il numero di visitatori, le pagine visitate, il paese da cui è avvenuto il collegamento, browser, sistema operativo e dispositivo utilizzato.
+    \item Rilevazione di specifici eventi: umami consente di tener traccia anche di eventi specifici che possono dipendere dal tipo di sito che si sta utilizzando. Questo può essere svolto in due modi:
+    \begin{itemize}
+        \item \textbf{Data attributes}: la sintassi da utilizzare è \textit{data-umami-event="{event-name}"}, ad esempio 
+        \begin{center}
+        <button id="signup-button" data-umami-event="Signup button">Sign up</button>
+        \end{center}
+        In questo caso, quando l'utente clicca sul bottone, umami rileva l'evento e gli assegna il nome "Signup button"
+        \item \textbf{JavaScript}: in questo caso l'evento deve essere rilevato manualmente utilizzando l'oggeto \textit{window.umami}. Riprendendo l'esempio precedente, in questo caso diventa:
+        \begin{center}
+            const button = document.getElementById('signup-button');
+            \newline
+            button.onclick = () => umami.track('Signup button');
+        \end{center}
+    \end{itemize}
+\end{enumerate}
+
+%% Sezione
+\section{Hosting del sito}
+
+%% Sottosezione
+\subsection{Pubblicazione}
+
+%% Sottosezione
+\subsection{Aggiornare il sito}
+
+%% Sottosezione
+\subsection{Risultati ottenuti}
+
+%% Sezione
+\section{Portabilità del sito}
+
+%% Sottosezione
+\subsection{Adattamento della sezione People}
+
+%% Sezione
+\section{Accessibilità del sito}
 
 %% Capitolo  
 \chapter{Conclusioni}
