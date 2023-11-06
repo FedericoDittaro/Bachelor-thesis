@@ -797,7 +797,7 @@ Come detto precedentemente, tutti i file bibtex sono contenuti all'interno di un
         \item Attraverso un ciclo vengono attraversati gli elementi di \textit{ybib} e per ciascuno di essi viene cercato il corrispondente elemento nel file BibTeX. Vengono poi uniti attraverso la funzione di merge; 
         \item Il contenuto di \textit{ybib} viene scritto all'interno di un nuovo file, \textit{publications.yml} 
     \end{itemize}
-    \item Successiviamente viene richiamata la funzione \textit{gen\_items} (\cref{img:genitems1} e \cref{img:genitems2}) attraverso la quale sarà possibile ottenere un file Markdown per ogni singola pubblicazione. Il risultato viene ottenuto dai seguenti passaggi:
+    \item Successivamente viene richiamata la funzione \textit{gen\_items} (\cref{img:genitems1} e \cref{img:genitems2}) attraverso la quale sarà possibile ottenere un file Markdown per ogni singola pubblicazione. Il risultato viene ottenuto dai seguenti passaggi:
     \begin{itemize}
         \item La variabile \textit{output\_keys} rappresenta una lista di chiavi che vengono utilizzate per estrarre specifici campi dai dati bibliografici, come ad esempio DOI, URL, abstract;
         \item Viene verificata l'esistenza della cartella "content", la quale viene creata nel caso in cui non sia presente. Nella \cref{subsec:shugo} viene spiegata l'importanza di questa cartella, contiene infatti tutto il contenuto del sito in file di formato Markdown;
@@ -900,11 +900,11 @@ Le precondizioni richieste sono l'installazione di git ed il caricamento dell'in
 
 %% Sottosezione
 \subsection{Pubblicazione}
-Il primo step è quello di modificare un'impostazione nel file di configurazione \textit{config.toml}, il campo \textbf{baseURL} va infatti modificato sostituendo il precedente contenuto con
+Il primo step è quello di cambiare un'impostazione nel file di configurazione \textit{config.toml}, il campo \textbf{baseURL} va infatti modificato sostituendo il precedente contenuto con
 \begin{center}
     \textit{"https://NOME\_UTENTE.github.io/NOME\_REPOSITORY/"}
 \end{center}
-Questo campo risulta importante perchè è quello utilizzato da Hugo per generare i link delle pagine staticamente. I link delle altre pagine vengono cotruiti a partire dal baseURL al quale viene aggiunto il nome specifico (ad esempio \textit{"https://NOME\_UTENTE.github.io/NOME\_REPOSITORY/people/"}).
+Questo campo risulta importante perchè è quello utilizzato da Hugo per generare i link delle pagine staticamente. I link delle altre pagine vengono infatti costruiti a partire dal baseURL al quale viene aggiunto il nome specifico (ad esempio \textit{"https://NOME\_UTENTE.github.io/NOME\_REPOSITORY/people/"}).
 \newline
 Il servizio di GitHub pages preleva il contenuto da uno specifico branch chiamato "gh-pages", per prima cosa è necessario quindi crearlo. Per risparmiare tempo e spazio nell'operazione di \textit{deploy}, conviene inserire in questo branch solamente la cartella \textit{public}. 
 I comandi da terminale da eseguire sono i seguenti:
@@ -916,13 +916,13 @@ I comandi da terminale da eseguire sono i seguenti:
         \item git commit -m "MESSAGGIO"
         \item git push
     \end{itemize}
-    \item Esecuzione del comando \textbf{git subtree push - -prefix public origin gh-pages}: questo permette le creazione del branch \textit{gh-pages}, sul quale viene inserito solamente il contenuto della cartella "puiblic" 
+    \item Esecuzione del comando \textbf{git subtree push - -prefix public origin gh-pages}: questo permette le creazione del branch \textit{gh-pages}, sul quale viene inserito solamente il contenuto della cartella "public" 
 \end{enumerate}
-Al termine di questo procedimento si può passare all'attivazione del servizio GitHub Pages, per farlo ci si deve spostare sulla sezione \textit{settings} e dal menù che compare sulla sinistra dello schermo selezionare la voce \textit{Pages}.
-A questo punto scegliere l'impostazione "deploy from a branch" nel campo \textbf{source} e nella voce \textbf{Branch} selezionare "gh-pages" e "root".
+Al termine di questo procedimento si può passare all'attivazione del servizio GitHub Pages, per farlo ci si deve spostare sulla sezione \textit{Settings} e dal menù che compare sulla sinistra dello schermo selezionare la voce \textit{Pages}.
+A questo punto scegliere l'impostazione "deploy from a branch" nel campo \textbf{Source} e nella voce \textbf{Branch} selezionare "gh-pages" e "root".
 \newline
-Salvando le impostazioni appena create, github avvierà il processo di pubblicazione il quale richiederà del tempo. Al completamento dell'operazione, sarà disponibile una nuova sezione "Vist site". 
-Cliccando su di essa si verrà reindirizzati al baseURL inserito precedentemente. 
+Salvando le impostazioni appena create, github avvierà il processo di pubblicazione il quale richiederà del tempo. Al completamento dell'operazione, sarà disponibile una nuova sezione "Vist site": 
+cliccando su di essa si verrà reindirizzati al baseURL inserito precedentemente. 
 
 \begin{figure}[b]
     \centering
@@ -940,13 +940,13 @@ I passaggi da seguire per rendere pubbliche le modifiche sono le stesse riportat
     \item git push
     \item git subtree push --prefix public origin gh-pages
 \end{enumerate}
-La procedura di aggiornamento è visibile nella sezione \textit{Actions} della propria repository. Le operazioni "pages build and deployment" inizialmente avranno un simbolo giallo a simboleggiare lo svolgimento dell'operazione, 
+La procedura di aggiornamento è visibile nella sezione \textit{Actions} della propria repository. Le voci "pages build and deployment" inizialmente avranno un simbolo giallo a simboleggiare lo svolgimento dell'operazione, 
 al termine la spunta verde indica il completamento dell'aggiornamento e le modifiche sono completate e visibili. 
 
 %% Sottosezione
 \subsection{Risultati ottenuti}
 Questo procedimento rappresenta l'intera fase di pubblicazione di un sito web, si tratta ora di manterlo efficiente ed aggiornato per garantire ai futuri utenti un buon servizio e dei contenuti interessanti. 
-Riepigolando, le operazioni da eseguire per la pubblicazione e l'aggiornamento sono le seguenti: 
+Riepilogando, le operazioni da eseguire per la pubblicazione e l'aggiornamento sono le seguenti: 
 \begin{itemize}
     \item Caricamento dell'intero sito su una repository GitHub;
     \item Modifica del baseURL;
@@ -981,7 +981,7 @@ il menù orizzontale viene sostituito con un menù ad "hamburger", dentro al qua
 Tuttavia le funzionalità aggiunte e le strutture che si è scelto di adottare necessitano di codice aggiuntivo per pemettere una corretta visualizzazione di tutti gli elementi presenti.
 %% Sottosezione
 \subsection{Adattamento della funzione di ricerca}
-La barra di ricerca posta all'estremità destra del menù orizzonatale non viene inizialmente inclusa nel menù ad "hamburger". 
+La barra di ricerca posta all'estremità destra del menù orizzontale non viene inizialmente inclusa nel menù ad "hamburger". 
 Questo è causato dal fatto che Tella inserisce all'interno di quest'ultimo solamente le voci definite nel file di configurazione \textit{config.toml} all'interno della struttura [menu].
 \newline
 Essendo la funzione di ricerca strutturata in maniera differente, per risolvere il problema si possono sfruttare le template actions ed importare il file \textit{search-form.html} all'interno del file \textbf{header.html}. 
@@ -991,7 +991,7 @@ L'import del file ed il risultato sono mostrati in \cref{img:header} e \cref{img
 \subsection{Adattamento della sezione People}
 Una sezione importante e sempre presente in un sito web accademico, è la sezione \textit{people}, la quale contiene l'elenco dei membri del specifico gruppo di ricerca. 
 \newline
-Navigando sul web, si possono trovare vari metodi per l'organizzazione del contenuto di questa pagina. Il metodo scelto nel caso di studio è quello raffigurato in .
+Navigando sul web, si possono trovare vari metodi per l'organizzazione del contenuto di questa pagina. Il metodo scelto nel caso di studio è quello raffigurato in \cref{img:computerp}.
 Questa struttura permette di organizzare in maniera ordinata tutti i membri del gruppo e fornisce delle indicazioni generali su ognuno di essi (fotografia, ruolo ed indirizzo e-mail accademico) che poi possono essere approfondite cliccando sul componente desiderato.   
 \newline \newline
 Questa organizzazione è stata realizzata creando all'interno della cartella \textit{content} la cartella \textit{people}, la quale contiene un file Markdown per ciascuna persona del gruppo di ricerca. La struttura del front-matter di ogni file .md è la seguente:
@@ -1012,7 +1012,7 @@ Il motivo verrà illustrato nelle righe successive.
 \newline
 Per una migliore organizzazione dei contenuti, si è scelto di posizionare tre membri per ogni riga. L'obbiettivo è stato raggiunto attraverso l'utilizzo di due file:
 \begin{itemize}
-    \item \textbf{list.html}: contenuto all'interno della cartella \textit{themes/tella/layouts/people}, si occupa di organizzare il contenuto mostrato in .
+    \item \textbf{list.html}: contenuto all'interno della cartella \textit{themes/tella/layouts/people}, si occupa di organizzare il contenuto così come descritto precedentemente.
     \newline
     Il codice sfrutta le template actions per ricavare le informazioni dal file Markdown, in questo modo posiziona il titolo ed il contenuto. Successivamente la classe \textit{grid-cols-3} permette di organizzare il contenuto così come desiderato ed elenca le persone presenti secondo il parametro "weight" definito nel front-matter.
     È importante notare come il filtro \textbf{Params.former != true} permetta di elencare solo i membri correnti.
@@ -1021,8 +1021,8 @@ Per una migliore organizzazione dei contenuti, si è scelto di posizionare tre m
     \newline
     In entrambi i casi viene richiamato il file \textit{summary}, che verrà descritto nel punto successivo.
     \item \textbf{summary.html}: contenuto all'interno della stessa cartella del file precedente, si occupa di mostrare le informazioni di ciascuna persona. Anche in questo caso verranno sfruttate le template actions assieme a delle condizioni di \textit{if}.
-    Proprio quest'ultimo costrutto viene subito utilizzato per verificare la presenza di un'immagine nel fron-matter del corrispondente file markdown, in caso positivo viene posizionata la foto specificata altrimenti un'immagine di default. 
-    Viene poi inserito il nome e poi riapplicato nuovamente il costrutto \textit{if} per verificare la presenza del campo "position" e del campo "e-mail", in caso negativo non viene mostrato nulla.  
+    Proprio quest'ultimo costrutto viene subito utilizzato per verificare la presenza di un'immagine nel front-matter del corrispondente file markdown, in caso positivo viene posizionata la foto specificata altrimenti un'immagine di default. 
+    Viene poi inserito il nome e riapplicato nuovamente il costrutto \textit{if} per verificare la presenza del campo "position" e del campo "e-mail" che in caso negativo non vengono mostrati.  
 \end{itemize} 
 
 \begin{figure}[h]
@@ -1045,7 +1045,7 @@ Per una migliore organizzazione dei contenuti, si è scelto di posizionare tre m
 Nel caso di riduzione dello schermo o dell'utlizzo di dispostivi diversi da un computer, la soluzione di porre tre membri per ogni riga non è più valida in quanto le sezioni si sovrappongono e diventano indistinguibili.
 Il problema è stato risolto utilizzando una query che verifica la dimensione dello schermo in pixel, in base a questo valore la classe CSS \textit{grid-cols-3} viene sovrascritta in base alle necessità.
 \newline  
-Le dimensione generiche di un tablet sono comprese tra 768px e 1265px, si è scelto quindi di passare da una griglia di tre elementi ad una griglia di due elementi. Il codice corrispondente è il seguente:
+Le dimensioni generiche di un tablet sono comprese tra 768px e 1265px, si è scelto quindi di passare da una griglia di tre elementi ad una griglia di due elementi. Il codice corrispondente è il seguente:
 \newline \newline
 @media (min-width: 768px) and (max-width: 1265px) \{
 \newline .grid-cols-3 \{
@@ -1056,7 +1056,7 @@ Le dimensione generiche di un tablet sono comprese tra 768px e 1265px, si è sce
 \newline \newline 
 
 
-Nel caso di un cellulare, si riducono ulteriormente le dimensioni che generalmente sono comprese tra 320px e 767px, la griglia si riduce quindi ad un singolo elemento. Il codice è il seguente.
+Nel caso di un cellulare, le dimensioni si riducono ulteriormente e generalmente sono comprese tra 320px e 767px, la griglia si riduce quindi ad un singolo elemento. Il codice è il seguente:
 \newline \newline
 @media (min-width: 320px) and (max-width: 767px) \{
 \newline .grid-cols-3 \{
@@ -1092,12 +1092,12 @@ In questo modo l'organizzazione della sezione \textit{people} sarà uniforme su 
 
 %% Sezione
 \section{Accessibilità del sito}
-Un'altra importante misura di un sito web è l'accessibilità, questa è definita come la capacità di un sito di essere utilizzato in modo efficace da persone con un diverso raggio di abilità e capacità.
+Un'altra importante misura è l'accessibilità, questa è definita come la capacità di un sito web di essere utilizzato in modo efficace da persone con un diverso raggio di abilità e capacità.
 Deve essere progettato e sviluppato in modo da consentire a tutti, comprese le persone con disabilità visive, uditive, motorie o cognitive, di accedere alle informazioni e alle funzionalità del sito senza ostacoli.
 \newline
 I principi chiave dell'acessibilità sono la \textbf{percezione}, l'\textbf{operabilità}, la \textbf{comprensione} e la \textbf{robustezza}.
 \newline \newline
-Nel caso di esempio riportato nelle prossime righe è stato utilizzando il browser "Microsoft Edge", attraverso gli strumenti di sviluppo è possibile infatti simulare diversi deficit visivi.  
+Nel caso di esempio riportato nelle prossime righe è stato utilizzando il browser "Microsoft Edge", attraverso i cui strumenti di sviluppo è possibile simulare diversi deficit visivi.  
 Aprendo questa funzionalità con il comando "F12", in alto a sinsitra si seleziona l'icona del cellulare/tablet e successivamente sono resi disponibili le varie opzioni di deficit visivo. 
 Nel caso di studio si è scelta di simulare la condizione di "Deuteranopia". 
 Si può notare in \cref{img:deuteranopia} come gli elementi della pagina restino comunque distinguibili.  
@@ -1117,6 +1117,38 @@ Si può notare in \cref{img:deuteranopia} come gli elementi della pagina restino
 
 %% Capitolo  
 \chapter{Conclusioni}
+In questo capitolo verrà riassunto il lavoro svolto per la creazione del sito web accademico presentato ed implementato nel corso dei precedenti capitoli. 
+Verrà poi mostrata una possibile implementazione aggiuntiva.
+
+%% Sezione
+\section{Riepilogo}
+Si è partiti ragionando sulla definizione di SSG (Static Site Generator) e sulla presentazione dei principali tool utilizzabili, analizzandone similitudini e differenze.
+Sono state poi discusse le diversità tra siti dinamici e statici, elencando le motivazioni per cui è preferibile utilizzare questi ultimi per la realizzazione di un sito web accademico.   
+\newline
+Segue una descrizione approfondita di Hugo, l'SSG scelto per la realizzazione del caso di studio, di cui sono state elencate le caratteristiche, i plugin e le modalità di hosting.
+Si è passati poi all'implementazione di un sito reale attraverso il tema \textit{Tella}, sfruttando gli elementi già presenti e modificandoli per renderli conformi ad un sito accademico. 
+Sono state aggiunte le funzionalità non fornite originariamente dal tema (funzione di ricerca e gestione delle pubblicazioni), terminando il lavoro con un'analisi di acessibilità e portabilità. 
+Per quest'ultimo punto è stato necessario attuare degli accorgimenti per garantire la corretta visualizzazione dei contenuti su tutti i dispositivi.  
+
+%% Sezione
+\section{Possibile implementazione aggiuntiva}
+Una possibile implementazione futura riguarda il modulo di contatto, attraverso il quale è possibile comunicare con il gruppo di ricerca.
+\textit{Tella} mette a disposizione nella versione originale la sezione "Contact" nella quale è presente un form compilabile.
+L'invio e la creazione di questo form sono state realizzate attraverso \textit{getform.io}, ovvero un generatore di moduli web personalizzati che permette di raccogliere i dati inseriti (ad esempio attraverso e-mail). 
+L'implementazione di questa funzionalità è stata svolta all'interno del file \textbf{form.html} nella cartella \textit{themes/tella/layouts/shortcodes}, il codice mostrato in \cref{img:form}, attraverso il comando "action", permette di importare questa funzionalità definendo successivamente i campi desiderati.
+
+\begin{figure}
+    \centering
+      \includegraphics[width=1\textwidth]{images/form-html.png}
+      \caption{Codice del file \textit{form.html}}
+      \label{img:form}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 1\textwidth]{images/form-tella.png}
+    \caption{Modulo di contatto} 
+\end{figure}
 
 %% Fine dei capitoli normali, inizio dei capitoli-appendice (opzionali)
 \appendix

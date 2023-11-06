@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex thesis_Dittaro"] 1699110469 "thesis_Dittaro.aux" "thesis_Dittaro.bbl" "thesis_Dittaro" 1699111048 0
+["bibtex thesis_Dittaro"] 1699284647 "thesis_Dittaro.aux" "thesis_Dittaro.bbl" "thesis_Dittaro" 1699284720 0
   "./plain_italian.bst" 1693055552 21772 b9f53fc1e71a9c29c62ec7586a3d5fef ""
   "./thud.bib" 1693055552 572 73f492a4f63f45d4cbbf003dbc69cd28 ""
-  "thesis_Dittaro.aux" 1699111047 16949 a8b29bca7a36d8a4072cab51c5e1984c "pdflatex"
+  "thesis_Dittaro.aux" 1699284719 17625 2b1de5fec785a3d90ad2be8af6e83160 "pdflatex"
   (generated)
   "thesis_Dittaro.bbl"
   "thesis_Dittaro.blg"
   (rewritten before read)
-["pdflatex"] 1699111041 "c:/Users/feded/OneDrive/Documenti/thud/thesis_Dittaro.tex" "thesis_Dittaro.pdf" "thesis_Dittaro" 1699111048 0
-  "<pdfa.xmpi" 1699111042 5042 0 ""
+["pdflatex"] 1699284714 "c:/Users/feded/OneDrive/Documenti/thud/thesis_Dittaro.tex" "thesis_Dittaro.pdf" "thesis_Dittaro" 1699284720 0
+  "<pdfa.xmpi" 1699284715 5042 0 ""
   "C:/Users/feded/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1697540968 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/feded/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1693055919 12668 3ccaf0f9d6e2f8afa2409fbf5345587b ""
   "C:/Users/feded/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1694092527 24142035 1296f7a0f7b55f9926df71a64f17482e ""
@@ -133,7 +133,7 @@
   "C:/Users/feded/AppData/Local/Programs/MiKTeX/tex/latex/xmpincl/xmpincl.sty" 1633250524 2832 d498c59e94b7dfa3b4bcf74380ad6348 ""
   "banners/banner_uniud_italian.pdf" 1693055552 41062 b0aa8b86c9a2ce10c6e0830c80f88f1d ""
   "book.thud.tex" 1693055552 8518 ad4f4ec56a8d1eaaab360c919f880ca0 ""
-  "c:/Users/feded/OneDrive/Documenti/thud/thesis_Dittaro.tex" 1699111039 90587 d657ec133430524d72f1a20228d0caa8 ""
+  "c:/Users/feded/OneDrive/Documenti/thud/thesis_Dittaro.tex" 1699284708 93133 041e566be75b786a1eb3e10a6bf1489a ""
   "images/ARC-menu.png" 1698225499 350911 ddc64ce502f61222b85683b1c9c69b92 ""
   "images/Deuteranopia.png" 1699110054 5400064 0eace44416bb9096a2270c5d69511fbf ""
   "images/Eleventy_logo.png" 1697546886 422844 c6ed0987d3f07029a239dbad7d6d9579 ""
@@ -147,6 +147,8 @@
   "images/dev-tools.png" 1699110204 928927 f1fb1cabfdc86fc5851ee4456c3983e2 ""
   "images/displayResults.png" 1698756777 30978 2e25a703533c3c32381f67e28c38f89d ""
   "images/ex-research.png" 1698758634 503369 ad91a2fe91d51ee226a3b26fdae7cc3c ""
+  "images/form-html.png" 1699284265 45621 c6056b79df54446a58aa360b29f18daa ""
+  "images/form-tella.png" 1699284307 44985 9134a633805aadcbcec686d6fc1f21a5 ""
   "images/gen-items-1.png" 1698854524 67492 847f9c47880013c7044f1e6616cd3ebe ""
   "images/gen-items-2.png" 1698854556 55667 42e07d18f6ffe0a5ce8a16ce092f2fa8 ""
   "images/gen-refs.png" 1698852359 46636 a270efb47576ad18c1fc0858fbe14b6e ""
@@ -169,12 +171,12 @@
   "images/search-form.png" 1698683552 11169 57a60405656ff2d54edddc7041930178 ""
   "images/static.png" 1697698082 17199 1c5baa02da20e610faf1c2866870edd2 ""
   "images/summary.png" 1699024707 24897 2403c54d3d134aaf51b7b1790b9cb02e ""
-  "pdfa.xmpi" 1699111042 5042 8b0c258daa5e7ace40039d652b7ccb5b "pdflatex"
-  "thesis_Dittaro.aux" 1699111047 16949 a8b29bca7a36d8a4072cab51c5e1984c "pdflatex"
-  "thesis_Dittaro.bbl" 1699110469 153 b42ce0bf5f40421ff8ae005c427f75c6 "bibtex thesis_Dittaro"
-  "thesis_Dittaro.out" 1699111047 3048 fd891dceeefe3081ea6cb8dbc40c6dc6 "pdflatex"
-  "thesis_Dittaro.tex" 1699111039 90587 d657ec133430524d72f1a20228d0caa8 ""
-  "thesis_Dittaro.toc" 1699111047 3631 f9ca881ea62b39aef72d49bd7b1f5269 "pdflatex"
+  "pdfa.xmpi" 1699284715 5042 65723cdb1a7db005059ffa6af1ac6290 "pdflatex"
+  "thesis_Dittaro.aux" 1699284719 17625 2b1de5fec785a3d90ad2be8af6e83160 "pdflatex"
+  "thesis_Dittaro.bbl" 1699284648 153 b42ce0bf5f40421ff8ae005c427f75c6 "bibtex thesis_Dittaro"
+  "thesis_Dittaro.out" 1699284719 3193 d128f5bbf6f4ced190137a3c42942b9d "pdflatex"
+  "thesis_Dittaro.tex" 1699284708 93133 041e566be75b786a1eb3e10a6bf1489a ""
+  "thesis_Dittaro.toc" 1699284719 3798 055a4a0ca39450ac9aaef229c731f5ce "pdflatex"
   "thud.cls" 1693055552 6840 eed6da3f8af95a50dc922bd509f364dd ""
   (generated)
   "pdfa.xmpi"
