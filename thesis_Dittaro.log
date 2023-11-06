@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.7)  6 NOV 2023 16:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.7)  6 NOV 2023 16:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -295,14 +295,7 @@ Package cleveref Info: always capitalise cross-reference names on input line 785
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count283
 \l__pdf_internal_box=\box54
-) (thesis_Dittaro.aux
-
-LaTeX Warning: Label `img:form' multiply defined.
-
-
-LaTeX Warning: Label `img:form@cref' multiply defined.
-
-)
+) (thesis_Dittaro.aux)
 \openout1 = `thesis_Dittaro.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
@@ -831,12 +824,12 @@ Overfull \hbox (38.67714pt too wide) in paragraph at lines 696--704
 \OT1/cmr/bx/n/10.95 <script ty-pe="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js">
  []
 
-<images/if-part.png, id=477, 416.30531pt x 308.65312pt>
+<images/if-part.png, id=476, 416.30531pt x 308.65312pt>
 File: images/if-part.png Graphic file (type png)
 <use images/if-part.png>
 Package pdftex.def Info: images/if-part.png  used on input line 716.
 (pdftex.def)             Requested size: 246.47565pt x 182.73956pt.
-<images/displayResults.png, id=478, 467.49657pt x 292.09125pt>
+<images/displayResults.png, id=477, 467.49657pt x 292.09125pt>
 File: images/displayResults.png Graphic file (type png)
 <use images/displayResults.png>
 Package pdftex.def Info: images/displayResults.png  used on input line 722.
@@ -851,12 +844,12 @@ Overfull \hbox (2.43332pt too wide) in paragraph at lines 714--726
 []$[]$ $[]$ 
  []
 
-<images/css-results.png, id=479, 231.86626pt x 210.7875pt>
+<images/css-results.png, id=478, 231.86626pt x 210.7875pt>
 File: images/css-results.png Graphic file (type png)
 <use images/css-results.png>
 Package pdftex.def Info: images/css-results.png  used on input line 731.
 (pdftex.def)             Requested size: 147.88689pt x 134.4436pt.
-<images/ex-research.png, id=480, 1009.7725pt x 1588.93625pt>
+<images/ex-research.png, id=479, 1009.7725pt x 1588.93625pt>
 File: images/ex-research.png Graphic file (type png)
 <use images/ex-research.png>
 Package pdftex.def Info: images/ex-research.png  used on input line 737.
@@ -935,12 +928,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 816--821
  []
 
 [31]
-<images/gen-items-1.png, id=516, 634.62094pt x 424.58624pt>
+<images/gen-items-1.png, id=515, 634.62094pt x 424.58624pt>
 File: images/gen-items-1.png Graphic file (type png)
 <use images/gen-items-1.png>
 Package pdftex.def Info: images/gen-items-1.png  used on input line 843.
 (pdftex.def)             Requested size: 394.36255pt x 263.84975pt.
-<images/gen-items-2.png, id=517, 458.46281pt x 403.5075pt>
+<images/gen-items-2.png, id=516, 458.46281pt x 403.5075pt>
 File: images/gen-items-2.png Graphic file (type png)
 <use images/gen-items-2.png>
 Package pdftex.def Info: images/gen-items-2.png  used on input line 851.
@@ -950,7 +943,7 @@ Underfull \hbox (badness 2512) in paragraph at lines 852--852
 []\OT1/cmr/m/n/10.95 Figura 4.12: []Parte del co-di-ce del-la fun-zio-ne
  []
 
-<images/gen-refs.png, id=518, 472.76625pt x 377.91188pt>
+<images/gen-refs.png, id=517, 472.76625pt x 377.91188pt>
 File: images/gen-refs.png Graphic file (type png)
 <use images/gen-refs.png>
 Package pdftex.def Info: images/gen-refs.png  used on input line 857.
@@ -965,7 +958,7 @@ Overfull \hbox (2.43332pt too wide) in paragraph at lines 849--861
 []$[]$ $[]$ 
  []
 
-<images/publications.png, id=519, 1063.975pt x 648.4225pt>
+<images/publications.png, id=518, 1063.975pt x 648.4225pt>
 File: images/publications.png Graphic file (type png)
 <use images/publications.png>
 Package pdftex.def Info: images/publications.png  used on input line 865.
@@ -996,7 +989,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.14}) 
                                                   \__shipout_drop_firstpage_...
 l.911 \begin{enumerate}
                         <./images/publications.png>]
-<images/githubpages.png, id=541, 976.39781pt x 411.03563pt>
+<images/githubpages.png, id=540, 976.39781pt x 411.03563pt>
 File: images/githubpages.png Graphic file (type png)
 <use images/githubpages.png>
 Package pdftex.def Info: images/githubpages.png  used on input line 929.
@@ -1007,12 +1000,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.15}) 
                                                   \__shipout_drop_firstpage_...
 l.937 \begin{enumerate}
                         <./images/githubpages.png>]
-<images/header.png, id=551, 300.3722pt x 170.13562pt>
+<images/header.png, id=550, 300.3722pt x 170.13562pt>
 File: images/header.png Graphic file (type png)
 <use images/header.png>
 Package pdftex.def Info: images/header.png  used on input line 963.
 (pdftex.def)             Requested size: 246.47565pt x 139.61334pt.
-<images/menu-hamburger.png, id=552, 636.12656pt x 453.94594pt>
+<images/menu-hamburger.png, id=551, 636.12656pt x 453.94594pt>
 File: images/menu-hamburger.png Graphic file (type png)
 <use images/menu-hamburger.png>
 Package pdftex.def Info: images/menu-hamburger.png  used on input line 969.
@@ -1048,12 +1041,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.17}) 
                                                   \__shipout_drop_firstpage_...
 l.1014 \begin{itemize}
                        <./images/header.png> <./images/menu-hamburger.png>]
-<images/summary.png, id=574, 410.2828pt x 246.9225pt>
+<images/summary.png, id=573, 410.2828pt x 246.9225pt>
 File: images/summary.png Graphic file (type png)
 <use images/summary.png>
 Package pdftex.def Info: images/summary.png  used on input line 1031.
 (pdftex.def)             Requested size: 246.47565pt x 148.33548pt.
-<images/list.png, id=575, 362.85562pt x 243.15843pt>
+<images/list.png, id=574, 362.85562pt x 243.15843pt>
 File: images/list.png Graphic file (type png)
 <use images/list.png>
 Package pdftex.def Info: images/list.png  used on input line 1037.
@@ -1111,7 +1104,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1059--1068
 
  []
 
-<images/people-computer.png, id=587, 1188.44pt x 1177.39874pt>
+<images/people-computer.png, id=586, 1188.44pt x 1177.39874pt>
 File: images/people-computer.png Graphic file (type png)
 <use images/people-computer.png>
 Package pdftex.def Info: images/people-computer.png  used on input line 1074.
@@ -1121,7 +1114,7 @@ Overfull \hbox (49.29437pt too wide) in paragraph at lines 1074--1075
  [][] 
  []
 
-<images/people-telefono.png, id=588, 369.38pt x 1432.35126pt>
+<images/people-telefono.png, id=587, 369.38pt x 1432.35126pt>
 File: images/people-telefono.png Graphic file (type png)
 <use images/people-telefono.png>
 Package pdftex.def Info: images/people-telefono.png  used on input line 1080.
@@ -1131,7 +1124,7 @@ Overfull \hbox (2.43332pt too wide) in paragraph at lines 1072--1084
 []$[]$ $[]$ 
  []
 
-<images/people-tablet.png, id=589, 718.685pt x 1112.155pt>
+<images/people-tablet.png, id=588, 718.685pt x 1112.155pt>
 File: images/people-tablet.png Graphic file (type png)
 <use images/people-tablet.png>
 Package pdftex.def Info: images/people-tablet.png  used on input line 1088.
@@ -1141,12 +1134,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1095--1104
 
  []
 
-<images/dev-tools.png, id=591, 1027.58907pt x 540.51938pt>
+<images/dev-tools.png, id=590, 1027.58907pt x 540.51938pt>
 File: images/dev-tools.png Graphic file (type png)
 <use images/dev-tools.png>
 Package pdftex.def Info: images/dev-tools.png  used on input line 1107.
 (pdftex.def)             Requested size: 295.77379pt x 155.57542pt.
-<images/Deuteranopia.png, id=592, 2569.6pt x 3360.555pt>
+<images/Deuteranopia.png, id=591, 2569.6pt x 3360.555pt>
 File: images/Deuteranopia.png Graphic file (type png)
 <use images/Deuteranopia.png>
 Package pdftex.def Info: images/Deuteranopia.png  used on input line 1113.
@@ -1180,12 +1173,12 @@ l.1119 \chapter
 
 ]
 Capitolo 5.
-<images/form-html.png, id=625, 629.35126pt x 250.68657pt>
+<images/form-html.png, id=624, 629.35126pt x 250.68657pt>
 File: images/form-html.png Graphic file (type png)
 <use images/form-html.png>
 Package pdftex.def Info: images/form-html.png  used on input line 1142.
 (pdftex.def)             Requested size: 492.95131pt x 196.3533pt.
-<images/form-tella.png, id=626, 1188.44pt x 963.6pt>
+<images/form-tella.png, id=625, 1188.44pt x 963.6pt>
 File: images/form-tella.png Graphic file (type png)
 <use images/form-tella.png>
 Package pdftex.def Info: images/form-tella.png  used on input line 1149.
@@ -1211,19 +1204,15 @@ Appendice A.
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `thesis_Dittaro.out' has not changed.
 (rerunfilecheck)             Checksum: D128F5BBF6F4CED190137A3C42942B9D;3193.
  )
 (\end occurred when \ifx on line 3 was incomplete) 
 Here is how much of TeX's memory you used:
- 16802 strings out of 475248
- 275920 string characters out of 5757814
+ 16804 strings out of 475248
+ 275947 string characters out of 5757814
  1934801 words of memory out of 5000000
- 37929 multiletter control sequences out of 15000+600000
+ 37931 multiletter control sequences out of 15000+600000
  577601 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,9n,83p,948b,2380s stack positions out of 10000i,1000n,20000p,200000b,200000s
