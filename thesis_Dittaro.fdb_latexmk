@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex thesis_Dittaro"] 1699284875 "thesis_Dittaro.aux" "thesis_Dittaro.bbl" "thesis_Dittaro" 1699284882 0
+["bibtex thesis_Dittaro"] 1699362354 "thesis_Dittaro.aux" "thesis_Dittaro.bbl" "thesis_Dittaro" 1699362360 0
   "./plain_italian.bst" 1693055552 21772 b9f53fc1e71a9c29c62ec7586a3d5fef ""
   "./thud.bib" 1693055552 572 73f492a4f63f45d4cbbf003dbc69cd28 ""
-  "thesis_Dittaro.aux" 1699284881 17627 56a0f494aa44d3ec390dc6d78ec502f2 "pdflatex"
+  "thesis_Dittaro.aux" 1699362359 17439 e7f8adefd39acd153719ab46d645664c "pdflatex"
   (generated)
   "thesis_Dittaro.bbl"
   "thesis_Dittaro.blg"
   (rewritten before read)
-["pdflatex"] 1699284875 "c:/Users/feded/OneDrive/Documenti/thud/thesis_Dittaro.tex" "thesis_Dittaro.pdf" "thesis_Dittaro" 1699284882 0
-  "<pdfa.xmpi" 1699284876 5042 0 ""
+["pdflatex"] 1699362354 "c:/Users/feded/OneDrive/Documenti/thud/thesis_Dittaro.tex" "thesis_Dittaro.pdf" "thesis_Dittaro" 1699362360 0
+  "<pdfa.xmpi" 1699362355 5042 0 ""
   "C:/Users/feded/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1697540968 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/feded/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1693055919 12668 3ccaf0f9d6e2f8afa2409fbf5345587b ""
   "C:/Users/feded/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1694092527 24142035 1296f7a0f7b55f9926df71a64f17482e ""
@@ -25,6 +25,7 @@
   "C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi10.tfm" 1136765053 1528 abec98dbc43e172678c11b3b9031252a ""
   "C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi6.tfm" 1136765053 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi8.tfm" 1136765053 1520 eccf95517727cb11801f4f1aee3a21b4 ""
+  "C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmib10.tfm" 1136765053 1524 554068197b70979a55370e6c6495f441 ""
   "C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr10.tfm" 1136765053 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr12.tfm" 1136765053 1288 655e228510b4c2a1abe905c368440826 ""
   "C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr17.tfm" 1136765053 1292 296a67155bdbfc32aa9c636f21e91433 ""
@@ -38,6 +39,8 @@
   "C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1247593066 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247593066 32080 340ef9bf63678554ee606688e7b5339d ""
   "C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1247593067 32001 6aeea3afe875097b1eb0da29acd61e28 ""
+  "C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247593067 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb" 1247593066 36912 b448ef9ad9d7228ec3c6e71005136d55 ""
   "C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247593067 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247593067 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1247593067 37944 359e864bd06cde3b1cf57bb20757fb06 ""
@@ -86,6 +89,7 @@
   "C:/Users/feded/AppData/Local/Programs/MiKTeX/tex/latex/base/book.cls" 1687170546 23268 4ef3f0c1d276578b68abf6a1d0e1b8ad ""
   "C:/Users/feded/AppData/Local/Programs/MiKTeX/tex/latex/base/ifthen.sty" 1687170546 5319 5435f8f7051e23a851a1c665c5b84e22 ""
   "C:/Users/feded/AppData/Local/Programs/MiKTeX/tex/latex/base/inputenc.sty" 1687170546 5048 4a74b0804469fbfae7849704c4687a07 ""
+  "C:/Users/feded/AppData/Local/Programs/MiKTeX/tex/latex/base/omlcmr.fd" 1687170546 2470 6599b13c7da0906c887a7e3cfca75f4e ""
   "C:/Users/feded/AppData/Local/Programs/MiKTeX/tex/latex/base/omscmr.fd" 1687170546 2469 7cf25c0dd8ba984c37b877b83027725f ""
   "C:/Users/feded/AppData/Local/Programs/MiKTeX/tex/latex/cleveref/cleveref.sty" 1524382254 337536 7fc6b003158402a4c694bc0a1b729308 ""
   "C:/Users/feded/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1622999586 13886 d1306dcf79a944f6988e688c1785f9ce ""
@@ -133,7 +137,7 @@
   "C:/Users/feded/AppData/Local/Programs/MiKTeX/tex/latex/xmpincl/xmpincl.sty" 1633250524 2832 d498c59e94b7dfa3b4bcf74380ad6348 ""
   "banners/banner_uniud_italian.pdf" 1693055552 41062 b0aa8b86c9a2ce10c6e0830c80f88f1d ""
   "book.thud.tex" 1693055552 8518 ad4f4ec56a8d1eaaab360c919f880ca0 ""
-  "c:/Users/feded/OneDrive/Documenti/thud/thesis_Dittaro.tex" 1699284873 93135 deead29d6a42fe8f080f30d7e4ed86c2 ""
+  "c:/Users/feded/OneDrive/Documenti/thud/thesis_Dittaro.tex" 1699362346 93280 f49cfa6831ba422ffb28d75c7829c67e ""
   "images/ARC-menu.png" 1698225499 350911 ddc64ce502f61222b85683b1c9c69b92 ""
   "images/Deuteranopia.png" 1699110054 5400064 0eace44416bb9096a2270c5d69511fbf ""
   "images/Eleventy_logo.png" 1697546886 422844 c6ed0987d3f07029a239dbad7d6d9579 ""
@@ -171,12 +175,12 @@
   "images/search-form.png" 1698683552 11169 57a60405656ff2d54edddc7041930178 ""
   "images/static.png" 1697698082 17199 1c5baa02da20e610faf1c2866870edd2 ""
   "images/summary.png" 1699024707 24897 2403c54d3d134aaf51b7b1790b9cb02e ""
-  "pdfa.xmpi" 1699284876 5042 07803f185c76b6471621547fe6b950ca "pdflatex"
-  "thesis_Dittaro.aux" 1699284881 17627 56a0f494aa44d3ec390dc6d78ec502f2 "pdflatex"
-  "thesis_Dittaro.bbl" 1699284875 153 b42ce0bf5f40421ff8ae005c427f75c6 "bibtex thesis_Dittaro"
-  "thesis_Dittaro.out" 1699284881 3193 d128f5bbf6f4ced190137a3c42942b9d "pdflatex"
-  "thesis_Dittaro.tex" 1699284873 93135 deead29d6a42fe8f080f30d7e4ed86c2 ""
-  "thesis_Dittaro.toc" 1699284881 3798 055a4a0ca39450ac9aaef229c731f5ce "pdflatex"
+  "pdfa.xmpi" 1699362355 5042 fa7b9ecb31680501b34caf926101fe63 "pdflatex"
+  "thesis_Dittaro.aux" 1699362359 17439 e7f8adefd39acd153719ab46d645664c "pdflatex"
+  "thesis_Dittaro.bbl" 1699362354 153 b42ce0bf5f40421ff8ae005c427f75c6 "bibtex thesis_Dittaro"
+  "thesis_Dittaro.out" 1699362359 3143 0c2794bcb1bc4d6bfe81e255766f2078 "pdflatex"
+  "thesis_Dittaro.tex" 1699362346 93280 f49cfa6831ba422ffb28d75c7829c67e ""
+  "thesis_Dittaro.toc" 1699362359 3727 c955948b22fa8167cc4360bb24021869 "pdflatex"
   "thud.cls" 1693055552 6840 eed6da3f8af95a50dc922bd509f364dd ""
   (generated)
   "pdfa.xmpi"
