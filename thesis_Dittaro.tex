@@ -53,7 +53,24 @@
 
 %% Capitolo
 \chapter{Introduzione}
-In hac habitasse platea dictumst. Vestibulum consectetur dictum pellentesque. Suspendisse nunc neque, commodo ac imperdiet nec, sollicitudin vitae libero. Donec bibendum vel nunc vitae pharetra. In vel volutpat odio, et interdum dui. Duis mauris ligula, congue eget molestie at, tincidunt nec diam. Nam vitae eros nec arcu suscipit vehicula. Aliquam consectetur imperdiet elit, eget pretium arcu fringilla at. Maecenas \cite{Knu86} sed libero pulvinar, mattis tortor vel, fermentum enim.
+Nell'era digitale, i siti web sono diventati uno strumento essenziale per la comunicazione, la condivisione di informazioni e l'accesso a servizi online. 
+Rappresentano una parte integrante delle nostre vite quotidiane, influenzando la nostra esperienza in modi che spesso diamo per scontati. 
+Che si tratti di siti web di notizie che ci tengono informati sugli eventi globali, di piattaforme di e-commerce che semplificano gli acquisti online o di blog personali che ci connettono con passioni e interessi condivisi, i siti web sono un mezzo in continua evoluzione per la comunicazione e l'interazione.
+\newline \newline
+In questa tesi verrà affrontata una costruzione di un sito web accademico in una modalità meno conosciuta ma molto più funzionale se soddisfatte certe precondizioni e caratteristiche. 
+Verrà creato un sito web statico generato attraverso Hugo, uno dei pricipali SSG (static site generator) disponibili, verranno elencati i vantaggi della scelta di utilizzare un sito di questo tipo e del perchè scegliere questi tool.  
+\newline
+A differenza dei siti dinamici non sono infatti richieste elaborazioni \textit{back-end}, questo rende la struttura client/server molto più snella e performante, velocizzando il tempo necessario per il caricamento delle pagine, aumentando la sicurezza contro attacchi esterni, limitando le richieste al server web e permettendo anche la possibilità di utilizzare servizi di hosting completamente gratuiti.     
+Non essendoci dati da elaborare, la visualizzazione è la stessa per tutti gli utenti, non c'è quindi alcuna possibilità di modificare lo stato nè di ottenere contenuti personalizzati.  
+Queste caratteristiche non implicano l'immobilità delle pagine, è infatti comunque possibile creare animazioni e personalizzazioni grafiche.
+\newline \newline
+Verranno presentate tutte le fasi preliminari all'effettiva realizzazione, partendo dall'analisi dei requisiti per arrivare all'esperienza utente e conludere con delle considerazioni di usabilità e accessibilità.
+Si fornirà una panoramica sui fattori chiavi e sulle strutture necessarie per realizzare un sito solido e facilmente utilizzabile, che semplifichi la ricerca e il riconoscimento dei contenuti. 
+Verranno discussi i possibili temi e le scelte sulle funzionalità aggiuntive utili sia agli utenti che agli amministratori per ottenere informazioni e poter migliorare continuamente il servizio offerto.  
+\newline \newline
+Saranno anche presentati gli altri principali SSG disponibili, discusse le differenze più importanti tra loro e le motivazioni che possono portare a preferirne uno piuttosto che un'altro.  
+Verranno introdotte ed applicate le \textit{Web Analytics} attraverso un software meno utilizzato di "Google Analytics" ma ugualmente utile e produttivo.
+In conclusione verrà presentata una possibile implementazione futura, utile per fornire un servizio aggiuntivo agli utenti.   
 
 %% Capitolo  
 \chapter{Analisi del software}
@@ -206,7 +223,7 @@ Pelican offre inoltre una vasta serie di temi e plugin per estendere le funziona
 
 %% Sottosezione
 \subsection{Tabella riassuntiva}
-La seguente tabella riassume le caratteristche dei cinque principali SSG visti nelle sezioni precedenti.
+La seguente tabella riassume le caratteristiche dei cinque principali SSG visti nelle sezioni precedenti.
 
 \begin{table}[h]
     \centering
@@ -536,7 +553,7 @@ Nella stessa pagina è poi disponibile la possibilità di provare la demo e sono
 
 %% Sottosezione
 \subsection{Struttura di Tella}
-Sebbene Tella sia stato utilizzato per la realizzazione di un sito accademico, nel sito di Hugo viene classificato nel gruppo "Company". Tuttavia possiede alcune caratteristche riconducibili ad un sito adatto per un'università, soprattutto se vengo effettuati alcuni accorgimenti
+Sebbene Tella sia stato utilizzato per la realizzazione di un sito accademico, nel sito di Hugo viene classificato nel gruppo "Company". Tuttavia possiede alcune caratteristiche riconducibili ad un sito adatto per un'università, soprattutto se vengo effettuati alcuni accorgimenti
 e rimosse alcune sezioni. 
 In particolare si può sfruttare la presenza del menù orizzonatale, in quanto rappresenta proprio una delle caratteristiche cercate. 
 \newline
