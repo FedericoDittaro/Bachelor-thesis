@@ -14,7 +14,7 @@
 \contentsline {section}{\numberline {2.4}Hugo}{9}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Formati supportati}{9}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Template actions}{10}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Plugin}{10}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.3}Plugin}{11}{subsection.2.4.3}%
 \contentsline {subsection}{\numberline {2.4.4}Creazione del sito}{12}{subsection.2.4.4}%
 \contentsline {subsection}{\numberline {2.4.5}Costruzione del sito}{13}{subsection.2.4.5}%
 \contentsline {subsection}{\numberline {2.4.6}Hosting e distribuzione}{13}{subsection.2.4.6}%

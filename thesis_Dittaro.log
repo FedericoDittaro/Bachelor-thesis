@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.7)  8 NOV 2023 14:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.7)  9 NOV 2023 15:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -449,7 +449,7 @@ Underfull \vbox (badness 1859) has occurred while \output is active []
 
 ] [2]
 Capitolo 2.
-<images/Hugo_logo.png, id=278, 567.11874pt x 151.56625pt>
+<images/Hugo_logo.png, id=281, 567.11874pt x 151.56625pt>
 File: images/Hugo_logo.png Graphic file (type png)
 <use images/Hugo_logo.png>
 Package pdftex.def Info: images/Hugo_logo.png  used on input line 98.
@@ -457,216 +457,219 @@ Package pdftex.def Info: images/Hugo_logo.png  used on input line 98.
 [3
 
 ]
-<images/jekyll_teaser.png, id=285, 276.03125pt x 190.7125pt>
+<images/jekyll_teaser.png, id=290, 276.03125pt x 190.7125pt>
 File: images/jekyll_teaser.png Graphic file (type png)
 <use images/jekyll_teaser.png>
-Package pdftex.def Info: images/jekyll_teaser.png  used on input line 124.
+Package pdftex.def Info: images/jekyll_teaser.png  used on input line 125.
 (pdftex.def)             Requested size: 147.88689pt x 102.18004pt.
  [4
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.134     \item l
+l.135     \item l
                  a cartella \textit{\_post} contiene gli articoli del sito (... <./images/Hugo_logo.png>]
-<images/Gridsome-logo.png, id=293, 738.76pt x 738.76pt>
+<images/Gridsome-logo.png, id=301, 738.76pt x 738.76pt>
 File: images/Gridsome-logo.png Graphic file (type png)
 <use images/Gridsome-logo.png>
-Package pdftex.def Info: images/Gridsome-logo.png  used on input line 150.
+Package pdftex.def Info: images/Gridsome-logo.png  used on input line 151.
 (pdftex.def)             Requested size: 123.23782pt x 123.23157pt.
-<images/Eleventy_logo.png, id=294, 1100.11pt x 803.0pt>
+<images/Eleventy_logo.png, id=302, 1100.11pt x 803.0pt>
 File: images/Eleventy_logo.png Graphic file (type png)
 <use images/Eleventy_logo.png>
-Package pdftex.def Info: images/Eleventy_logo.png  used on input line 156.
+Package pdftex.def Info: images/Eleventy_logo.png  used on input line 157.
 (pdftex.def)             Requested size: 123.23782pt x 89.94763pt.
  [5
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.168     \item \textit
+l.169     \item \textit
                        {src} è la cartella principale al cui interno si tro... <./images/jekyll_teaser.png>] [6
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.188     \item \textit
+l.189     \item \textit
                        {\_data}: questa cartella è utilizzata per i file di...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.188     \item \textit
+l.189     \item \textit
                        {\_data}: questa cartella è utilizzata per i file di... <./images/Gridsome-logo.png> <./images/Eleventy_logo.png>]
-<images/pelican_logo.png, id=308, 200.75pt x 200.75pt>
+<images/pelican_logo.png, id=320, 200.75pt x 200.75pt>
 File: images/pelican_logo.png Graphic file (type png)
 <use images/pelican_logo.png>
-Package pdftex.def Info: images/pelican_logo.png  used on input line 202.
+Package pdftex.def Info: images/pelican_logo.png  used on input line 203.
 (pdftex.def)             Requested size: 73.93968pt x 73.93938pt.
  [7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.214     \item \textit
+l.215     \item \textit
                        {themes}: qui si possono collocare i temi o modelli p... <./images/pelican_logo.png (PNG copy)>]
-<images/WAMP_LAMP.png, id=316, 759.58781pt x 355.3275pt>
+<images/WAMP_LAMP.png, id=331, 759.58781pt x 355.3275pt>
 File: images/WAMP_LAMP.png Graphic file (type png)
 <use images/WAMP_LAMP.png>
-Package pdftex.def Info: images/WAMP_LAMP.png  used on input line 258.
+Package pdftex.def Info: images/WAMP_LAMP.png  used on input line 259.
 (pdftex.def)             Requested size: 295.77379pt x 138.36028pt.
-<images/static.png, id=317, 702.625pt x 797.98125pt>
+<images/static.png, id=332, 702.625pt x 797.98125pt>
 File: images/static.png Graphic file (type png)
 <use images/static.png>
-Package pdftex.def Info: images/static.png  used on input line 266.
+Package pdftex.def Info: images/static.png  used on input line 267.
 (pdftex.def)             Requested size: 123.23782pt x 139.95322pt.
  [8
 pdfTeX warning (ext4): destination with the same identifier (name{table.2.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.270 
+l.271 
       ] [9
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.282     \item C
-                 SS: formato utilizzato per definire lo stile delle pagine (...
+l.282     \item H
+                 TML: formato utilizzato per definire l'organizzazione e la ...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.282     \item C
-                 SS: formato utilizzato per definire lo stile delle pagine (... <./images/WAMP_LAMP.png> <./images/static.png>]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 304.
+l.282     \item H
+                 TML: formato utilizzato per definire l'organizzazione e la ... <./images/WAMP_LAMP.png> <./images/static.png>]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 305.
  (C:\Users\feded\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
 File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 304.
-<images/if-template-actions.png, id=334, 355.3275pt x 76.78688pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 305.
+<images/if-template-actions.png, id=350, 355.3275pt x 76.78688pt>
 File: images/if-template-actions.png Graphic file (type png)
 <use images/if-template-actions.png>
-Package pdftex.def Info: images/if-template-actions.png  used on input line 310.
+Package pdftex.def Info: images/if-template-actions.png  used on input line 311.
 (pdftex.def)             Requested size: 315.49124pt x 68.18074pt.
-<images/partial-template-actions.png, id=335, 207.02344pt x 66.2475pt>
+<images/partial-template-actions.png, id=351, 207.02344pt x 66.2475pt>
 File: images/partial-template-actions.png Graphic file (type png)
 <use images/partial-template-actions.png>
-Package pdftex.def Info: images/partial-template-actions.png  used on input line 318.
+Package pdftex.def Info: images/partial-template-actions.png  used on input line 319.
 (pdftex.def)             Requested size: 197.18126pt x 63.09952pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--385
+Underfull \hbox (badness 10000) in paragraph at lines 327--386
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--385
+Underfull \hbox (badness 10000) in paragraph at lines 327--386
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--385
+Underfull \hbox (badness 10000) in paragraph at lines 327--386
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--385
+Underfull \hbox (badness 10000) in paragraph at lines 327--386
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--385
+Underfull \hbox (badness 10000) in paragraph at lines 327--386
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--385
+Underfull \hbox (badness 10000) in paragraph at lines 327--386
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--385
+Underfull \hbox (badness 10000) in paragraph at lines 327--386
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--385
+Underfull \hbox (badness 10000) in paragraph at lines 327--386
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--385
+Underfull \hbox (badness 10000) in paragraph at lines 327--386
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--385
+Underfull \hbox (badness 10000) in paragraph at lines 327--386
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--385
+Underfull \hbox (badness 10000) in paragraph at lines 327--386
 
  []
 
-[10] [11
+[10]
+Underfull \vbox (badness 4441) has occurred while \output is active []
+
+ [11
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.385 
+l.386 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.385 
+l.386 
        <./images/if-template-actions.png> <./images/partial-template-actions.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 397--411
+Underfull \vbox (badness 2050) has occurred while \output is active []
+
+ [12]
+Underfull \hbox (badness 10000) in paragraph at lines 398--412
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 397--411
+Underfull \hbox (badness 10000) in paragraph at lines 398--412
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 397--411
+Underfull \hbox (badness 10000) in paragraph at lines 398--412
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 397--411
+Underfull \hbox (badness 10000) in paragraph at lines 398--412
 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [12] [13] [14] [15] [16]
+[13] [14] [15] [16]
 Capitolo 3.
 [17
 
 ]
-<images/ARC-menu.png, id=378, 970.3753pt x 249.18094pt>
+<images/ARC-menu.png, id=404, 970.3753pt x 249.18094pt>
 File: images/ARC-menu.png Graphic file (type png)
 <use images/ARC-menu.png>
-Package pdftex.def Info: images/ARC-menu.png  used on input line 510.
+Package pdftex.def Info: images/ARC-menu.png  used on input line 511.
 (pdftex.def)             Requested size: 492.95131pt x 126.5863pt.
-<images/MADS-menu.png, id=379, 950.80219pt x 113.67468pt>
+<images/MADS-menu.png, id=405, 950.80219pt x 113.67468pt>
 File: images/MADS-menu.png Graphic file (type png)
 <use images/MADS-menu.png>
-Package pdftex.def Info: images/MADS-menu.png  used on input line 517.
+Package pdftex.def Info: images/MADS-menu.png  used on input line 518.
 (pdftex.def)             Requested size: 492.95131pt x 58.93597pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--534
+Underfull \hbox (badness 10000) in paragraph at lines 523--535
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--534
+Underfull \hbox (badness 10000) in paragraph at lines 523--535
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--534
+Underfull \hbox (badness 10000) in paragraph at lines 523--535
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--534
+Underfull \hbox (badness 10000) in paragraph at lines 523--535
 
  []
 
@@ -674,44 +677,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 522--534
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.538 \chapter
+l.539 \chapter
               {Caso di studio}\label{cap:casostudio}
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.538 \chapter
+l.539 \chapter
               {Caso di studio}\label{cap:casostudio} <./images/ARC-menu.png> <./images/MADS-menu.png>] [20]
 Capitolo 4.
-<images/Tella.png, id=399, 949.29657pt x 404.26031pt>
+<images/Tella.png, id=426, 949.29657pt x 404.26031pt>
 File: images/Tella.png Graphic file (type png)
 <use images/Tella.png>
-Package pdftex.def Info: images/Tella.png  used on input line 549.
+Package pdftex.def Info: images/Tella.png  used on input line 550.
 (pdftex.def)             Requested size: 492.95131pt x 209.92665pt.
 [21
 
 ]
-<images/Tella-menu.png, id=405, 971.88094pt x 97.11281pt>
+<images/Tella-menu.png, id=433, 971.88094pt x 97.11281pt>
 File: images/Tella-menu.png Graphic file (type png)
 <use images/Tella-menu.png>
-Package pdftex.def Info: images/Tella-menu.png  used on input line 575.
+Package pdftex.def Info: images/Tella-menu.png  used on input line 576.
 (pdftex.def)             Requested size: 492.95131pt x 49.25569pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 581--592
+Underfull \hbox (badness 10000) in paragraph at lines 582--593
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 581--592
+Underfull \hbox (badness 10000) in paragraph at lines 582--593
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 581--592
+Underfull \hbox (badness 10000) in paragraph at lines 582--593
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 581--592
+Underfull \hbox (badness 10000) in paragraph at lines 582--593
 
  []
 
@@ -719,64 +722,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 581--592
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.592 \begin{itemize}
+l.593 \begin{itemize}
                      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.592 \begin{itemize}
+l.593 \begin{itemize}
                       <./images/Tella.png> <./images/Tella-menu.png>]
-<images/index-iniziale.png, id=422, 1053.9375pt x 1881.0275pt>
+<images/index-iniziale.png, id=450, 1053.9375pt x 1881.0275pt>
 File: images/index-iniziale.png Graphic file (type png)
 <use images/index-iniziale.png>
-Package pdftex.def Info: images/index-iniziale.png  used on input line 606.
+Package pdftex.def Info: images/index-iniziale.png  used on input line 607.
 (pdftex.def)             Requested size: 197.18126pt x 351.91684pt.
-<images/index-finale.jpeg, id=423, 1053.9375pt x 1548.78625pt>
+<images/index-finale.jpeg, id=451, 1053.9375pt x 1548.78625pt>
 File: images/index-finale.jpeg Graphic file (type jpg)
 <use images/index-finale.jpeg>
-Package pdftex.def Info: images/index-finale.jpeg  used on input line 612.
+Package pdftex.def Info: images/index-finale.jpeg  used on input line 613.
 (pdftex.def)             Requested size: 244.01224pt x 358.5766pt.
 
-Overfull \hbox (2.43332pt too wide) in paragraph at lines 604--616
+Overfull \hbox (2.43332pt too wide) in paragraph at lines 605--617
 []$[]$ $[]$ 
  []
 
-<images/list-html.png, id=424, 252.19218pt x 201.75375pt>
+<images/list-html.png, id=452, 252.19218pt x 201.75375pt>
 File: images/list-html.png Graphic file (type png)
 <use images/list-html.png>
-Package pdftex.def Info: images/list-html.png  used on input line 627.
+Package pdftex.def Info: images/list-html.png  used on input line 628.
 (pdftex.def)             Requested size: 197.1775pt x 157.74286pt.
 [23] [24
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.637 \begin{enumerate}
+l.638 \begin{enumerate}
                        
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.637 \begin{enumerate}
+l.638 \begin{enumerate}
                         <./images/index-iniziale.png> <./images/index-finale.jpeg>]
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 641.
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 642.
  (C:\Users\feded\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
 File: omlcmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/bx/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 641.
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 642.
 
-Underfull \hbox (badness 10000) in paragraph at lines 639--643
+Underfull \hbox (badness 10000) in paragraph at lines 640--644
 
  []
 
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 644.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 645.
 
-Underfull \hbox (badness 10000) in paragraph at lines 643--660
+Underfull \hbox (badness 10000) in paragraph at lines 644--661
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 643--660
+Underfull \hbox (badness 10000) in paragraph at lines 644--661
 
  []
 
@@ -784,40 +787,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 643--660
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.660     \item C
+l.661     \item C
                  reazione della parte grafica: questa fase riguarda la reali... <./images/list-html.png>]
-<images/search-form.png, id=450, 605.26125pt x 74.52844pt>
+<images/search-form.png, id=480, 605.26125pt x 74.52844pt>
 File: images/search-form.png Graphic file (type png)
 <use images/search-form.png>
-Package pdftex.def Info: images/search-form.png  used on input line 664.
+Package pdftex.def Info: images/search-form.png  used on input line 665.
 (pdftex.def)             Requested size: 394.36255pt x 48.56003pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 660--677
+Underfull \hbox (badness 10000) in paragraph at lines 661--678
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--698
+Underfull \hbox (badness 10000) in paragraph at lines 678--699
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--698
+Underfull \hbox (badness 10000) in paragraph at lines 678--699
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--698
+Underfull \hbox (badness 10000) in paragraph at lines 678--699
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--698
+Underfull \hbox (badness 10000) in paragraph at lines 678--699
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--698
+Underfull \hbox (badness 10000) in paragraph at lines 678--699
 
  []
 
@@ -825,104 +828,104 @@ Underfull \hbox (badness 10000) in paragraph at lines 677--698
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.698     \begin{itemize}
+l.699     \begin{itemize}
                           <./images/search-form.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 702--712
+Underfull \hbox (badness 10000) in paragraph at lines 703--713
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 702--712
+Underfull \hbox (badness 10000) in paragraph at lines 703--713
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 702--712
+Underfull \hbox (badness 10000) in paragraph at lines 703--713
 
  []
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 712--720
+Underfull \hbox (badness 10000) in paragraph at lines 713--721
 
  []
 
 
-Overfull \hbox (48.48645pt too wide) in paragraph at lines 712--720
+Overfull \hbox (48.48645pt too wide) in paragraph at lines 713--721
 \OML/cmm/b/it/10.95 <\OT1/cmr/bx/n/10.95 script ty-pe="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"\OML/cmm/b/it/10.95 >
  []
 
-<images/if-part.png, id=471, 416.30531pt x 308.65312pt>
+<images/if-part.png, id=501, 416.30531pt x 308.65312pt>
 File: images/if-part.png Graphic file (type png)
 <use images/if-part.png>
-Package pdftex.def Info: images/if-part.png  used on input line 732.
+Package pdftex.def Info: images/if-part.png  used on input line 733.
 (pdftex.def)             Requested size: 246.47565pt x 182.73956pt.
-<images/displayResults.png, id=472, 467.49657pt x 292.09125pt>
+<images/displayResults.png, id=502, 467.49657pt x 292.09125pt>
 File: images/displayResults.png Graphic file (type png)
 <use images/displayResults.png>
-Package pdftex.def Info: images/displayResults.png  used on input line 738.
+Package pdftex.def Info: images/displayResults.png  used on input line 739.
 (pdftex.def)             Requested size: 290.83945pt x 181.72311pt.
 
-Overfull \hbox (44.3638pt too wide) in paragraph at lines 738--739
+Overfull \hbox (44.3638pt too wide) in paragraph at lines 739--740
  [][] 
  []
 
 
-Overfull \hbox (2.43332pt too wide) in paragraph at lines 730--742
+Overfull \hbox (2.43332pt too wide) in paragraph at lines 731--743
 []$[]$ $[]$ 
  []
 
-<images/css-results.png, id=473, 231.86626pt x 210.7875pt>
+<images/css-results.png, id=503, 231.86626pt x 210.7875pt>
 File: images/css-results.png Graphic file (type png)
 <use images/css-results.png>
-Package pdftex.def Info: images/css-results.png  used on input line 747.
+Package pdftex.def Info: images/css-results.png  used on input line 748.
 (pdftex.def)             Requested size: 147.88689pt x 134.4436pt.
-<images/ex-research.png, id=474, 1009.7725pt x 1588.93625pt>
+<images/ex-research.png, id=504, 1009.7725pt x 1588.93625pt>
 File: images/ex-research.png Graphic file (type png)
 <use images/ex-research.png>
-Package pdftex.def Info: images/ex-research.png  used on input line 753.
+Package pdftex.def Info: images/ex-research.png  used on input line 754.
 (pdftex.def)             Requested size: 197.18126pt x 310.26561pt.
 
-Overfull \hbox (2.43332pt too wide) in paragraph at lines 745--757
+Overfull \hbox (2.43332pt too wide) in paragraph at lines 746--758
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--802
+Underfull \hbox (badness 10000) in paragraph at lines 762--803
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--802
+Underfull \hbox (badness 10000) in paragraph at lines 762--803
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--802
+Underfull \hbox (badness 10000) in paragraph at lines 762--803
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--802
+Underfull \hbox (badness 10000) in paragraph at lines 762--803
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--802
+Underfull \hbox (badness 10000) in paragraph at lines 762--803
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--802
+Underfull \hbox (badness 10000) in paragraph at lines 762--803
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--802
+Underfull \hbox (badness 10000) in paragraph at lines 762--803
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--802
+Underfull \hbox (badness 10000) in paragraph at lines 762--803
 
  []
 
@@ -930,12 +933,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 761--802
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.802 \begin{enumerate}
+l.803 \begin{enumerate}
                        
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.802 \begin{enumerate}
+l.803 \begin{enumerate}
                         <./images/if-part.png> <./images/displayResults.png>]
 Underfull \vbox (badness 2894) has occurred while \output is active []
 
@@ -943,55 +946,55 @@ Underfull \vbox (badness 2894) has occurred while \output is active []
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.802 \begin{enumerate}
+l.803 \begin{enumerate}
                        
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.802 \begin{enumerate}
+l.803 \begin{enumerate}
                         <./images/css-results.png> <./images/ex-research.png>] [30]
-Underfull \hbox (badness 10000) in paragraph at lines 832--837
+Underfull \hbox (badness 10000) in paragraph at lines 833--838
 
  []
 
 [31]
-<images/gen-items-1.png, id=510, 634.62094pt x 424.58624pt>
+<images/gen-items-1.png, id=542, 634.62094pt x 424.58624pt>
 File: images/gen-items-1.png Graphic file (type png)
 <use images/gen-items-1.png>
-Package pdftex.def Info: images/gen-items-1.png  used on input line 859.
+Package pdftex.def Info: images/gen-items-1.png  used on input line 860.
 (pdftex.def)             Requested size: 394.36255pt x 263.84975pt.
-<images/gen-items-2.png, id=511, 458.46281pt x 403.5075pt>
+<images/gen-items-2.png, id=543, 458.46281pt x 403.5075pt>
 File: images/gen-items-2.png Graphic file (type png)
 <use images/gen-items-2.png>
-Package pdftex.def Info: images/gen-items-2.png  used on input line 867.
+Package pdftex.def Info: images/gen-items-2.png  used on input line 868.
 (pdftex.def)             Requested size: 246.47565pt x 216.93031pt.
 
-Underfull \hbox (badness 2512) in paragraph at lines 868--868
+Underfull \hbox (badness 2512) in paragraph at lines 869--869
 []\OT1/cmr/m/n/10.95 Figura 4.12: []Parte del co-di-ce del-la fun-zio-ne
  []
 
-<images/gen-refs.png, id=512, 472.76625pt x 377.91188pt>
+<images/gen-refs.png, id=544, 472.76625pt x 377.91188pt>
 File: images/gen-refs.png Graphic file (type png)
 <use images/gen-refs.png>
-Package pdftex.def Info: images/gen-refs.png  used on input line 873.
+Package pdftex.def Info: images/gen-refs.png  used on input line 874.
 (pdftex.def)             Requested size: 271.12471pt x 216.73253pt.
 
-Overfull \hbox (24.64906pt too wide) in paragraph at lines 873--874
+Overfull \hbox (24.64906pt too wide) in paragraph at lines 874--875
  [][] 
  []
 
 
-Overfull \hbox (2.43332pt too wide) in paragraph at lines 865--877
+Overfull \hbox (2.43332pt too wide) in paragraph at lines 866--878
 []$[]$ $[]$ 
  []
 
-<images/publications.png, id=513, 1063.975pt x 648.4225pt>
+<images/publications.png, id=545, 1063.975pt x 648.4225pt>
 File: images/publications.png Graphic file (type png)
 <use images/publications.png>
-Package pdftex.def Info: images/publications.png  used on input line 881.
+Package pdftex.def Info: images/publications.png  used on input line 882.
 (pdftex.def)             Requested size: 394.36255pt x 240.33801pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 888--891
+Underfull \hbox (badness 10000) in paragraph at lines 889--892
 
  []
 
@@ -999,61 +1002,61 @@ Underfull \hbox (badness 10000) in paragraph at lines 888--891
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.11}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.896     \item R
+l.897     \item R
                  ilevazione di specifici eventi: umami consente di tener tra...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.12}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.896     \item R
+l.897     \item R
                  ilevazione di specifici eventi: umami consente di tener tra...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.13}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.896     \item R
+l.897     \item R
                  ilevazione di specifici eventi: umami consente di tener tra... <./images/gen-items-1.png> <./images/gen-items-2.png> <./images/gen-refs.png>] [34
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.14}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.927 \begin{enumerate}
+l.928 \begin{enumerate}
                         <./images/publications.png>]
-<images/githubpages.png, id=535, 976.39781pt x 411.03563pt>
+<images/githubpages.png, id=567, 976.39781pt x 411.03563pt>
 File: images/githubpages.png Graphic file (type png)
 <use images/githubpages.png>
-Package pdftex.def Info: images/githubpages.png  used on input line 945.
+Package pdftex.def Info: images/githubpages.png  used on input line 946.
 (pdftex.def)             Requested size: 443.65317pt x 186.76434pt.
  [35
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.15}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.953 \begin{enumerate}
+l.954 \begin{enumerate}
                         <./images/githubpages.png>]
-<images/header.png, id=545, 300.3722pt x 170.13562pt>
+<images/header.png, id=577, 300.3722pt x 170.13562pt>
 File: images/header.png Graphic file (type png)
 <use images/header.png>
-Package pdftex.def Info: images/header.png  used on input line 979.
+Package pdftex.def Info: images/header.png  used on input line 980.
 (pdftex.def)             Requested size: 246.47565pt x 139.61334pt.
-<images/menu-hamburger.png, id=546, 636.12656pt x 453.94594pt>
+<images/menu-hamburger.png, id=578, 636.12656pt x 453.94594pt>
 File: images/menu-hamburger.png Graphic file (type png)
 <use images/menu-hamburger.png>
-Package pdftex.def Info: images/menu-hamburger.png  used on input line 985.
+Package pdftex.def Info: images/menu-hamburger.png  used on input line 986.
 (pdftex.def)             Requested size: 221.82657pt x 158.2947pt.
 
-Overfull \hbox (2.43332pt too wide) in paragraph at lines 977--989
+Overfull \hbox (2.43332pt too wide) in paragraph at lines 978--990
 []$[]$ $[]$ 
  []
 
 [36]
-Underfull \hbox (badness 10000) in paragraph at lines 1008--1030
+Underfull \hbox (badness 10000) in paragraph at lines 1009--1031
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1008--1030
+Underfull \hbox (badness 10000) in paragraph at lines 1009--1031
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1008--1030
+Underfull \hbox (badness 10000) in paragraph at lines 1009--1031
 
  []
 
@@ -1061,45 +1064,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 1008--1030
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.16}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1030 \begin{itemize}
+l.1031 \begin{itemize}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.17}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1030 \begin{itemize}
+l.1031 \begin{itemize}
                        <./images/header.png> <./images/menu-hamburger.png>]
-<images/summary.png, id=568, 410.2828pt x 246.9225pt>
+<images/summary.png, id=602, 410.2828pt x 246.9225pt>
 File: images/summary.png Graphic file (type png)
 <use images/summary.png>
-Package pdftex.def Info: images/summary.png  used on input line 1047.
+Package pdftex.def Info: images/summary.png  used on input line 1048.
 (pdftex.def)             Requested size: 246.47565pt x 148.33548pt.
-<images/list.png, id=569, 362.85562pt x 243.15843pt>
+<images/list.png, id=603, 362.85562pt x 243.15843pt>
 File: images/list.png Graphic file (type png)
 <use images/list.png>
-Package pdftex.def Info: images/list.png  used on input line 1053.
+Package pdftex.def Info: images/list.png  used on input line 1054.
 (pdftex.def)             Requested size: 246.47565pt x 165.17116pt.
 
-Overfull \hbox (2.43332pt too wide) in paragraph at lines 1045--1057
+Overfull \hbox (2.43332pt too wide) in paragraph at lines 1046--1058
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1059--1073
+Underfull \hbox (badness 10000) in paragraph at lines 1060--1074
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1059--1073
+Underfull \hbox (badness 10000) in paragraph at lines 1060--1074
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1059--1073
+Underfull \hbox (badness 10000) in paragraph at lines 1060--1074
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1059--1073
+Underfull \hbox (badness 10000) in paragraph at lines 1060--1074
 
  []
 
@@ -1110,123 +1113,124 @@ Underfull \vbox (badness 1009) has occurred while \output is active []
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.18}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1073 
+l.1074 
        
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.19}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1073 
+l.1074 
         <./images/summary.png> <./images/list.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1075--1084
+Underfull \hbox (badness 10000) in paragraph at lines 1076--1085
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1075--1084
+Underfull \hbox (badness 10000) in paragraph at lines 1076--1085
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1075--1084
+Underfull \hbox (badness 10000) in paragraph at lines 1076--1085
 
  []
 
-<images/people-computer.png, id=581, 1188.44pt x 1177.39874pt>
+<images/people-computer.png, id=615, 1188.44pt x 1177.39874pt>
 File: images/people-computer.png Graphic file (type png)
 <use images/people-computer.png>
-Package pdftex.def Info: images/people-computer.png  used on input line 1090.
+Package pdftex.def Info: images/people-computer.png  used on input line 1091.
 (pdftex.def)             Requested size: 295.77002pt x 293.0195pt.
 
-Overfull \hbox (49.29437pt too wide) in paragraph at lines 1090--1091
+Overfull \hbox (49.29437pt too wide) in paragraph at lines 1091--1092
  [][] 
  []
 
-<images/people-telefono.png, id=582, 369.38pt x 1432.35126pt>
+<images/people-telefono.png, id=616, 369.38pt x 1432.35126pt>
 File: images/people-telefono.png Graphic file (type png)
 <use images/people-telefono.png>
-Package pdftex.def Info: images/people-telefono.png  used on input line 1096.
+Package pdftex.def Info: images/people-telefono.png  used on input line 1097.
 (pdftex.def)             Requested size: 123.23782pt x 477.87907pt.
 
-Overfull \hbox (2.43332pt too wide) in paragraph at lines 1088--1100
+Overfull \hbox (2.43332pt too wide) in paragraph at lines 1089--1101
 []$[]$ $[]$ 
  []
 
-<images/people-tablet.png, id=583, 718.685pt x 1112.155pt>
+<images/people-tablet.png, id=617, 718.685pt x 1112.155pt>
 File: images/people-tablet.png Graphic file (type png)
 <use images/people-tablet.png>
-Package pdftex.def Info: images/people-tablet.png  used on input line 1104.
+Package pdftex.def Info: images/people-tablet.png  used on input line 1105.
 (pdftex.def)             Requested size: 295.77379pt x 457.71745pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1111--1120
+Underfull \hbox (badness 10000) in paragraph at lines 1112--1121
 
  []
 
-<images/dev-tools.png, id=585, 1027.58907pt x 540.51938pt>
+<images/dev-tools.png, id=620, 1027.58907pt x 540.51938pt>
 File: images/dev-tools.png Graphic file (type png)
 <use images/dev-tools.png>
-Package pdftex.def Info: images/dev-tools.png  used on input line 1123.
+Package pdftex.def Info: images/dev-tools.png  used on input line 1124.
 (pdftex.def)             Requested size: 295.77379pt x 155.57542pt.
-<images/Deuteranopia.png, id=586, 2569.6pt x 3360.555pt>
+<images/Deuteranopia.png, id=621, 2569.6pt x 3360.555pt>
 File: images/Deuteranopia.png Graphic file (type png)
 <use images/Deuteranopia.png>
-Package pdftex.def Info: images/Deuteranopia.png  used on input line 1129.
+Package pdftex.def Info: images/Deuteranopia.png  used on input line 1130.
 (pdftex.def)             Requested size: 295.77379pt x 386.789pt.
 [39] [40
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.20}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1135 \chapter
+l.1136 \chapter
                {Conclusioni}
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.21}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1135 \chapter
+l.1136 \chapter
                {Conclusioni} <./images/people-computer.png> <./images/people-telefono.png>] [41
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.22}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1135 \chapter
+l.1136 \chapter
                {Conclusioni}
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.23}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1135 \chapter
+l.1136 \chapter
                {Conclusioni} <./images/people-tablet.png> <./images/dev-tools.png>] [42
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.24}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1135 \chapter
+l.1136 \chapter
                {Conclusioni} <./images/Deuteranopia.png>] [43] [44
 
 ]
 Capitolo 5.
-<images/form-html.png, id=619, 629.35126pt x 250.68657pt>
+<images/form-html.png, id=656, 629.35126pt x 250.68657pt>
 File: images/form-html.png Graphic file (type png)
 <use images/form-html.png>
-Package pdftex.def Info: images/form-html.png  used on input line 1158.
+Package pdftex.def Info: images/form-html.png  used on input line 1159.
 (pdftex.def)             Requested size: 492.95131pt x 196.3533pt.
-<images/form-tella.png, id=620, 1188.44pt x 963.6pt>
+<images/form-tella.png, id=657, 1188.44pt x 963.6pt>
 File: images/form-tella.png Graphic file (type png)
 <use images/form-tella.png>
-Package pdftex.def Info: images/form-tella.png  used on input line 1165.
+Package pdftex.def Info: images/form-tella.png  used on input line 1166.
 (pdftex.def)             Requested size: 492.95131pt x 399.6954pt.
 [45] [46
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1175 \backmatter
+l.1176 \backmatter
                   
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1175 \backmatter
+l.1176 \backmatter
                    <./images/form-html.png> <./images/form-tella.png>] [47] (thesis_Dittaro.bbl [48
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 41--43
+[]\OT1/cmr/m/n/10.95 Static vs dy-na-mic web-si-tes: the key dif-fe-ren-ces., 2023.  Avai-la-ble at
+ []
 
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
-) [49] (thesis_Dittaro.aux)
+[49]) [50] (thesis_Dittaro.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -1236,17 +1240,17 @@ Package rerunfilecheck Info: File `thesis_Dittaro.out' has not changed.
  )
 (\end occurred when \ifx on line 3 was incomplete) 
 Here is how much of TeX's memory you used:
- 16821 strings out of 475248
- 276303 string characters out of 5757814
+ 16863 strings out of 475248
+ 276991 string characters out of 5757814
  1934801 words of memory out of 5000000
- 37948 multiletter control sequences out of 15000+600000
+ 37970 multiletter control sequences out of 15000+600000
  577959 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,9n,83p,948b,2380s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\feded\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis_Dittaro.pdf (55 pages, 10915466 bytes).
+Output written on thesis_Dittaro.pdf (56 pages, 10927539 bytes).
 PDF statistics:
- 736 PDF objects out of 1000 (max. 8388607)
- 165 named destinations out of 1000 (max. 500000)
+ 782 PDF objects out of 1000 (max. 8388607)
+ 185 named destinations out of 1000 (max. 500000)
  555 words of extra memory for PDF output out of 10000 (max. 10000000)
 

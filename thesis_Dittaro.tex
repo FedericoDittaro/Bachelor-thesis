@@ -48,7 +48,7 @@
 %% Parte
 %% La suddivisione in parti ? opzionale; solitamente sono sufficienti i capitoli.
 %\part{Parte}
-
+%% Google scholar 
 %% -------------------------------------------------------------------------------------------------------------------------------
 
 %% Capitolo
@@ -60,7 +60,7 @@ Che si tratti di siti web di notizie che ci tengono informati sugli eventi globa
 In questa tesi verrà affrontata una costruzione di un sito web accademico in una modalità meno conosciuta ma molto più funzionale se soddisfatte certe precondizioni e caratteristiche. 
 Verrà creato un sito web statico generato attraverso Hugo, uno dei pricipali SSG (static site generator) disponibili, verranno elencati i vantaggi della scelta di utilizzare un sito di questo tipo e del perchè scegliere questi tool.  
 \newline
-A differenza dei siti dinamici non sono infatti richieste elaborazioni \textit{back-end}, questo rende la struttura client/server molto più snella e performante, velocizzando il tempo necessario per il caricamento delle pagine, aumentando la sicurezza contro attacchi esterni, limitando le richieste al server web e permettendo anche la possibilità di utilizzare servizi di hosting completamente gratuiti.     
+A differenza dei siti dinamici non sono infatti richieste elaborazioni \textit{back-end}, questo rende la struttura client/server molto più snella e performante, velocizzando il tempo necessario per il caricamento delle pagine, aumentando la sicurezza contro attacchi esterni, limitando le richieste al server web e permettendo anche la possibilità di utilizzare servizi di hosting completamente gratuiti \cite{static-dinamic}.     
 Non essendoci dati da elaborare, la visualizzazione è la stessa per tutti gli utenti, non c'è quindi alcuna possibilità di modificare lo stato nè di ottenere contenuti personalizzati.  
 Queste caratteristiche non implicano l'immobilità delle pagine, è infatti comunque possibile creare animazioni e personalizzazioni grafiche.
 \newline \newline
@@ -77,7 +77,7 @@ In conclusione verrà presentata una possibile implementazione futura, utile per
 
 %% Sezione
 \section{SSG}\label{sec:SSG}
-Gli SSG (in inglese, Static Site Generator) sono dei tool che permettono la creazione di tutti i contenuti presenti nei siti web a partire da file di configurazione e contenuti scritti in formati più generali (tipicamente markdown).
+Gli SSG (in inglese, Static Site Generator) sono dei tool che permettono la creazione di tutti i contenuti presenti nei siti web a partire da file di configurazione e contenuti scritti in formati più generali (tipicamente markdown) \cite{camden2017working}.
 La caratteristica principale di tali siti è che a fronte di una richiesta da parte dell'utente di visualizzare determinati contenuti del sito, il web server fornisce pagine statiche, delle quali l'utente non è in grado di modificare il contenuto né possiede alcun tipo di stato che ne permetta la personalizzazione. Non esiste quindi una elaborazione back-end sul lato server e non esistono database, qualsiasi funzionalità "dinamica" associata al sito statico viene eseguita sul lato client. \newline
 I principali vantaggi riguardanti la scelta di utilizzo di un SSG sono:
 \begin{itemize}
@@ -99,8 +99,9 @@ In questa sezione verranno menzionati i cinque principali SSG e discusse le loro
     \caption{Hugo logo}
 \end{figure}
 
-Hugo verrà brevemente presentato in modo da poterlo confrontare con gli altri principali SSG, per poi essere ripreso più approfonditamente nella \cref{sec:hugo} dato che si tratta del framework scelto per sviluppare il progetto. \newline
-Hugo è un generatore di siti web statici scritto in Go ideato inizialmente da Steve Francia nel 2013 e successivamente sviluppato da Bjørn Erik. L'ultima versione, la 0.119.0 è stata rilasciata a settembre 2023.
+Hugo verrà brevemente presentato in modo da poterlo confrontare con gli altri principali SSG, per poi essere ripreso più approfonditamente nella \cref{sec:hugo} dato che si tratta del framework scelto per sviluppare il progetto.
+
+Hugo è un generatore di siti web statici scritto in Go ideato inizialmente da Steve Francia nel 2013 e successivamente sviluppato da Bjørn Erik \cite{hugo-site}. L'ultima versione, la 0.119.0 è stata rilasciata a settembre 2023.
 Per utilizzare Hugo non è necessario conoscere Go in quanto il sito web viene creato attraverso file HTML e CSS, inoltre c'è una separazione tra il contenuto e la presentazione permettendo così di cambiare l'aspetto senza modificare l'informazione presente. 
 Oltre ai tipi di file citati precedentemente, Hugo supporta anche file di tipo Javascript, Markdown, TOML, YAML e JSON. \newline
 Le informazioni necessarie per creare, modificare, stilizzare o eliminare pagine e/o contenuti sono racchiuse all'interno di specifiche cartelle che possono essere successivamente estese. La struttura generale è la seguente:
@@ -125,7 +126,7 @@ Hugo mette inoltre a disposizione una grande verietà di Plugin molto utili come
     \caption{Jekyll logo}
 \end{figure}
 
-Jekyll è un generatore di siti web statici, ideato da Tom Preston-Werner, la prima versione del software risale al 2008 mentre l'ultima, la 3.9.3, è uscita a gennaio 2023.
+Jekyll è un generatore di siti web statici, ideato da Tom Preston-Werner, la prima versione del software risale al 2008 mentre l'ultima, la 3.9.3, è uscita a gennaio 2023 \cite{jekyll-site}.
 Jekyll si basa sul linguaggio Ruby, perciò richiede un'installazione ed una configurazione corretta e funzionante di tale ambiente.
 Successivamente si scarica la versione desiderata e si segue la procedura di installazione, così come descritta sulla documentazione.
 In Jekyll tutti i contenuti e i layout del sito vengono salvati localmente e vengono classificati in una struttura a cartelle, principalmente orientata alla costruzione di blog. \newline
@@ -160,7 +161,7 @@ In conclusione, Jekyll è un'ottima scelta se si ha familiarità con l'ambiente 
 
 %% Sottosezione
 \subsection{Gridsome}
-Gridsome è un SSG molto recente, è stato infatti ideato da Johannes Schickling nel 2018 subendo poi miglioramenti negli anni successivi fino all'ultima versione disponibile, la 0.7.23, rilasciata a settembre 2021.
+Gridsome è un SSG molto recente, è stato infatti ideato da Johannes Schickling nel 2018 subendo poi miglioramenti negli anni successivi fino all'ultima versione disponibile, la 0.7.23, rilasciata a settembre 2021 \cite{gridsome-site}.
 Si tratta di un framework basato su Vue.js e GraphQL che permette di creare una configurazione "headless", consentendo così di sfruttare la separazione dei contenuti dalla loro presentazione.
 Le cartelle di lavoro possono variare in base alla configurazione specifica di un progetto, ma in generale sono strutturate nel modo seguente:
 
@@ -176,7 +177,7 @@ Anche Gridsome offre una vasta raccolta di plugin che possono essere utilizzati 
 %% Sottosezione
 \subsection{Eleventy}
 
-Eleventy (chiamato anche 11ty), come Gridsome, è un SSG molto recente ideato da Zach Leatherman nel 2018 e migliorato fino alla versione 2.0.0, rilasciata a febbraio 2023. 
+Eleventy (chiamato anche 11ty), come Gridsome, è un SSG molto recente ideato da Zach Leatherman nel 2018 e migliorato fino alla versione 2.0.0, rilasciata a febbraio 2023 \cite{eleventy-site}. 
 La sua crescita è dovuta sia alla sua flessibilià e potenza ma anche al sempre maggior utilizzo delle piattaforme di hosting come "Chrome Developers" e "Netlify". \newline
 Questo software si base su Node.js e javascript, il che richiede una buona conoscenza di quest'ultimo linguaggio per poter sfruttare a pieno la sua potenzialità. Eleventy supporta molteplici linguaggi di modello ma fondamentalmente si base su Liquid, il che lo rende simie a Jekyll.
 Come tutti gli altri SSG supporta diversi linguaggi come ad esempio Markdown, JSON, YAML. \newline 
@@ -204,7 +205,7 @@ Eleventy non è sicuramente il miglior SSG per iniziare a lavorare in questo cam
 \end{figure}
 
 Pelican è meno conosciuto e utilizzato rispetto agli altri presenti in questa sezione, ma si tratta comunque di una valida alternativa data la sua flessibilità e la possibilità di importare siti già esistenti creati con altre piattaforme come ad esempio Wordpress.
-Questo SSG è stato creato da Justin Mayer nel 2010, l'ultima versione disponibile è la 4.8.0 rilasciata a luglio 2023 ed è stato principalmente sviluppato per la creazione di blog.  
+Questo SSG è stato creato da Justin Mayer nel 2010, l'ultima versione disponibile è la 4.8.0 rilasciata a luglio 2023 ed è stato principalmente sviluppato per la creazione di blog \cite{pelican-site}.  
 A differenza degli altri ruota completamente attorno a python, creando pagine statiche attraverso file markdown e reStructuredText. \newline
 la struttura generale delle cartelle è la seguente: 
 \begin{itemize}
@@ -250,7 +251,7 @@ La seguente tabella riassume le caratteristiche dei cinque principali SSG visti 
 \section{Differenze tra siti statici e dinamici}
 Riprendendo la \cref{sec:SSG}, un'ulteriore differenza che si può notare tra siti statici e dinamici riguarda l'architettura client/server utilizzata. \newline
 Per quanto riguarda i siti dinamici, l'architettura adottata prende il nome di WAMP/LAMP, l'acronimo è composto dalle seguenti parole: la W/L riguarda il sistema operativo utilizzato (rispettivamente Windows oppure Linux),
-la A sta per Apache ovvero il server http impiegato per eseguire il server web, la M per il DBMS MySQL e la P per PHP. Alcune architetture utilizzano al posto di MySQL il DBMS MariaDB e al posto del PHP i linguaggi Python oppure Pearl (l'acronimo rimane comunque invariato). \newline
+la A sta per Apache ovvero il server http impiegato per eseguire il server web, la M per il DBMS MySQL e la P per PHP \cite{andrzej2007development}. Alcune architetture utilizzano al posto di MySQL il DBMS MariaDB e al posto del PHP i linguaggi Python oppure Pearl (l'acronimo rimane comunque invariato). \newline
 WAMP è quindi la piattaforma di sviluppo web grazie a cui è possibile realizzare dei siti web dinamici attraverso la programmazione con il linguaggio PHP, permettendo così la creazione dei siti direttamente sul computer. 
 Utilizzare questa architettura attraverso il PHP offre diversi vantaggi in quanto si tratta di uno dei linguaggi più frequentemente utilizzati in rete ed inoltre è il linguaggio di riferimento per WordPress, la principale piattaforma software per lo sviluppo di siti dinamici. 
 \begin{figure}
@@ -417,7 +418,7 @@ Il risultato del processo di compilazione è la creazione di due cartelle:
 \subsection{Hosting e distribuzione}\label{subsec:hosting}
 In seguito alla generazione e compilazione, il sito può essere caricato su qualsiasi web server o servizio di hosting. Come detto precedentemente, non è necessario eseguire elaborazioni lato server oppure richieste ad un database, pertanto è possibile utilizzare servizi di hosting completamente gratuiti.
 \newline
-Un esempio di questi servizi è \textit{Github Pages}, offerto da GitHub. Quest'ultimo è uno dei servizi di hosting di repository Git più popolari al mondo che offre servizi per il controllo di versione, la collaborazione e l'hosting di progetti software (attrverso appunto Github Pages).
+Un esempio di questi servizi è \textit{Github Pages}, offerto da GitHub \cite{github-pages}. Quest'ultimo è uno dei servizi di hosting di repository Git più popolari al mondo che offre servizi per il controllo di versione, la collaborazione e l'hosting di progetti software (attrverso appunto Github Pages).
 Alcune delle principali funzionalità di GitHub includono il controllo di versione distribuito, il tracciamento delle modifiche, la collaborazione tra sviluppatori e molto altro.
 GitHub Pages è uno dei servizi offerti da Github che consente di pubblicare siti web statici direttamente da una repository GitHub, in particolare utilizza uno specifico branch chiamato "gh-pages" dal quale preleva il contenuto che viene poi pubblicato.
 Di default, l'indirizzo che viene assegnato è \textit{"https://NOME\_UTENTE.github.io/NOME\_REPOSITORY/"} ma supporta anche domini personalizzati. 
@@ -435,7 +436,7 @@ per cui sono vietati contenuti sessuali oppure violenti/minacciosi.
 
 %% Sottosezione
 \subsection{Web Analytics}\label{subsec:umami}
-Le web analytics sono il processo di raccolta, misurazione, analisi e reporting dei dati relativi all'uso di un sito web al fine di comprendere il comportamento degli utenti, valutare le prestazioni del sito e trarre informazioni utili per  migliorare l'esperienza degli utenti. 
+Le web analytics sono il processo di raccolta, misurazione, analisi e reporting dei dati relativi all'uso di un sito web al fine di comprendere il comportamento degli utenti, valutare le prestazioni del sito e trarre informazioni utili per  migliorare l'esperienza degli utenti. \cite{cooper2012analytics}
 Le web analytics sono fondamentali per il miglioramento dell'usabilità, l'ottimizzazione dei motori di ricerca e l'analisi delle conversioni.
 \begin{itemize}
     \item \textbf{Raccolta dei Dati}: la raccolta dei dati inizia con l'implementazione di strumenti di analisi web che tracciano il comportamento degli utenti sul sito. Questi strumenti registrano dati come il numero di visite, il tempo trascorso sul sito, le pagine visitate e molto altro;
@@ -446,7 +447,7 @@ Le web analytics sono fondamentali per il miglioramento dell'usabilità, l'ottim
     \item \textbf{Segmentazione degli Utenti}: le web analytics consentono di suddividere gli utenti in segmenti in base a criteri come la provenienza geografica, il comportamento di navigazione, il dispositivo utilizzato e altro ancora. Questa segmentazione aiuta a comprendere meglio il pubblico e a personalizzare l'esperienza dell'utente.
 \end{itemize}
 Uno delle più famose piattaforme di analisi web è sicuramente \textit{Google Analytics} che utilizza come strumento di analitica i cookies. 
-Nel sito web che si è realizzato con questo progetto, viene utilizzata come piattafroma di analisi uno strumento meno conosciuto di Google Analytics: \textit{umami}. 
+Nel sito web che si è realizzato con questo progetto, viene utilizzata come piattafroma di analisi uno strumento meno conosciuto di Google Analytics: \textit{umami} \cite{umami-site}. 
 Si tratta di un'applicazione open-source compatibile con il GDPR che a differenza di Google Analytics non utilizza cookie di tracciamento ma allo stesso tempo permette di ottenere informazioni come le pagine visitate, il browser, il sistema operativo ed il dispositivo utilizzati, nonchè il paese di provenienza. Queste informazioni di base possono poi essere ampliate comprendendo ad esempio specifici eventi di interesse per l'analisi del sito web.
 Umami mette inoltre a disposizione una dashboard per la presentazione del numero di visite nel corso del tempo, permettendo di visualizzare gli accessi nella giornata, nell'ultima settimana, nell'ultimo mese oppure nell'anno corrente. 
 \newline 
@@ -460,7 +461,7 @@ L'utilizzo e l'implementazione di umami verranno riprese nel \cref{cap:casostudi
 %% Sezione
 \section{Analisi dei requisiti}
 Nella realizzazione di un sito web bisogna tenere in considerazione diversi aspetti che possono influenzare la buona riuscita del progetto, come ad esempio l'usabilità, l'accessibilità, l'organizzazione dei contenuti e molto altro.
-Per questo motivo esistono delle linee guida e degli approcci consolidati che permettono di creare siti web di buona qualità. Queste "best practice" si basano sull'esperienza e su ricerche condotte nel campo della progettazione web, le più comuni sono:
+Per questo motivo esistono delle linee guida e degli approcci consolidati che permettono di creare siti web di buona qualità \cite{hong2006influence}. Queste "best practice" si basano sull'esperienza e su ricerche condotte nel campo della progettazione web, le più comuni sono:
 \begin{itemize}
     \item \textbf{Usabilità}: il sito deve essere intuitivo da utilizzare, la navigazione deve essere chiara e gli utenti dovrebbero essere in grado di trovare facilmente ciò di cui hanno bisogno;
     \item \textbf{Responsive Design}: il sito deve essere ottimizzato per dispositivi desktop, tablet e smartphone. Deve quindi adattarsi a diverse dimensioni di schermo;
@@ -473,7 +474,7 @@ La loro applicazione dipenderà ovviamente dalle esigenze specifiche del sito e 
 
 %% Sezione
 \section{User Experience}
-Il fattore forse più importante da tenere in considerazione nella realizzazione di un sito web è l'esperienza dell'utente (UX), questo termine si riferisce a quello che prova una persona quando interagisce o immagina di interagire con un prototipo, un prodotto finito, un sistema od un servizio.
+Il fattore forse più importante da tenere in considerazione nella realizzazione di un sito web è l'esperienza dell'utente (UX), questo termine si riferisce a quello che prova una persona quando interagisce o immagina di interagire con un prototipo, un prodotto finito, un sistema od un servizio \cite{hassenzahl2006user}.
 L'UX oltrepassa i limiti di altri termini come "interfaccia utente" e "usabilità" in quanto comprende tutti gli aspetti dell'esperienza che le persone hanno con i sistemi interattivi.
 \newline 
 Sono stati identificati tre livelli, basati sulle risorse fisiologiche e psicologiche mobilitate dall'utente durante l'interazione:
@@ -539,7 +540,7 @@ I temi non standard modificano significativamente la struttura dei siti in cui v
 
 %% Sezione
 \section{Tema utilizzato}
-Nel caso di studio sono state prese in cosiderazione le assunzioni e le regole generali della \cref{sec:tema}, per questo motivo il tema che è stato scelto è \textbf{Tella}.
+Nel caso di studio sono state prese in cosiderazione le assunzioni e le regole generali della \cref{sec:tema}, per questo motivo il tema che è stato scelto è \textbf{Tella} \cite{tella-site}.
 La pagina di presentazione presente sul sito ufficiale di Hugo mostra alcune informazioni generali come l'autore, l'ultimo update rilasciato ed il collegamento alla repository di GitHub.
 \newline
 Nella stessa pagina è poi disponibile la possibilità di provare la demo e sono inoltre presenti le varie modalità di installazione ed inizializzazione. Questi passaggi verranno ripresi ed utilizzati nelle sezioni successive.
@@ -629,7 +630,7 @@ Verranno ora trattate le aggiunte più sigificative non presenti nella versione 
     \label{img:list}
 \end{figure}
 L'implementazione della barra di ricerca è stata svolta utilizzando la libreria \textit{Lunr.js} ed utilizza una serie di file organizzati in una struttura non banale, la quale verrà descritta nella pagine successive.
-La soluzione è ispirata da \textbf{link}.
+La soluzione è ispirata da \cite{lunr}.
 \newline
 Dato che nell'architettura di un sito web statico (descritta in \cref{img:architettura}) non è presente un'elaborazione lato server, in quanto non ci sono database per eseguire le computazioni, l'operazione di ricerca verrà gestita completamente nel lato client.
 In particolare la libreria permette di effettuare staticamente delle ricerche e di indicizzare i contenuti. 
@@ -779,7 +780,7 @@ La soluzione adottata in questa tesi, considera un unico file bibtex contente le
 \newline \newline
 \textbf{{\fontsize{12}{14}\selectfont Pandoc}}
 \newline \newline
-Pandoc è un convertitore di documenti open-source che ne consente la converisone da un formato all'altro. Ad esempio, si possono convertire documenti da Markdown a HTML, da HTML a PDF, da LaTeX a Word, e viceversa.
+Pandoc è un convertitore di documenti open-source che ne consente la converisone da un formato all'altro \cite{pandoc}. Ad esempio, si possono convertire documenti da Markdown a HTML, da HTML a PDF, da LaTeX a Word, e viceversa.
 Pandoc è ampiamente utilizzato per la conversione tra formati di markup e documenti, rendendo più facile la creazione e la pubblicazione di contenuti in diversi formati.
 \newline
 La soluzione utilizzerà in particolare anche Pandoc-citeproc, un filtro aggiuntivo per Pandoc che gestisce le citazioni bibliografiche nei documenti.
@@ -989,7 +990,7 @@ Riepilogando, le operazioni da eseguire per la pubblicazione e l'aggiornamento s
 \end{figure}
 In questa sezione verrà analizzata la visualizzazione del sito su diversi dispositivi e gli accorgimenti adottati per garantire una visualizzazione uniforme in tutti i casi. 
 \newline
-La portabilità di un sito web si riferisce alla capacità di un sito di essere facilmente trasferito o replicato su diverse piattaforme, server o ambienti senza problemi significativi o modifiche sostanziali, garantendo le stesse funzionalità.
+La portabilità di un sito web si riferisce alla capacità di un sito di essere facilmente trasferito o replicato su diverse piattaforme, server o ambienti senza problemi significativi o modifiche sostanziali, garantendo le stesse funzionalità. \cite{chiuchi2011efficiency}
 \newline
 "Tella" presenta già alcuni accorgimenti che vengono adottati. Ad esempio, nel caso in cui ci sia una riduzione dello schermo disponibile, 
 il menù orizzontale viene sostituito con un menù ad "hamburger", dentro al quale le voci vengono posizionate verticalmente.
@@ -1108,7 +1109,7 @@ In questo modo l'organizzazione della sezione \textit{people} sarà uniforme su 
 
 %% Sezione
 \section{Accessibilità del sito}
-Un'altra importante misura è l'accessibilità, questa è definita come la capacità di un sito web di essere utilizzato in modo efficace da persone con un diverso raggio di abilità e capacità.
+Un'altra importante misura è l'accessibilità, questa è definita come la capacità di un sito web di essere utilizzato in modo efficace da persone con un diverso raggio di abilità e capacità \cite{campoverde2023accessibility}.
 Deve essere progettato e sviluppato in modo da consentire a tutti, comprese le persone con disabilità visive, uditive, motorie o cognitive, di accedere alle informazioni e alle funzionalità del sito senza ostacoli.
 \newline
 I principi chiave dell'acessibilità sono la \textbf{percezione}, l'\textbf{operabilità}, la \textbf{comprensione} e la \textbf{robustezza}.
@@ -1150,7 +1151,7 @@ Per quest'ultimo punto è stato necessario attuare degli accorgimenti per garant
 \section{Possibile implementazione aggiuntiva}
 Una possibile implementazione futura riguarda il modulo di contatto, attraverso il quale è possibile comunicare con il gruppo di ricerca.
 \textit{Tella} mette a disposizione nella versione originale la sezione "Contact" nella quale è presente un form compilabile.
-L'invio e la creazione di questo form sono state realizzate attraverso \textit{getform.io}, ovvero un generatore di moduli web personalizzati che permette di raccogliere i dati inseriti (ad esempio attraverso e-mail). 
+L'invio e la creazione di questo form sono state realizzate attraverso \textit{getform.io}, ovvero un generatore di moduli web personalizzati che permette di raccogliere i dati inseriti (ad esempio attraverso e-mail) \cite{getform}. 
 L'implementazione di questa funzionalità è stata svolta all'interno del file \textbf{form.html} nella cartella \textit{themes/tella/layouts/shortcodes}, il codice mostrato in \cref{img:formc}, attraverso il comando "action", permette di importare questa funzionalità definendo successivamente i campi desiderati.
 
 \begin{figure}
