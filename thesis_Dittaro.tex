@@ -22,15 +22,18 @@
 %% big: Come "sfbig", solo serif.
 %% plain: Apertura delle parti e dei capitoli tradizionali di LaTeX; intestazioni di pagina come "big".
 
-\usepackage[capitalise]{cleveref}
+\usepackage[italian, capitalise]{cleveref}
+
+\let\cleardoublepage = \clearpage
 
 \begin{document}
 \maketitle
 
 \newpage 
 \begin{flushright}
-     
-    \textit{Dedica da scrivere}
+    \textit{Alla mia famiglia,}
+
+    \textit{per aver sempre creduto in me.}
 \end{flushright} 
  
 %% Indice
@@ -69,7 +72,7 @@ Si fornirà una panoramica sui fattori chiavi e sulle strutture necessarie per r
 Verranno discussi i possibili temi e le scelte sulle funzionalità aggiuntive utili sia agli utenti che agli amministratori per ottenere informazioni e poter migliorare continuamente il servizio offerto.  
 \newline \newline
 Saranno anche presentati gli altri principali SSG disponibili, discusse le differenze più importanti tra loro e le motivazioni che possono portare a preferirne uno piuttosto che un'altro.  
-Verranno introdotte ed applicate le \textit{Web Analytics} attraverso un software meno utilizzato di "Google Analytics" ma ugualmente utile e produttivo.
+Verranno introdotte ed applicate le \textit{Web Analytics} attraverso un software meno utilizzato di ``Google Analytics" ma ugualmente utile e produttivo.
 In conclusione verrà presentata una possibile implementazione futura, utile per fornire un servizio aggiuntivo agli utenti.   
 
 %% Capitolo  
@@ -78,7 +81,7 @@ In conclusione verrà presentata una possibile implementazione futura, utile per
 %% Sezione
 \section{SSG}\label{sec:SSG}
 Gli SSG (in inglese, Static Site Generator) sono dei tool che permettono la creazione di tutti i contenuti presenti nei siti web a partire da file di configurazione e contenuti scritti in formati più generali (tipicamente markdown) \cite{camden2017working}.
-La caratteristica principale di tali siti è che a fronte di una richiesta da parte dell'utente di visualizzare determinati contenuti del sito, il web server fornisce pagine statiche, delle quali l'utente non è in grado di modificare il contenuto né possiede alcun tipo di stato che ne permetta la personalizzazione. Non esiste quindi una elaborazione back-end sul lato server e non esistono database, qualsiasi funzionalità "dinamica" associata al sito statico viene eseguita sul lato client. \newline
+La caratteristica principale di tali siti è che a fronte di una richiesta da parte dell'utente di visualizzare determinati contenuti del sito, il web server fornisce pagine statiche, delle quali l'utente non è in grado di modificare il contenuto né possiede alcun tipo di stato che ne permetta la personalizzazione. Non esiste quindi una elaborazione back-end sul lato server e non esistono database, qualsiasi funzionalità ``dinamica" associata al sito statico viene eseguita sul lato client. \newline
 I principali vantaggi riguardanti la scelta di utilizzo di un SSG sono:
 \begin{itemize}
 \item Ottimizzazione delle prestazioni: avendo poche o nessuna parte dinamica sono più facili da ottimizzare ed il caricamento è molto rapido;
@@ -88,7 +91,7 @@ I principali vantaggi riguardanti la scelta di utilizzo di un SSG sono:
 \end{itemize}
 
 %% Sezione
-\section{principali SSG}
+\section{Principali SSG}
 In questa sezione verranno menzionati i cinque principali SSG e discusse le loro differenze più significative. 
 
 %% Sottosezione
@@ -162,7 +165,7 @@ In conclusione, Jekyll è un'ottima scelta se si ha familiarità con l'ambiente 
 %% Sottosezione
 \subsection{Gridsome}
 Gridsome è un SSG molto recente, è stato infatti ideato da Johannes Schickling nel 2018 subendo poi miglioramenti negli anni successivi fino all'ultima versione disponibile, la 0.7.23, rilasciata a settembre 2021 \cite{gridsome-site}.
-Si tratta di un framework basato su Vue.js e GraphQL che permette di creare una configurazione "headless", consentendo così di sfruttare la separazione dei contenuti dalla loro presentazione.
+Si tratta di un framework basato su Vue.js e GraphQL che permette di creare una configurazione ``headless", consentendo così di sfruttare la separazione dei contenuti dalla loro presentazione.
 Le cartelle di lavoro possono variare in base alla configurazione specifica di un progetto, ma in generale sono strutturate nel modo seguente:
 
 \begin{itemize}
@@ -178,7 +181,7 @@ Anche Gridsome offre una vasta raccolta di plugin che possono essere utilizzati 
 \subsection{Eleventy}
 
 Eleventy (chiamato anche 11ty), come Gridsome, è un SSG molto recente ideato da Zach Leatherman nel 2018 e migliorato fino alla versione 2.0.0, rilasciata a febbraio 2023 \cite{eleventy-site}. 
-La sua crescita è dovuta sia alla sua flessibilià e potenza ma anche al sempre maggior utilizzo delle piattaforme di hosting come "Chrome Developers" e "Netlify". \newline
+La sua crescita è dovuta sia alla sua flessibilià e potenza ma anche al sempre maggior utilizzo delle piattaforme di hosting come ``Chrome Developers" e ``Netlify". \newline
 Questo software si base su Node.js e javascript, il che richiede una buona conoscenza di quest'ultimo linguaggio per poter sfruttare a pieno la sua potenzialità. Eleventy supporta molteplici linguaggi di modello ma fondamentalmente si base su Liquid, il che lo rende simie a Jekyll.
 Come tutti gli altri SSG supporta diversi linguaggi come ad esempio Markdown, JSON, YAML. \newline 
 La struttura di base contiene almeno le seguenti cartelle:
@@ -251,7 +254,7 @@ La seguente tabella riassume le caratteristiche dei cinque principali SSG visti 
 \section{Differenze tra siti statici e dinamici}
 Riprendendo la \cref{sec:SSG}, un'ulteriore differenza che si può notare tra siti statici e dinamici riguarda l'architettura client/server utilizzata. \newline
 Per quanto riguarda i siti dinamici, l'architettura adottata prende il nome di WAMP/LAMP, l'acronimo è composto dalle seguenti parole: la W/L riguarda il sistema operativo utilizzato (rispettivamente Windows oppure Linux),
-la A sta per Apache ovvero il server http impiegato per eseguire il server web, la M per il DBMS MySQL e la P per PHP \cite{andrzej2007development}. Alcune architetture utilizzano al posto di MySQL il DBMS MariaDB e al posto del PHP i linguaggi Python oppure Pearl (l'acronimo rimane comunque invariato). \newline
+la A sta per Apache ovvero il server http impiegato per eseguire il server web, la M per il DBMS MySQL e la P per PHP \cite{andrzej2007development}. Alcune architetture utilizzano al posto di MySQL il DBMS MariaDB e al posto del PHP i linguaggi Python oppure Perl (l'acronimo rimane comunque invariato). \newline
 WAMP è quindi la piattaforma di sviluppo web grazie a cui è possibile realizzare dei siti web dinamici attraverso la programmazione con il linguaggio PHP, permettendo così la creazione dei siti direttamente sul computer. 
 Utilizzare questa architettura attraverso il PHP offre diversi vantaggi in quanto si tratta di uno dei linguaggi più frequentemente utilizzati in rete ed inoltre è il linguaggio di riferimento per WordPress, la principale piattaforma software per lo sviluppo di siti dinamici. 
 \begin{figure}
@@ -300,8 +303,8 @@ Alcune delle template actions più comuni in Hugo includono:
     \item \textbf{partial}: per includere modelli o contenuti da altri file. 
 \end{itemize}
 
-La \cref{img:if} mostra un esempio di utilizzo del controllo di flusso attraverso il costrutto "if", nello specifico verifica se nei parametri che descrivono la persona è presente un'immagine: in caso positivo mostra l'immagine corrispondente altrimenti un'immagine di default.
-La \cref{img:partial} mostra invece l'utilizzo della template action "partial", permettendo così di includere il file \textit{recent.html}. \newline 
+La \cref{img:if} mostra un esempio di utilizzo del controllo di flusso attraverso il costrutto ``if", nello specifico verifica se nei parametri che descrivono la persona è presente un'immagine: in caso positivo mostra l'immagine corrispondente altrimenti un'immagine di default.
+La \cref{img:partial} mostra invece l'utilizzo della template action ``partial", permettendo così di includere il file \textit{recent.html}. \newline 
 Nelle template actions è possibile anche selezionare specifici parametri come ad esempio \{\{ .Title \}\} che permette di inserire il titolo della pagina corrente. Allo stesso modo si può ottenere la descrizione (\{\{ .Description \}\}) o il sommario (\{\{ .Summary \}\}).
 
 \begin{figure}[b]
@@ -309,7 +312,7 @@ Nelle template actions è possibile anche selezionare specifici parametri come a
     \begin{minipage}{0.8\textwidth}
       \centering
       \includegraphics[width=0.8\textwidth]{images/if-template-actions.png}
-      \caption{Esempio di utilizzo della template action "if"}
+      \caption{Esempio di utilizzo della template action ``if"}
       \label{img:if}
     \end{minipage}
     \hspace{1cm}
@@ -317,7 +320,7 @@ Nelle template actions è possibile anche selezionare specifici parametri come a
     \begin{minipage}{0.5\textwidth}
       \centering
       \includegraphics[width=0.8\textwidth]{images/partial-template-actions.png}
-      \caption{Esempio di utilizzo della template action "partial"}
+      \caption{Esempio di utilizzo della template action ``partial"}
       \label{img:partial}
     \end{minipage}
 \end{figure}
@@ -329,7 +332,7 @@ Hugo supporta una grande varietà di Plugin che permettono di esetendere le funz
 \newline 
 \textbf{{\fontsize{12}{14}\selectfont Hugo-authors}}
 \newline \newline
-Il plugin "hugo-authors" è progettato per semplificare la gestione dei dati degli autori. Consente di definire e visualizzare le informazioni su di essi come nome, biografia, immagine del profilo e collegamenti ai social media, in modo più strutturato.
+Il plugin ``hugo-authors" è progettato per semplificare la gestione dei dati degli autori. Consente di definire e visualizzare le informazioni su di essi come nome, biografia, immagine del profilo e collegamenti ai social media, in modo più strutturato.
 \newline
 Per poter utilizzare questo plugin è necessario prima installarlo attraverso il modulo Hugo o includendolo nel file di configurazione (config.toml oppure config.yaml) e solo successivamente è possibile creare dei nuovi autori attraverso la seguente sintassi:
 \newline \newline
@@ -406,7 +409,7 @@ Il processo di generazione viene avviato attraverso il comando \textbf{hugo}, il
 \newline \newline
 Terminata la fase di generazione, Hugo applica i temi e genera il codice HTML e CSS per ogni pagina del sito. L'ultima fase prima di poter rendere le pagine distribuibili e visualizzabili consiste nel produrre un insieme di fogli di stile CSS, immagini e
 altri file statici, ciascuno rappresentante una pagina del sito. 
-Una variante più efficiente è il comando \textbf{hugo - -minify} che ottimizza il caricamento delle pagine minimizzando la dimensione dei file attraverso l'eliminazione di spazi vuoti, commenti e caratteri non necessari.
+Una variante più efficiente è il comando \textbf{hugo \texttt{--minify}} che ottimizza il caricamento delle pagine minimizzando la dimensione dei file attraverso l'eliminazione di spazi vuoti, commenti e caratteri non necessari.
 \newline
 Il risultato del processo di compilazione è la creazione di due cartelle:
 \begin{itemize}
@@ -420,14 +423,14 @@ In seguito alla generazione e compilazione, il sito può essere caricato su qual
 \newline
 Un esempio di questi servizi è \textit{Github Pages}, offerto da GitHub \cite{github-pages}. Quest'ultimo è uno dei servizi di hosting di repository Git più popolari al mondo che offre servizi per il controllo di versione, la collaborazione e l'hosting di progetti software (attrverso appunto Github Pages).
 Alcune delle principali funzionalità di GitHub includono il controllo di versione distribuito, il tracciamento delle modifiche, la collaborazione tra sviluppatori e molto altro.
-GitHub Pages è uno dei servizi offerti da Github che consente di pubblicare siti web statici direttamente da una repository GitHub, in particolare utilizza uno specifico branch chiamato "gh-pages" dal quale preleva il contenuto che viene poi pubblicato.
-Di default, l'indirizzo che viene assegnato è \textit{"https://NOME\_UTENTE.github.io/NOME\_REPOSITORY/"} ma supporta anche domini personalizzati. 
+GitHub Pages è uno dei servizi offerti da Github che consente di pubblicare siti web statici direttamente da una repository GitHub, in particolare utilizza uno specifico branch chiamato ``gh-pages" dal quale preleva il contenuto che viene poi pubblicato.
+Di default, l'indirizzo che viene assegnato è \textit{``https://NOME\_UTENTE.github.io/NOME\_REPOSITORY/"} ma supporta anche domini personalizzati. 
 \newline 
 GitHub Pages tuttavia presenta dei limiti sulla dimensione dei siti che consente di hostare:
 \begin{itemize}
     \item Le dimensioni della repository utilizzata per creare il sito web non deve essere superiore ad un 1GB;
     \item Le risorse messe a disposizione sono limitate a 100GB di banda e 100.000 richieste al mese;
-    \item Non si dovrebbero eseguire più di dieci "build" per ora, per evitare di sovraccaricare i server e mantenerli performanti per tutti gli utenti.
+    \item Non si dovrebbero eseguire più di dieci ``build" per ora, per evitare di sovraccaricare i server e mantenerli performanti per tutti gli utenti.
 \end{itemize}
 I limiti appena citati possono essere superati attraverso un piano di pagamento del servizio.
 \newline
@@ -461,7 +464,7 @@ L'utilizzo e l'implementazione di umami verranno riprese nel \cref{cap:casostudi
 %% Sezione
 \section{Analisi dei requisiti}
 Nella realizzazione di un sito web bisogna tenere in considerazione diversi aspetti che possono influenzare la buona riuscita del progetto, come ad esempio l'usabilità, l'accessibilità, l'organizzazione dei contenuti e molto altro.
-Per questo motivo esistono delle linee guida e degli approcci consolidati che permettono di creare siti web di buona qualità \cite{hong2006influence}. Queste "best practice" si basano sull'esperienza e su ricerche condotte nel campo della progettazione web, le più comuni sono:
+Per questo motivo esistono delle linee guida e degli approcci consolidati che permettono di creare siti web di buona qualità \cite{hong2006influence}. Queste ``best practice" si basano sull'esperienza e su ricerche condotte nel campo della progettazione web, le più comuni sono:
 \begin{itemize}
     \item \textbf{Usabilità}: il sito deve essere intuitivo da utilizzare, la navigazione deve essere chiara e gli utenti dovrebbero essere in grado di trovare facilmente ciò di cui hanno bisogno;
     \item \textbf{Responsive Design}: il sito deve essere ottimizzato per dispositivi desktop, tablet e smartphone. Deve quindi adattarsi a diverse dimensioni di schermo;
@@ -475,7 +478,7 @@ La loro applicazione dipenderà ovviamente dalle esigenze specifiche del sito e 
 %% Sezione
 \section{User Experience}
 Il fattore forse più importante da tenere in considerazione nella realizzazione di un sito web è l'esperienza dell'utente (UX), questo termine si riferisce a quello che prova una persona quando interagisce o immagina di interagire con un prototipo, un prodotto finito, un sistema od un servizio \cite{hassenzahl2006user}.
-L'UX oltrepassa i limiti di altri termini come "interfaccia utente" e "usabilità" in quanto comprende tutti gli aspetti dell'esperienza che le persone hanno con i sistemi interattivi.
+L'UX oltrepassa i limiti di altri termini come ``interfaccia utente" e ``usabilità" in quanto comprende tutti gli aspetti dell'esperienza che le persone hanno con i sistemi interattivi.
 \newline 
 Sono stati identificati tre livelli, basati sulle risorse fisiologiche e psicologiche mobilitate dall'utente durante l'interazione:
 \begin{itemize}
@@ -520,7 +523,7 @@ Un ulteriore problema che si pone è la scelta del numero di voci, questa proble
     \end{minipage}
 \end{figure}
 \subsection{Tipologie di temi}
-Un'altra distinzione degna di nota in Hugo riguarda la possibilità di installare "temi standard" e "temi non standard". I primi si riferiscono ai temi precdentemente descritti mentre i secondi sono più complessi in quanto offrono delle funzionalità e dell'estetica superiore, rendendo necessariamnete più complesso e costoso lo sviluppo ed il mantenimento.
+Un'altra distinzione degna di nota in Hugo riguarda la possibilità di installare ``temi standard" e ``temi non standard". I primi si riferiscono ai temi precdentemente descritti mentre i secondi sono più complessi in quanto offrono delle funzionalità e dell'estetica superiore, rendendo necessariamnete più complesso e costoso lo sviluppo ed il mantenimento.
 \newline \newline
 \textbf{{\fontsize{12}{14}\selectfont Installazione temi standard}}
 \newline \newline
@@ -554,7 +557,7 @@ Nella stessa pagina è poi disponibile la possibilità di provare la demo e sono
 
 %% Sottosezione
 \subsection{Struttura di Tella}
-Sebbene Tella sia stato utilizzato per la realizzazione di un sito accademico, nel sito di Hugo viene classificato nel gruppo "Company". Tuttavia possiede alcune caratteristiche riconducibili ad un sito adatto per un'università, soprattutto se vengo effettuati alcuni accorgimenti
+Sebbene Tella sia stato utilizzato per la realizzazione di un sito accademico, nel sito di Hugo viene classificato nel gruppo ``Company". Tuttavia possiede alcune caratteristiche riconducibili ad un sito adatto per un'università, soprattutto se vengo effettuati alcuni accorgimenti
 e rimosse alcune sezioni. 
 In particolare si può sfruttare la presenza del menù orizzonatale, in quanto rappresenta proprio una delle caratteristiche cercate. 
 \newline
@@ -563,9 +566,9 @@ Il file di configurazione generale \textit{config.toml} è presente all'interno 
 \subsection{Implementazione di Tella}
 Prima di poter installare il tema scelto è necessario creare un nuovo sito da terminale attraverso il comando \textbf{hugo new site NOME\_SITO}, a questo punto si seguono le istruzioni riportate sulla pagina di presentazione di Tella (è richiesta l'installazione di Git):
 \begin{enumerate}
-    \item Dalla cartella creata attraverso il comando precedente, digitare \newline \textbf{git clone https://github.com/opera7133/tella themes/tella}, il risultato sarà la creazione di una nuova cartella "Tella" all'interno di "Themes" dove sarà presente tutto il contenuto della repository clonata;
-    \item Il seguente comando è necessario per aggiornare il tema in caso di modifiche alla repository di Github, alla prima creazione non è pertanto necessario. Per farlo bisogna prima spostarsi all'interno della cartella "Tella" attraverso il comando \textbf{cd tella}, a questo punto si può eseguire \textbf{git pull};
-    \item Installazione delle dipendenze: seguendo i passi elencati nel sito ufficiale è necessario copiare i file "package.json", "tailwind.config.js" e "postcss.config.js" dalla cartella \textit{exampleSite} alla cartella radice del progetto;
+    \item Dalla cartella creata attraverso il comando precedente, digitare \newline \textbf{git clone https://github.com/opera7133/tella themes/tella}, il risultato sarà la creazione di una nuova cartella ``Tella" all'interno di ``Themes" dove sarà presente tutto il contenuto della repository clonata;
+    \item Il seguente comando è necessario per aggiornare il tema in caso di modifiche alla repository di Github, alla prima creazione non è pertanto necessario. Per farlo bisogna prima spostarsi all'interno della cartella ``Tella" attraverso il comando \textbf{cd tella}, a questo punto si può eseguire \textbf{git pull};
+    \item Installazione delle dipendenze: seguendo i passi elencati nel sito ufficiale è necessario copiare i file ``package.json", ``tailwind.config.js" e ``postcss.config.js" dalla cartella \textit{exampleSite} alla cartella radice del progetto;
     \item L'ultimo passo prima di poter visualizzare il sito è quello di installare npm attraverso il comando \textbf{npm install};
     \item Una volta installato, npm permette di visualizzare il sito digitando \textbf{npm run start} (equivalente a \textbf{hugo server}). Il risultato sarà visibile all'indirizzo 127.0.0.1:1313.
 \end{enumerate}
@@ -595,10 +598,10 @@ La pagina iniziale, come si può vedere nelle \cref{img:indexin} e \cref{img:ind
     \item Il blocco intermedio posto sotto le foto scorrevoli è stato rimosso eliminando il file \textit{features.json} nella stessa cartella del punto precedente; 
     \item Parte del menù posto in fondo alla pagina è stato cancellato con l'eliminazione del contenuto del file \textit{footer.html} all'interno della cartella \textit{themes/tella/layouts/partials}
 \end{itemize}
-È stata poi creata una sezione di "About us" immediatamente sotto le immagini, la quale conterrà una descrizione del lavoro svolto dallo specifico gruppo di ricerca. Si è scelto di assegnare un colore di sfondo diverso dal resto della pagina per risaltarne la posizione ed il contenuto.
+È stata poi creata una sezione di ``About us" immediatamente sotto le immagini, la quale conterrà una descrizione del lavoro svolto dallo specifico gruppo di ricerca. Si è scelto di assegnare un colore di sfondo diverso dal resto della pagina per risaltarne la posizione ed il contenuto.
 \newline
 L'ultima modifica effetuata riguarda l'informazione ed il collegamento interno presente nella pagina di index. Si è scelto di riservare questo spazio per l'elencazione delle news in modo tale che vengano presentate le tre più recenti
-mentre l'elenco completo è reso disponibile sia attraverso la voce nel menù orizzontale sia attraverso il tasto \textbf{"All news"} in fondo alla pagina. 
+mentre l'elenco completo è reso disponibile sia attraverso la voce nel menù orizzontale sia attraverso il tasto \textbf{``All news"} in fondo alla pagina. 
 Per realizzare questa idea sono state sfruttare le Template actions descritte nella \cref{sec:tactions}, la pagina di index include infatti il file \textit{recent.html} posto all'interno della cartella \textit{partials} che attraverso la funzione di range (in questo caso impostata al valore 3) permette di realizzare l'obbiettivo. 
 Questo file richiama a sua volta \textit{summary.html}, utilizzato per rappresentare il titolo, la breve descrizione e la data presenti in ogni news. 
 \begin{figure}
@@ -636,12 +639,12 @@ Dato che nell'architettura di un sito web statico (descritta in \cref{img:archit
 In particolare la libreria permette di effettuare staticamente delle ricerche e di indicizzare i contenuti. 
 I passi seguiti per la realizzazione della barra di ricerca sono i seguenti:
 \begin{enumerate}
-    \item Creazione della pagina Markdown per la visualizzazione dei risultati: è necessario creare una cartella "search" all'interno della cartella \textit{content}, questa cartella conterrà il file "\_index.md" il quale racchiude solamente il front-matter con la riga \textbf{{\selectfont title: Search}};
+    \item Creazione della pagina Markdown per la visualizzazione dei risultati: è necessario creare una cartella ``search" all'interno della cartella \textit{content}, questa cartella conterrà il file ``\_index.md" il quale racchiude solamente il front-matter con la riga \textbf{{\selectfont title: Search}};
     \item Ogni file markdown necessita la creazione di un file HTML di template per la presentazione dei contenuti. Tale file, chiamato \textit{list.html} è contenuto all'interno della cartella \textit{layouts/search}.
     \newline \newline
-    La \cref{img:list} mostra l'organizzazione della pagina di visualizzazione dei risultati. Il file è organizzato in due parti importanti, la prima riguarda la sezione \textbf{\textless h2\textgreater} dove l'id "search-title" verrà utilizzato come titolo della pagina, in quanto viene salvato e richiamato dalla template action \{\{ .Name \}\}. 
+    La \cref{img:list} mostra l'organizzazione della pagina di visualizzazione dei risultati. Il file è organizzato in due parti importanti, la prima riguarda la sezione \textbf{\textless h2\textgreater} dove l'id ``search-title" verrà utilizzato come titolo della pagina, in quanto viene salvato e richiamato dalla template action \{\{ .Name \}\}. 
     La seconda parte riguarda il tag \textbf{\textless ul\textgreater} che verrà utilizzato per elencare i risultati di ricerca.
-    \item Costruzione della struttura dati: questo avviene attraverso il file "search-index.html" posto all'interno della cartella \textit{themes/tella/layouts/partials}. Il file contiene il seguente codice:
+    \item Costruzione della struttura dati: questo avviene attraverso il file ``search-index.html" posto all'interno della cartella \textit{themes/tella/layouts/partials}. Il file contiene il seguente codice:
     \newline \newline \textless script\textgreater 
     \newline window.store = \{ 
         \newline \{\{ range .Site.RegularPages\}\}
@@ -667,15 +670,15 @@ I passi seguiti per la realizzazione della barra di ricerca sono i seguenti:
         \label{img:form}
     \end{figure}
     \newline
-    La realizzazione avviene attraverso il file "search-form.html" contenuto nella cartella 
+    La realizzazione avviene attraverso il file ``search-form.html" contenuto nella cartella 
     \newline \textit{themes/tella/layouts/partials}, il codice è rappresentato in \cref{img:form}.
     Il tag form contiene l'aspetto grafico della funzione di ricerca. All'interno di questo tag, viene richiamato tramite una template action il file \textit{list.html} citato precedentemente (\cref{img:list}), Hugo utlizzerà questo template in combinazione con il file \textit{\_index.md} per generare la pagina finale. 
     \newline \newline 
-    Una nota importante riguarda la creazione della cartella "search" all'interno di "content", questa è necessaria in quanto Hugo usa lo stesso percorso del template HTML selezionato con “GetPage” per trovare il file Markdown da renderizzare. 
+    Una nota importante riguarda la creazione della cartella ``search" all'interno di ``content", questa è necessaria in quanto Hugo usa lo stesso percorso del template HTML selezionato con “GetPage” per trovare il file Markdown da renderizzare. 
     Risulta poi pratico includere il file \textit{search-form.html} all'interno di \textit{search-index.html} in modo da includere entrambi i file ogni volta che il primo di essi verrà richiamato. 
     \newline
-    Affinchè la funzione di ricerca sia visibile nel menù, il file \textit{search-form.html} è stato incluso all'interno del file "header.html", presente nella cartella \textit{themes/tella/layouts/partials}.
-    \item Creazione dello script di ricerca: in questa fase verrà sfruttata la libreria Lunr.js e la funzione di ricerca verrà svolta da un codice javascript, è neccessario pertanto creare il file "search.js" all'interno della cartella \textit{themes/tella/static/js}.
+    Affinchè la funzione di ricerca sia visibile nel menù, il file \textit{search-form.html} è stato incluso all'interno del file ``header.html", presente nella cartella \textit{themes/tella/layouts/partials}.
+    \item Creazione dello script di ricerca: in questa fase verrà sfruttata la libreria Lunr.js e la funzione di ricerca verrà svolta da un codice javascript, è neccessario pertanto creare il file ``search.js" all'interno della cartella \textit{themes/tella/static/js}.
     \newline \newline 
     Il primo compito che viene svolto è quello di prelevare la stringa inserita come ricerca, questo viene fatto dalle seguenti righe di codice:
     \newline \newline
@@ -685,32 +688,32 @@ I passi seguiti per la realizzazione della barra di ricerca sono i seguenti:
     \newline \newline
     La prima riga permette di ottenere l'URL della ricerca che è rappresentato nel modo seguente: \textit{/PERCORSO/search/?query=STRINGA CERCATA}.
     \newline
-    Nella seconda riga viene poi prelevato, tramite il metodo "params.get", solo il contenuto di interesse (rappresentato nell'esempio da \textit{STRINGA CERCATA}) che viene salvato all'interno della variabile "query".
+    Nella seconda riga viene poi prelevato, tramite il metodo ``params.get", solo il contenuto di interesse (rappresentato nell'esempio da \textit{STRINGA CERCATA}) che viene salvato all'interno della variabile ``query".
     \newline \newline
     La parte seguente del codice riguarda il contenuto della condizione di \textbf{if} (\cref{img:ifpart}) che viene eseguita solo se la query non è vuota. La riga immediatamente successiva è molto importante in quanto mantiene la query nel modulo di ricerca dopo il reindirizzamento della pagina, senza questa funzione non sarebbe infatti possibile svolgere alcuna operazione su di essa.
     \newline
     Viene successivamente creata la variabile \textbf{idx} che rappresenta l'indice creato dalla funzione lunr, necessario per definire come le pagine del sito web verranno indicizzate e pesate durante la ricerca.
     \newline
-    All'interno della stessa funzione, l'indice è diviso in più field e comprende anche il comando \textit{boost}, il quale assegna ai campi "title" e "content" una priorità di ricerca più alta, in modo da essere analizzati per primi.  
+    All'interno della stessa funzione, l'indice è diviso in più field e comprende anche il comando \textit{boost}, il quale assegna ai campi ``title" e ``content" una priorità di ricerca più alta, in modo da essere analizzati per primi.  
     \newline
     A questo punto l'indice viene popolato attraverso la struttura dati \textbf{windows.store} che, essendo utilizzato dentro un ciclo for, permette di concludere la fase di riempimento.
     \newline \newline
     La stesura del codice prosegue poi con la definizione delle seguenti due variabili:
     \begin{itemize}
-        \item sringQuery: questa variabile è necessaria per evitare che i risultati di ricerca includano solamente la stringa cercata e non i suoi prefissi e suffissi. Ad esempio se la parola inserita è "computer", l'assenza di questa variabile non mostrerebbe tra i risultati la parola "computers";
+        \item stringQuery: questa variabile è necessaria per evitare che i risultati di ricerca includano solamente la stringa cercata e non i suoi prefissi e suffissi. Ad esempio se la parola inserita è ``computer", l'assenza di questa variabile non mostrerebbe tra i risultati la parola ``computers";
         \item results: questa variabile contiene sia i risultati parziali che i risultati esatti.
     \end{itemize}
-    Al termine di questi assegnamenti viene eseguita la funzione \textbf{displayResults} a cui vengono passati come argomenti i risultati di ricerca e le pagine salvate nello store. Viene poi sostituito il titolo della pagina facendo riferimento all'identificativo "search-title", definito all'interno del template \textit{list.html}. 
+    Al termine di questi assegnamenti viene eseguita la funzione \textbf{displayResults} a cui vengono passati come argomenti i risultati di ricerca e le pagine salvate nello store. Viene poi sostituito il titolo della pagina facendo riferimento all'identificativo ``search-title", definito all'interno del template \textit{list.html}. 
     \newline \newline
     La funzione di stampa dei risultati (\cref{img:results}), nel caso in cui ce ne siano, crea una lista (\textit{resultList}) che viene popolata dal ciclo for immediatamente successivo. Il ciclo ne incrementa la dimensione ad ogni iterazione utilizzando la variabile \textbf{item} che prende dallo store il valore dei campi sulla base del \textbf{ref} del risultato. 
-    Questo permette la stampa a video del titolo, l'URL e il contenuto della pagina. Nel caso in cui non vengano trovati risultati, viene stampata la stringa "No results found".
+    Questo permette la stampa a video del titolo, l'URL e il contenuto della pagina. Nel caso in cui non vengano trovati risultati, viene stampata la stringa ``No results found".
     \newline \newline
     Un'altra funzione ausiliaria molto utile per la qualità del risultato è \textbf{highlightSearchTerm}, la quale evidenzia i risultati trovati, facilitando l'utente nella distinzione e nel riconscimento di essi. 
     \newline
     Un'altra idea sviluppata per facilitare l'utente riguarda l'organizzazione e la colorazione della pagina. Il codice CSS in \cref{img:cssres}, permette di applicare un colore di sfondo diverso rispetto al contenuto ad ogni pagina contenente un risultato di ricerca. 
     \newline \newline
     I risultati vengono infine stampati dall'ultimo comando: \textbf{searchResults.innerHTML = resultList}.
-    \item L'ultimo passo è quello di includere il file \textit{search.js} e la libreria \textit{Lunr.js} nel sito. Per fare questo si deve creare un nuovo file "search-lunr.html" all'interno della cartella \textit{themes/tella/layouts/partials}. 
+    \item L'ultimo passo è quello di includere il file \textit{search.js} e la libreria \textit{Lunr.js} nel sito. Per fare questo si deve creare un nuovo file ``search-lunr.html" all'interno della cartella \textit{themes/tella/layouts/partials}. 
     Questo file contiene due script che permettono di importare, e quindi di utilizzare il file javascript. Il suo contenuto è il seguente:
     \newline \newline
     \textbf{
@@ -752,7 +755,7 @@ Un esempio del risultato che si ottiene è mostrato in \cref{img:exres}
     \begin{minipage}{0.5\textwidth}
       \centering
       \includegraphics[width = 0.8\textwidth]{images/ex-research.png}
-      \caption{Risultato della ricerca "text"}
+      \caption{Risultato della ricerca ``text"}
       \label{img:exres}
     \end{minipage}
 \end{figure}
@@ -776,7 +779,7 @@ In questo caso \textbf{@book} è il tipo di voce (nell'esempio è un libro), \te
 \newline
 I file bibtex sono privi di qualsiasi informazione riguardante lo stile di presentazione, è necessario pertanto ricorrere ad altre soluzioni. Piattaforme di sviluppo di siti web dinamici permettono la conversione di questi file grazie all'installazione di plugin (è ad esempio il caso di \textit{WordPress}), mentre gli SSG necessitano di altri accorgimenti.
 \newline
-La soluzione adottata in questa tesi, considera un unico file bibtex contente le varie pubblicazioni. Verrà utilizzato "Pandoc", "Pybtex" e un codice Python per la conversione in file Markdown e per la successiva pubblicazione. Il funzionamento verrà illustrato nelle pagine successive. 
+La soluzione adottata in questa tesi, considera un unico file bibtex contente le varie pubblicazioni. Verrà utilizzato ``Pandoc", ``Pybtex" e un codice Python per la conversione in file Markdown e per la successiva pubblicazione. Il funzionamento verrà illustrato nelle pagine successive. 
 \newline \newline
 \textbf{{\fontsize{12}{14}\selectfont Pandoc}}
 \newline \newline
@@ -797,17 +800,17 @@ Essendo una libreria di python, necessita di essere installata. Il caso di studi
 \newline \newline
 \textbf{{\fontsize{12}{14}\selectfont Implementazione del codice Python}}
 \newline \newline
-Il codice sviluppato, oltre alla libreria pybtex, necessita di una seconda estensione. Per formattare la data in uno specifico formato deve essere infatti installata anche la libreria "python-dateutil", per farlo il comando da eseguire è \textbf{pip install python-dateutil}.
+Il codice sviluppato, oltre alla libreria pybtex, necessita di una seconda estensione. Per formattare la data in uno specifico formato deve essere infatti installata anche la libreria ``python-dateutil", per farlo il comando da eseguire è \textbf{pip install python-dateutil}.
 \newline
-Come detto precedentemente, tutti i file bibtex sono contenuti all'interno di un unico file che in questo caso è stato chiamato \textit{pubs.bib}. Il codice python \textit{process\_bibliography.py} riceve come argomento "pubs.bib", sul quale svolge le seguenti operazioni:
+Come detto precedentemente, tutti i file bibtex sono contenuti all'interno di un unico file che in questo caso è stato chiamato \textit{pubs.bib}. Il codice python \textit{process\_bibliography.py} riceve come argomento ``pubs.bib", sul quale svolge le seguenti operazioni:
 \begin{enumerate}
     \item Controllo dell'installazione di pandoc: prima di poter iniziare qualsiasi fase di conversione e formattazione, viene eseguita una verifica dell'installazione di pandoc. 
     \newline
-    Nel main viene richiamata la funzione \textbf{pandoc\_version\_check()} la quale attraverso il comando "pandoc - -version" ne verifica l'installazione. 
+    Nel main viene richiamata la funzione \textbf{pandoc\_version\_check()} la quale attraverso il comando ``pandoc \texttt{--version}" ne verifica l'installazione. 
     Nel caso in cui il controllo fallisca, viene generato un messaggio di errore, altrimenti si procede con i passaggi successivi.
-    \item La prima funzione utilizzata è \textit{gen\_refs()} (\cref{img:genrefs}) la quale riceve come argomento dal main il file sorgente "pubs.bib". Le operazioni svolte sono:
+    \item La prima funzione utilizzata è \textit{gen\_refs()} (\cref{img:genrefs}) la quale riceve come argomento dal main il file sorgente ``pubs.bib". Le operazioni svolte sono:
     \begin{itemize}
-        \item Generazione di una variabile \textit{target}, dentro la quale viene estratto il nome del file bibtex (senza estensione) e generato il file di destinazione aggiungendo al nome ottenuto l'estensione \textbf{.yml}. A questo punto la varaibile "target" contiene il file \textit{pubs.yml};
+        \item Generazione di una variabile \textit{target}, dentro la quale viene estratto il nome del file bibtex (senza estensione) e generato il file di destinazione aggiungendo al nome ottenuto l'estensione \textbf{.yml}. A questo punto la varaibile ``target" contiene il file \textit{pubs.yml};
         \item Chiamata al filtro citeproc, al quale vengono passati il file iniziale ed il file target. Questa funzione è responsabile della conversione dei dati bibliografici dal formato BibTeX al formato YAML;
         \item La variabile \textbf{bib} utilizza pybtex per analizzare il file BibTeX sorgente, al termine conterrà i dati bibliografici;
         \item Apertura del file di destinazione \textit{target} e successivamente caricati i dati YAML all'interno della variabile \textbf{ybib};
@@ -817,15 +820,15 @@ Come detto precedentemente, tutti i file bibtex sono contenuti all'interno di un
     \item Successivamente viene richiamata la funzione \textit{gen\_items} (\cref{img:genitems1} e \cref{img:genitems2}) attraverso la quale sarà possibile ottenere un file Markdown per ogni singola pubblicazione. Il risultato viene ottenuto dai seguenti passaggi:
     \begin{itemize}
         \item La variabile \textit{output\_keys} rappresenta una lista di chiavi che vengono utilizzate per estrarre specifici campi dai dati bibliografici, come ad esempio DOI, URL, abstract;
-        \item Viene verificata l'esistenza della cartella "content", la quale viene creata nel caso in cui non sia presente. Nella \cref{subsec:shugo} viene spiegata l'importanza di questa cartella, contiene infatti tutto il contenuto del sito in file di formato Markdown;
+        \item Viene verificata l'esistenza della cartella ``content", la quale viene creata nel caso in cui non sia presente. Nella \cref{subsec:shugo} viene spiegata l'importanza di questa cartella, contiene infatti tutto il contenuto del sito in file di formato Markdown;
         \item Successivamente il codice svolge un ciclo su ciascun elemento nei dati bibliografici, su ognuno di essi esegue una serie di controlli e manipolazioni dei dati, inclusi cambiamenti di chiavi, formattazione e pulizia dei dati.
         \newline
         Viene creata una variabile \textit{header\_items} contenente solo le informazioni specificate in \textit{output\_keys}, e viene aggiunto un campo \textit{id}.
         \newline
-        Verifica l'esistenza di un campo "url" nelle informazioni bibliografiche. Se presente, il codice verifica la presenza di un campo "doi". In caso contrario, viene elaborato l'URL, rimuovendo eventuali proxy istituzionali dal hostname.
-        Se esistono campi "preprint" o "ssrn" nelle informazioni bibliografiche, vengono aggiunti al file di pubblicazione.
+        Verifica l'esistenza di un campo ``url" nelle informazioni bibliografiche. Se presente, il codice verifica la presenza di un campo ``doi". In caso contrario, viene elaborato l'URL, rimuovendo eventuali proxy istituzionali dal hostname.
+        Se esistono campi ``preprint" o ``ssrn" nelle informazioni bibliografiche, vengono aggiunti al file di pubblicazione.
         \newline 
-        Infine viene aperto un file di output con estensione ".md" nel percorso "content" e vengono scritti i dati bibliografici e l'eventuale abstract.
+        Infine viene aperto un file di output con estensione ``.md" nel percorso ``content" e vengono scritti i dati bibliografici e l'eventuale abstract.
     \end{itemize}
     \item L'ultimo passaggio consiste nel spostare i file Markdown appena creati all'interno della cartella \textit{content/publications}. Solo in seguito a questo passaggio i file saranno visibili da Hugo. 
 \end{enumerate}
@@ -890,9 +893,9 @@ Nella \cref{subsec:umami} è stato introdotto il concetto delle web analytics co
 \newline \newline
 L'intera procedura di inizializzazione e di visualizzazione dei risultati può essere fatta sul sito ufficiale (previa registrazione ed autenticazione). I passaggi da seguire sono i seguenti:
 \begin{enumerate}
-    \item Aggiunta di un nuovo sito web: attraverso il tasto "Add website" è possibile iniziare la procedura di collegamento di un nuovo sito. 
+    \item Aggiunta di un nuovo sito web: attraverso il tasto ``Add website" è possibile iniziare la procedura di collegamento di un nuovo sito. 
           Verrà richiesta la compilazione di due campi: un nome arbitrario che identifica il nuovo collegamento e l'URL del sito;
-    \item Inserimento del tracking code: il secondo passaggio consiste nel copiare il tracking code all'interno del file \textit{head.html}. Lo script è disponibile cliccando su "Edit" e successivamente su "Tracking code".
+    \item Inserimento del tracking code: il secondo passaggio consiste nel copiare il tracking code all'interno del file \textit{head.html}. Lo script è disponibile cliccando su ``Edit" e successivamente su ``Tracking code".
           A questo punto umami inizierà a rilevare le informazioni di base: il numero di visitatori, le pagine visitate, il paese da cui è avvenuto il collegamento, browser, sistema operativo e dispositivo utilizzato.
     \item Rilevazione di specifici eventi: umami consente di tener traccia anche di eventi specifici che possono dipendere dal tipo di sito che si sta utilizzando. Questo può essere svolto in due modi:
     \begin{itemize}
@@ -900,7 +903,7 @@ L'intera procedura di inizializzazione e di visualizzazione dei risultati può e
         \begin{center}
         \textless button id="signup-button" data-umami-event="Signup button"\textgreater Sign up\textless /button\textgreater
         \end{center}
-        In questo caso, quando l'utente clicca sul bottone, umami rileva l'evento e gli assegna il nome "Signup button"
+        In questo caso, quando l'utente clicca sul bottone, umami rileva l'evento e gli assegna il nome ``Signup button"
         \item \textbf{JavaScript}: in questo caso l'evento deve essere rilevato manualmente utilizzando l'oggetto \textit{window.umami}. Riprendendo l'esempio precedente, in questo caso diventa:
         \begin{center}
             const button = document.getElementById('signup-button');
@@ -923,7 +926,7 @@ Il primo step è quello di cambiare un'impostazione nel file di configurazione \
 \end{center}
 Questo campo risulta importante perchè è quello utilizzato da Hugo per generare i link delle pagine staticamente. I link delle altre pagine vengono infatti costruiti a partire dal baseURL al quale viene aggiunto il nome specifico (ad esempio \textit{"https://NOME\_UTENTE.github.io/NOME\_REPOSITORY/people/"}).
 \newline
-Il servizio di GitHub pages preleva il contenuto da uno specifico branch chiamato "gh-pages", per prima cosa è necessario quindi crearlo. Per risparmiare tempo e spazio nell'operazione di \textit{deploy}, conviene inserire in questo branch solamente la cartella \textit{public}. 
+Il servizio di GitHub pages preleva il contenuto da uno specifico branch chiamato ``gh-pages", per prima cosa è necessario quindi crearlo. Per risparmiare tempo e spazio nell'operazione di \textit{deploy}, conviene inserire in questo branch solamente la cartella \textit{public}. 
 I comandi da terminale da eseguire sono i seguenti:
 \begin{enumerate}
     \item Esecuzione del comando \textbf{hugo}: genera le cartelle \textit{public} e \textit{resources};
@@ -933,12 +936,12 @@ I comandi da terminale da eseguire sono i seguenti:
         \item git commit -m "MESSAGGIO"
         \item git push
     \end{itemize}
-    \item Esecuzione del comando \textbf{git subtree push - -prefix public origin gh-pages}: questo permette le creazione del branch \textit{gh-pages}, sul quale viene inserito solamente il contenuto della cartella "public" 
+    \item Esecuzione del comando \textbf{git subtree push \texttt{--prefix} public origin gh-pages}: questo permette le creazione del branch \textit{gh-pages}, sul quale viene inserito solamente il contenuto della cartella ``public" 
 \end{enumerate}
 Al termine di questo procedimento si può passare all'attivazione del servizio GitHub Pages, per farlo ci si deve spostare sulla sezione \textit{Settings} e dal menù che compare sulla sinistra dello schermo selezionare la voce \textit{Pages}.
-A questo punto scegliere l'impostazione "deploy from a branch" nel campo \textbf{Source} e nella voce \textbf{Branch} selezionare "gh-pages" e "root".
+A questo punto scegliere l'impostazione ``deploy from a branch" nel campo \textbf{Source} e nella voce \textbf{Branch} selezionare ``gh-pages" e ``root".
 \newline
-Salvando le impostazioni appena create, github avvierà il processo di pubblicazione il quale richiederà del tempo. Al completamento dell'operazione, sarà disponibile una nuova sezione "Vist site": 
+Salvando le impostazioni appena create, github avvierà il processo di pubblicazione il quale richiederà del tempo. Al completamento dell'operazione, sarà disponibile una nuova sezione ``Vist site": 
 cliccando su di essa si verrà reindirizzati al baseURL inserito precedentemente. 
 
 \begin{figure}[b]
@@ -957,7 +960,7 @@ I passaggi da seguire per rendere pubbliche le modifiche sono le stesse riportat
     \item git push
     \item git subtree push --prefix public origin gh-pages
 \end{enumerate}
-La procedura di aggiornamento è visibile nella sezione \textit{Actions} della propria repository. Le voci "pages build and deployment" inizialmente avranno un logo giallo a simboleggiare lo svolgimento dell'operazione, 
+La procedura di aggiornamento è visibile nella sezione \textit{Actions} della propria repository. Le voci ``pages build and deployment" inizialmente avranno un logo giallo a simboleggiare lo svolgimento dell'operazione, 
 al termine la spunta verde indica il completamento dell'aggiornamento e le modifiche sono completate e visibili. 
 
 %% Sottosezione
@@ -967,9 +970,9 @@ Riepilogando, le operazioni da eseguire per la pubblicazione e l'aggiornamento s
 \begin{itemize}
     \item Caricamento dell'intero sito su una repository GitHub;
     \item Modifica del baseURL;
-    \item Creazione del branch "gh-peges";
+    \item Creazione del branch ``gh-peges";
     \item Operazione di \textit{add}, \textit{commit} e \textit{push} sul branch principale;
-    \item \textit{push} della cartella "public" sul branch "gh-pages".
+    \item \textit{push} della cartella ``public" sul branch ``gh-pages".
 \end{itemize}
 
 %% Sezione
@@ -992,13 +995,13 @@ In questa sezione verrà analizzata la visualizzazione del sito su diversi dispo
 \newline
 La portabilità di un sito web si riferisce alla capacità di un sito di essere facilmente trasferito o replicato su diverse piattaforme, server o ambienti senza problemi significativi o modifiche sostanziali, garantendo le stesse funzionalità. \cite{chiuchi2011efficiency}
 \newline
-"Tella" presenta già alcuni accorgimenti che vengono adottati. Ad esempio, nel caso in cui ci sia una riduzione dello schermo disponibile, 
-il menù orizzontale viene sostituito con un menù ad "hamburger", dentro al quale le voci vengono posizionate verticalmente.
+``Tella" presenta già alcuni accorgimenti che vengono adottati. Ad esempio, nel caso in cui ci sia una riduzione dello schermo disponibile, 
+il menù orizzontale viene sostituito con un menù ad ``hamburger", dentro al quale le voci vengono posizionate verticalmente.
 \newline
 Tuttavia le funzionalità aggiunte e le strutture che si è scelto di adottare necessitano di codice aggiuntivo per pemettere una corretta visualizzazione di tutti gli elementi presenti.
 %% Sottosezione
 \subsection{Adattamento della funzione di ricerca}
-La barra di ricerca posta all'estremità destra del menù orizzontale non viene inizialmente inclusa nel menù ad "hamburger". 
+La barra di ricerca posta all'estremità destra del menù orizzontale non viene inizialmente inclusa nel menù ad ``hamburger". 
 Questo è causato dal fatto che Tella inserisce all'interno di quest'ultimo solamente le voci definite nel file di configurazione \textit{config.toml} all'interno della struttura [menu].
 \newline
 Essendo la funzione di ricerca strutturata in maniera differente, per risolvere il problema si possono sfruttare le template actions ed importare il file \textit{search-form.html} all'interno del file \textbf{header.html}. 
@@ -1031,15 +1034,15 @@ Per una migliore organizzazione dei contenuti, si è scelto di posizionare tre m
 \begin{itemize}
     \item \textbf{list.html}: contenuto all'interno della cartella \textit{themes/tella/layouts/people}, si occupa di organizzare il contenuto così come descritto precedentemente.
     \newline
-    Il codice sfrutta le template actions per ricavare le informazioni dal file Markdown, in questo modo posiziona il titolo ed il contenuto. Successivamente la classe \textit{grid-cols-3} permette di organizzare il contenuto così come desiderato ed elenca le persone presenti secondo il parametro "weight" definito nel front-matter.
+    Il codice sfrutta le template actions per ricavare le informazioni dal file Markdown, in questo modo posiziona il titolo ed il contenuto. Successivamente la classe \textit{grid-cols-3} permette di organizzare il contenuto così come desiderato ed elenca le persone presenti secondo il parametro ``weight" definito nel front-matter.
     È importante notare come il filtro \textbf{Params.former != true} permetta di elencare solo i membri correnti.
     \newline
-    La stessa idea viene applicata nella sezione successiva, in questo caso però vengono inserite solo le persone con il valore "former" fissato a true.
+    La stessa idea viene applicata nella sezione successiva, in questo caso però vengono inserite solo le persone con il valore ``former" fissato a true.
     \newline
     In entrambi i casi viene richiamato il file \textit{summary}, che verrà descritto nel punto successivo.
     \item \textbf{summary.html}: contenuto all'interno della stessa cartella del file precedente, si occupa di mostrare le informazioni di ciascuna persona. Anche in questo caso verranno sfruttate le template actions assieme a delle condizioni di \textit{if}.
     Proprio quest'ultimo costrutto viene utilizzato per verificare la presenza di un'immagine nel front-matter del corrispondente file markdown, in caso positivo viene posizionata la foto specificata altrimenti un'immagine di default. 
-    Viene poi inserito il nome e riapplicato nuovamente il costrutto \textit{if} per verificare la presenza del campo "position" e del campo "e-mail" che in caso negativo non vengono mostrati.  
+    Viene poi inserito il nome e riapplicato nuovamente il costrutto \textit{if} per verificare la presenza del campo ``position" e del campo ``e-mail" che in caso negativo non vengono mostrati.  
 \end{itemize} 
 
 \begin{figure}[h]
@@ -1103,7 +1106,7 @@ In questo modo l'organizzazione della sezione \textit{people} sarà uniforme su 
 \begin{figure}
     \centering
     \includegraphics[width = 0.6\textwidth]{images/people-tablet.png}
-    \caption{Visualizzazione della sezione \textit{People} su telefono}
+    \caption{Visualizzazione della sezione \textit{People} su tablet}
     \label{img:computertab}
 \end{figure}
 
@@ -1114,9 +1117,9 @@ Deve essere progettato e sviluppato in modo da consentire a tutti, comprese le p
 \newline
 I principi chiave dell'acessibilità sono la \textbf{percezione}, l'\textbf{operabilità}, la \textbf{comprensione} e la \textbf{robustezza}.
 \newline \newline
-Nel caso di esempio riportato nelle prossime righe è stato utilizzando il browser "Microsoft Edge", attraverso i cui strumenti di sviluppo è possibile simulare diversi deficit visivi.  
-Aprendo questa funzionalità con il comando "F12", in alto a sinsitra si seleziona l'icona del cellulare/tablet e successivamente sono resi disponibili le varie opzioni di deficit visivo. 
-Nel caso di studio si è scelta di simulare la condizione di "Deuteranopia". 
+Nel caso di esempio riportato nelle prossime righe è stato utilizzando il browser ``Microsoft Edge", attraverso i cui strumenti di sviluppo è possibile simulare diversi deficit visivi.  
+Aprendo questa funzionalità con il comando ``F12", in alto a sinsitra si seleziona l'icona del cellulare/tablet e successivamente sono resi disponibili le varie opzioni di deficit visivo. 
+Nel caso di studio si è scelta di simulare la condizione di ``Deuteranopia". 
 Si può notare in \cref{img:deuteranopia} come gli elementi della pagina restino comunque distinguibili.  
 
 \begin{figure}
@@ -1131,6 +1134,7 @@ Si può notare in \cref{img:deuteranopia} come gli elementi della pagina restino
     \caption{Risultato dell'applicazione del filtro \textit{Deuteranopia}}
     \label{img:deuteranopia}
 \end{figure}
+ 
 
 %% Capitolo  
 \chapter{Conclusioni}
@@ -1150,9 +1154,9 @@ Per quest'ultimo punto è stato necessario attuare degli accorgimenti per garant
 %% Sezione
 \section{Possibile implementazione aggiuntiva}
 Una possibile implementazione futura riguarda il modulo di contatto, attraverso il quale è possibile comunicare con il gruppo di ricerca.
-\textit{Tella} mette a disposizione nella versione originale la sezione "Contact" nella quale è presente un form compilabile.
+\textit{Tella} mette a disposizione nella versione originale la sezione ``Contact" nella quale è presente un form compilabile.
 L'invio e la creazione di questo form sono state realizzate attraverso \textit{getform.io}, ovvero un generatore di moduli web personalizzati che permette di raccogliere i dati inseriti (ad esempio attraverso e-mail) \cite{getform}. 
-L'implementazione di questa funzionalità è stata svolta all'interno del file \textbf{form.html} nella cartella \textit{themes/tella/layouts/shortcodes}, il codice mostrato in \cref{img:formc}, attraverso il comando "action", permette di importare questa funzionalità definendo successivamente i campi desiderati.
+L'implementazione di questa funzionalità è stata svolta all'interno del file \textbf{form.html} nella cartella \textit{themes/tella/layouts/shortcodes}, il codice mostrato in \cref{img:formc}, attraverso il comando ``action", permette di importare questa funzionalità definendo successivamente i campi desiderati.
 
 \begin{figure}
     \centering
