@@ -41,6 +41,6 @@
 \contentsline {subsection}{\numberline {4.5.1}Adattamento della funzione di ricerca}{37}{subsection.4.5.1}%
 \contentsline {subsection}{\numberline {4.5.2}Adattamento della sezione People}{37}{subsection.4.5.2}%
 \contentsline {section}{\numberline {4.6}Accessibilità del sito}{39}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Conclusioni}{44}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Riepilogo}{44}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Possibile implementazione aggiuntiva}{44}{section.5.2}%
+\contentsline {chapter}{\numberline {5}Conclusioni}{45}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Riepilogo}{45}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Possibile implementazione aggiuntiva}{45}{section.5.2}%
