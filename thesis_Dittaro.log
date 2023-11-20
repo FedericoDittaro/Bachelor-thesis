@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.7)  20 NOV 2023 15:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.7)  20 NOV 2023 17:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -454,10 +454,10 @@ Underfull \vbox (badness 1859) has occurred while \output is active []
 Package cleveref Info: loaded `italian' language definitions on input line 77.
  [2]
 Capitolo 2.
-<images/Hugo_logo.jpeg, id=281, 567.11874pt x 151.56625pt>
-File: images/Hugo_logo.jpeg Graphic file (type jpg)
-<use images/Hugo_logo.jpeg>
-Package pdftex.def Info: images/Hugo_logo.jpeg  used on input line 99.
+<images/Hugo_logo.jpg, id=281, 567.11874pt x 151.56625pt>
+File: images/Hugo_logo.jpg Graphic file (type jpg)
+<use images/Hugo_logo.jpg>
+Package pdftex.def Info: images/Hugo_logo.jpg  used on input line 99.
 (pdftex.def)             Requested size: 147.88689pt x 39.52423pt.
 [3
 
@@ -473,13 +473,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) h
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.136     \item l
-                 a cartella \textit{\_post} contiene gli articoli del sito (... <./images/Hugo_logo.jpeg>]
-<images/Gridsome-logo.png, id=301, 738.76pt x 738.76pt>
+                 a cartella \textit{\_post} contiene gli articoli del sito (... <./images/Hugo_logo.jpg>]
+<images/Gridsome-logo.png, id=300, 738.76pt x 738.76pt>
 File: images/Gridsome-logo.png Graphic file (type png)
 <use images/Gridsome-logo.png>
 Package pdftex.def Info: images/Gridsome-logo.png  used on input line 152.
 (pdftex.def)             Requested size: 123.23782pt x 123.23157pt.
-<images/Eleventy_logo.png, id=302, 1100.11pt x 803.0pt>
+<images/Eleventy_logo.png, id=301, 1100.11pt x 803.0pt>
 File: images/Eleventy_logo.png Graphic file (type png)
 <use images/Eleventy_logo.png>
 Package pdftex.def Info: images/Eleventy_logo.png  used on input line 158.
@@ -503,7 +503,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4}) h
                                                   \__shipout_drop_firstpage_...
 l.190     \item \textit
                        {\_data}: questa cartella è utilizzata per i file di... <./images/Gridsome-logo.png> <./images/Eleventy_logo.png>]
-<images/pelican_logo.png, id=320, 200.75pt x 200.75pt>
+<images/pelican_logo.png, id=319, 200.75pt x 200.75pt>
 File: images/pelican_logo.png Graphic file (type png)
 <use images/pelican_logo.png>
 Package pdftex.def Info: images/pelican_logo.png  used on input line 204.
@@ -515,15 +515,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5}) h
                                                   \__shipout_drop_firstpage_...
 l.216     \item \textit
                        {themes}: qui si possono collocare i temi o modelli p... <./images/pelican_logo.png (PNG copy)>]
-<images/WAMP_LAMP.png, id=331, 759.58781pt x 355.3275pt>
+<images/WAMP_LAMP.png, id=330, 759.58781pt x 355.3275pt>
 File: images/WAMP_LAMP.png Graphic file (type png)
 <use images/WAMP_LAMP.png>
 Package pdftex.def Info: images/WAMP_LAMP.png  used on input line 260.
 (pdftex.def)             Requested size: 295.77379pt x 138.36028pt.
-<images/static.jpeg, id=332, 702.625pt x 797.98125pt>
-File: images/static.jpeg Graphic file (type jpg)
-<use images/static.jpeg>
-Package pdftex.def Info: images/static.jpeg  used on input line 268.
+<images/static.jpg, id=331, 702.625pt x 797.98125pt>
+File: images/static.jpg Graphic file (type jpg)
+<use images/static.jpg>
+Package pdftex.def Info: images/static.jpg  used on input line 268.
 (pdftex.def)             Requested size: 123.23782pt x 139.95322pt.
 Package cleveref Info: loaded `italian' language definitions on input line 272.
  [8
@@ -543,19 +543,19 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2.7}) h
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.283     \item H
-                 TML: formato utilizzato per definire l'organizzazione e la ... <./images/WAMP_LAMP.png> <./images/static.jpeg>]
+                 TML: formato utilizzato per definire l'organizzazione e la ... <./images/WAMP_LAMP.png> <./images/static.jpg>]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 306.
  (C:\Users\feded\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
 File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 306.
-<images/if-template-actions.png, id=350, 355.3275pt x 76.78688pt>
+<images/if-template-actions.png, id=348, 355.3275pt x 76.78688pt>
 File: images/if-template-actions.png Graphic file (type png)
 <use images/if-template-actions.png>
 Package pdftex.def Info: images/if-template-actions.png  used on input line 312.
 (pdftex.def)             Requested size: 315.49124pt x 68.18074pt.
-<images/partial-template-actions.png, id=351, 207.02344pt x 66.2475pt>
+<images/partial-template-actions.png, id=349, 207.02344pt x 66.2475pt>
 File: images/partial-template-actions.png Graphic file (type png)
 <use images/partial-template-actions.png>
 Package pdftex.def Info: images/partial-template-actions.png  used on input line 320.
@@ -667,12 +667,12 @@ Capitolo 3.
 [17
 
 ]
-<images/ARC-menu.png, id=404, 970.3753pt x 249.18094pt>
+<images/ARC-menu.png, id=402, 970.3753pt x 249.18094pt>
 File: images/ARC-menu.png Graphic file (type png)
 <use images/ARC-menu.png>
 Package pdftex.def Info: images/ARC-menu.png  used on input line 512.
 (pdftex.def)             Requested size: 492.95131pt x 126.5863pt.
-<images/MADS-menu.png, id=405, 950.80219pt x 113.67468pt>
+<images/MADS-menu.png, id=403, 950.80219pt x 113.67468pt>
 File: images/MADS-menu.png Graphic file (type png)
 <use images/MADS-menu.png>
 Package pdftex.def Info: images/MADS-menu.png  used on input line 519.
@@ -712,7 +712,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) h
 l.540 \chapter
               {Caso di studio}\label{cap:casostudio} <./images/ARC-menu.png> <./images/MADS-menu.png>] [20]
 Capitolo 4.
-<images/Tella.png, id=426, 949.29657pt x 404.26031pt>
+<images/Tella.png, id=424, 949.29657pt x 404.26031pt>
 File: images/Tella.png Graphic file (type png)
 <use images/Tella.png>
 Package pdftex.def Info: images/Tella.png  used on input line 551.
@@ -720,7 +720,7 @@ Package pdftex.def Info: images/Tella.png  used on input line 551.
 [21
 
 ]
-<images/Tella-menu.png, id=433, 971.88094pt x 97.11281pt>
+<images/Tella-menu.png, id=431, 971.88094pt x 97.11281pt>
 File: images/Tella-menu.png Graphic file (type png)
 <use images/Tella-menu.png>
 Package pdftex.def Info: images/Tella-menu.png  used on input line 577.
@@ -757,40 +757,28 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) h
                                                   \__shipout_drop_firstpage_...
 l.594 \begin{itemize}
                       <./images/Tella.png> <./images/Tella-menu.png>]
-<images/index-iniziale.png, id=450, 1053.9375pt x 1881.0275pt>
+<images/index-iniziale.png, id=448, 882.14104pt x 1270.31288pt>
 File: images/index-iniziale.png Graphic file (type png)
 <use images/index-iniziale.png>
 Package pdftex.def Info: images/index-iniziale.png  used on input line 608.
-(pdftex.def)             Requested size: 197.18126pt x 351.91684pt.
-<images/index-finale.jpeg, id=451, 1053.9375pt x 1548.78625pt>
-File: images/index-finale.jpeg Graphic file (type jpg)
-<use images/index-finale.jpeg>
-Package pdftex.def Info: images/index-finale.jpeg  used on input line 614.
-(pdftex.def)             Requested size: 244.01224pt x 358.5766pt.
+(pdftex.def)             Requested size: 197.18126pt x 283.94727pt.
+<images/index-finale.png, id=449, 882.14104pt x 1162.28041pt>
+File: images/index-finale.png Graphic file (type png)
+<use images/index-finale.png>
+Package pdftex.def Info: images/index-finale.png  used on input line 614.
+(pdftex.def)             Requested size: 244.01224pt x 321.49915pt.
 
 Overfull \hbox (2.43332pt too wide) in paragraph at lines 606--618
 []$[]$ $[]$ 
  []
 
-<images/list-html.png, id=452, 252.19218pt x 201.75375pt>
+<images/list-html.png, id=450, 252.19218pt x 201.75375pt>
 File: images/list-html.png Graphic file (type png)
 <use images/list-html.png>
 Package pdftex.def Info: images/list-html.png  used on input line 629.
 (pdftex.def)             Requested size: 197.1775pt x 157.74286pt.
 Package cleveref Info: loaded `italian' language definitions on input line 639.
 [23]
-Package cleveref Info: loaded `italian' language definitions on input line 639.
- [24
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.639 \begin{enumerate}
-                       
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.639 \begin{enumerate}
-                        <./images/index-iniziale.png> <./images/index-finale.jpeg>]
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 643.
  (C:\Users\feded\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
 File: omlcmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
@@ -815,13 +803,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 645--662
  []
 
 Package cleveref Info: loaded `italian' language definitions on input line 662.
-[25
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) has been already used, duplicate ignored
+[24
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.662     \item C
-                 reazione della parte grafica: questa fase riguarda la reali... <./images/list-html.png>]
-<images/search-form.png, id=480, 605.26125pt x 74.52844pt>
+                 reazione della parte grafica: questa fase riguarda la reali...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.662     \item C
+                 reazione della parte grafica: questa fase riguarda la reali... <./images/index-iniziale.png (PNG copy)> <./images/index-finale.png (PNG copy)>]
+<images/search-form.png, id=471, 605.26125pt x 74.52844pt>
 File: images/search-form.png Graphic file (type png)
 <use images/search-form.png>
 Package pdftex.def Info: images/search-form.png  used on input line 666.
@@ -831,7 +824,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 662--679
 
  []
 
-
+Package cleveref Info: loaded `italian' language definitions on input line 679.
+[25
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.679     \item C
+                 reazione dello script di ricerca: in questa fase verrà sfr... <./images/list-html.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 679--700
 
  []
@@ -877,8 +876,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 704--714
 
  []
 
-Package cleveref Info: loaded `italian' language definitions on input line 714.
-[27]
+
 Underfull \hbox (badness 10000) in paragraph at lines 714--722
 
  []
@@ -888,12 +886,12 @@ Overfull \hbox (48.48645pt too wide) in paragraph at lines 714--722
 \OML/cmm/b/it/10.95 <\OT1/cmr/bx/n/10.95 script ty-pe="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"\OML/cmm/b/it/10.95 >
  []
 
-<images/if-part.png, id=501, 416.30531pt x 308.65312pt>
+<images/if-part.png, id=494, 416.30531pt x 308.65312pt>
 File: images/if-part.png Graphic file (type png)
 <use images/if-part.png>
 Package pdftex.def Info: images/if-part.png  used on input line 734.
 (pdftex.def)             Requested size: 246.47565pt x 182.73956pt.
-<images/displayResults.png, id=502, 467.49657pt x 292.09125pt>
+<images/displayResults.png, id=495, 467.49657pt x 292.09125pt>
 File: images/displayResults.png Graphic file (type png)
 <use images/displayResults.png>
 Package pdftex.def Info: images/displayResults.png  used on input line 740.
@@ -908,16 +906,18 @@ Overfull \hbox (2.43332pt too wide) in paragraph at lines 732--744
 []$[]$ $[]$ 
  []
 
+Package cleveref Info: loaded `italian' language definitions on input line 745.
+[27]
 <images/css-results.png, id=503, 231.86626pt x 210.7875pt>
 File: images/css-results.png Graphic file (type png)
 <use images/css-results.png>
 Package pdftex.def Info: images/css-results.png  used on input line 749.
 (pdftex.def)             Requested size: 147.88689pt x 134.4436pt.
-<images/ex-research.png, id=504, 1009.7725pt x 1588.93625pt>
+<images/ex-research.png, id=504, 882.14104pt x 949.19566pt>
 File: images/ex-research.png Graphic file (type png)
 <use images/ex-research.png>
 Package pdftex.def Info: images/ex-research.png  used on input line 755.
-(pdftex.def)             Requested size: 197.18126pt x 310.26561pt.
+(pdftex.def)             Requested size: 197.18126pt x 212.16939pt.
 
 Overfull \hbox (2.43332pt too wide) in paragraph at lines 747--759
 []$[]$ $[]$ 
@@ -974,11 +974,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.8}) h
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.804 \begin{enumerate}
-                        <./images/if-part.png> <./images/displayResults.png>]
-Underfull \vbox (badness 2894) has occurred while \output is active []
-
-Package cleveref Info: loaded `italian' language definitions on input line 804.
- [29
+                       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -988,21 +984,25 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.10}) 
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.804 \begin{enumerate}
-                        <./images/css-results.png> <./images/ex-research.png>]
-Package cleveref Info: loaded `italian' language definitions on input line 813.
+                        <./images/if-part.png> <./images/displayResults.png> <./images/css-results.png> <./images/ex-research.png (PNG copy)>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package cleveref Info: loaded `italian' language definitions on input line 804.
+ [29]
+Package cleveref Info: loaded `italian' language definitions on input line 830.
  [30]
 Underfull \hbox (badness 10000) in paragraph at lines 834--839
 
  []
 
-Package cleveref Info: loaded `italian' language definitions on input line 840.
-[31]
-<images/gen-items-1.png, id=542, 634.62094pt x 424.58624pt>
+<images/gen-items-1.png, id=534, 634.62094pt x 424.58624pt>
 File: images/gen-items-1.png Graphic file (type png)
 <use images/gen-items-1.png>
 Package pdftex.def Info: images/gen-items-1.png  used on input line 861.
 (pdftex.def)             Requested size: 394.36255pt x 263.84975pt.
-<images/gen-items-2.png, id=543, 458.46281pt x 403.5075pt>
+Package cleveref Info: loaded `italian' language definitions on input line 864.
+[31]
+<images/gen-items-2.png, id=541, 458.46281pt x 403.5075pt>
 File: images/gen-items-2.png Graphic file (type png)
 <use images/gen-items-2.png>
 Package pdftex.def Info: images/gen-items-2.png  used on input line 869.
@@ -1012,7 +1012,7 @@ Underfull \hbox (badness 2512) in paragraph at lines 870--870
 []\OT1/cmr/m/n/10.95 Figura 4.12: []Parte del co-di-ce del-la fun-zio-ne
  []
 
-<images/gen-refs.png, id=544, 472.76625pt x 377.91188pt>
+<images/gen-refs.png, id=542, 472.76625pt x 377.91188pt>
 File: images/gen-refs.png Graphic file (type png)
 <use images/gen-refs.png>
 Package pdftex.def Info: images/gen-refs.png  used on input line 875.
@@ -1027,71 +1027,70 @@ Overfull \hbox (2.43332pt too wide) in paragraph at lines 867--879
 []$[]$ $[]$ 
  []
 
-<images/publications.png, id=545, 1063.975pt x 648.4225pt>
+<images/publications.png, id=543, 882.14104pt x 551.33815pt>
 File: images/publications.png Graphic file (type png)
 <use images/publications.png>
 Package pdftex.def Info: images/publications.png  used on input line 883.
-(pdftex.def)             Requested size: 394.36255pt x 240.33801pt.
+(pdftex.def)             Requested size: 394.36255pt x 246.47621pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 890--893
 
  []
 
-Package cleveref Info: loaded `italian' language definitions on input line 898.
-[32]
-Package cleveref Info: loaded `italian' language definitions on input line 898.
- [33
+Package cleveref Info: loaded `italian' language definitions on input line 903.
+[32
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.11}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.898     \item R
-                 ilevazione di specifici eventi: umami consente di tener tra...
+l.903         \end{center}
+                           <./images/gen-items-1.png>]
+Package cleveref Info: loaded `italian' language definitions on input line 903.
+ [33
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.12}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.898     \item R
-                 ilevazione di specifici eventi: umami consente di tener tra...
+l.903         \end{center}
+                          
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.13}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.898     \item R
-                 ilevazione di specifici eventi: umami consente di tener tra... <./images/gen-items-1.png> <./images/gen-items-2.png> <./images/gen-refs.png>]
-Package cleveref Info: loaded `italian' language definitions on input line 929.
- [34
+l.903         \end{center}
+                          
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.14}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.929 \begin{enumerate}
-                        <./images/publications.png>]
-<images/githubpages.png, id=567, 976.39781pt x 411.03563pt>
+l.903         \end{center}
+                           <./images/gen-items-2.png> <./images/gen-refs.png> <./images/publications.png (PNG copy)>]
+<images/githubpages.png, id=561, 976.39781pt x 411.03563pt>
 File: images/githubpages.png Graphic file (type png)
 <use images/githubpages.png>
 Package pdftex.def Info: images/githubpages.png  used on input line 947.
 (pdftex.def)             Requested size: 443.65317pt x 186.76434pt.
-Package cleveref Info: loaded `italian' language definitions on input line 955.
+Package cleveref Info: loaded `italian' language definitions on input line 949.
+ [34]
+Package cleveref Info: loaded `italian' language definitions on input line 973.
  [35
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.15}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.955 \begin{enumerate}
-                        <./images/githubpages.png>]
-<images/header.png, id=577, 300.3722pt x 170.13562pt>
+l.973     \item \textit
+                       {push} della cartella ``public" sul branch ``gh-pages". <./images/githubpages.png>]
+<images/header.png, id=579, 300.3722pt x 170.13562pt>
 File: images/header.png Graphic file (type png)
 <use images/header.png>
 Package pdftex.def Info: images/header.png  used on input line 981.
 (pdftex.def)             Requested size: 246.47565pt x 139.61334pt.
-<images/menu-hamburger.png, id=578, 636.12656pt x 453.94594pt>
+<images/menu-hamburger.png, id=580, 606.47195pt x 410.5234pt>
 File: images/menu-hamburger.png Graphic file (type png)
 <use images/menu-hamburger.png>
 Package pdftex.def Info: images/menu-hamburger.png  used on input line 987.
-(pdftex.def)             Requested size: 221.82657pt x 158.2947pt.
+(pdftex.def)             Requested size: 221.82657pt x 150.14986pt.
 
 Overfull \hbox (2.43332pt too wide) in paragraph at lines 979--991
 []$[]$ $[]$ 
  []
 
-Package cleveref Info: loaded `italian' language definitions on input line 1007.
-[36]
+
 Underfull \hbox (badness 10000) in paragraph at lines 1010--1032
 
  []
@@ -1107,7 +1106,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1010--1032
  []
 
 Package cleveref Info: loaded `italian' language definitions on input line 1032.
-[37
+[36
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.16}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -1117,13 +1116,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.17}) 
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.1032 \begin{itemize}
-                       <./images/header.png> <./images/menu-hamburger.png>]
-<images/summary.png, id=602, 410.2828pt x 246.9225pt>
+                       <./images/header.png> <./images/menu-hamburger.png (PNG copy)>]
+Package cleveref Info: loaded `italian' language definitions on input line 1044.
+ [37]
+<images/summary.png, id=599, 410.2828pt x 246.9225pt>
 File: images/summary.png Graphic file (type png)
 <use images/summary.png>
 Package pdftex.def Info: images/summary.png  used on input line 1049.
 (pdftex.def)             Requested size: 246.47565pt x 148.33548pt.
-<images/list.png, id=603, 362.85562pt x 243.15843pt>
+<images/list.png, id=600, 362.85562pt x 243.15843pt>
 File: images/list.png Graphic file (type png)
 <use images/list.png>
 Package pdftex.def Info: images/list.png  used on input line 1055.
@@ -1154,20 +1155,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 1061--1075
  []
 
 
-Underfull \vbox (badness 1009) has occurred while \output is active []
-
-Package cleveref Info: loaded `italian' language definitions on input line 1075.
- [38
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.18}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.1075 
-       
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.19}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.1075 
-        <./images/summary.png> <./images/list.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 1077--1086
 
  []
@@ -1182,72 +1169,84 @@ Underfull \hbox (badness 10000) in paragraph at lines 1077--1086
 
  []
 
-<images/people-computer.png, id=615, 1188.44pt x 1177.39874pt>
+<images/people-computer.png, id=604, 882.14104pt x 873.94547pt>
 File: images/people-computer.png Graphic file (type png)
 <use images/people-computer.png>
 Package pdftex.def Info: images/people-computer.png  used on input line 1092.
-(pdftex.def)             Requested size: 295.77002pt x 293.0195pt.
+(pdftex.def)             Requested size: 295.77002pt x 293.0169pt.
 
 Overfull \hbox (49.29437pt too wide) in paragraph at lines 1092--1093
  [][] 
  []
 
-<images/people-telefono.png, id=616, 369.38pt x 1432.35126pt>
+<images/people-telefono.png, id=605, 274.17897pt x 1063.18855pt>
 File: images/people-telefono.png Graphic file (type png)
 <use images/people-telefono.png>
 Package pdftex.def Info: images/people-telefono.png  used on input line 1098.
-(pdftex.def)             Requested size: 123.23782pt x 477.87907pt.
+(pdftex.def)             Requested size: 123.23782pt x 477.87885pt.
 
 Overfull \hbox (2.43332pt too wide) in paragraph at lines 1090--1102
 []$[]$ $[]$ 
  []
 
-<images/people-tablet.png, id=617, 718.685pt x 1112.155pt>
+<images/people-tablet.png, id=606, 574.43474pt x 834.45773pt>
 File: images/people-tablet.png Graphic file (type png)
 <use images/people-tablet.png>
 Package pdftex.def Info: images/people-tablet.png  used on input line 1106.
-(pdftex.def)             Requested size: 295.77379pt x 457.71745pt.
+(pdftex.def)             Requested size: 295.77379pt x 429.66777pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 1113--1122
 
  []
 
-<images/dev-tools.png, id=620, 1027.58907pt x 540.51938pt>
+Package cleveref Info: loaded `italian' language definitions on input line 1122.
+[38
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.18}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1122 
+       
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.19}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1122 
+        <./images/summary.png> <./images/list.png>]
+Package cleveref Info: loaded `italian' language definitions on input line 1122.
+ [39
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.20}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1122 
+       
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.21}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1122 
+        <./images/people-computer.png (PNG copy)> <./images/people-telefono.png (PNG copy)>]
+Package cleveref Info: loaded `italian' language definitions on input line 1122.
+ [40
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.22}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1122 
+        <./images/people-tablet.png (PNG copy)>]
+<images/dev-tools.png, id=627, 1027.58907pt x 540.51938pt>
 File: images/dev-tools.png Graphic file (type png)
 <use images/dev-tools.png>
 Package pdftex.def Info: images/dev-tools.png  used on input line 1125.
 (pdftex.def)             Requested size: 295.77379pt x 155.57542pt.
-<images/Deuteranopia.png, id=621, 2569.6pt x 3360.555pt>
+<images/Deuteranopia.png, id=628, 2569.6pt x 3360.555pt>
 File: images/Deuteranopia.png Graphic file (type png)
 <use images/Deuteranopia.png>
 Package pdftex.def Info: images/Deuteranopia.png  used on input line 1131.
 (pdftex.def)             Requested size: 295.77379pt x 386.789pt.
 Package cleveref Info: loaded `italian' language definitions on input line 1138.
-[39]
-Package cleveref Info: loaded `italian' language definitions on input line 1138.
- [40
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.20}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.1138 \chapter
-               {Conclusioni}
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.21}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.1138 \chapter
-               {Conclusioni} <./images/people-computer.png> <./images/people-telefono.png>]
-Package cleveref Info: loaded `italian' language definitions on input line 1138.
  [41
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.22}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.1138 \chapter
-               {Conclusioni}
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.23}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.1138 \chapter
-               {Conclusioni} <./images/people-tablet.png> <./images/dev-tools.png>]
+               {Conclusioni} <./images/dev-tools.png>]
 Package cleveref Info: loaded `italian' language definitions on input line 1138.
  [42
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.24}) has been already used, duplicate ignored
@@ -1260,16 +1259,16 @@ Package cleveref Info: loaded `italian' language definitions on input line 1138.
 
 ]
 Capitolo 5.
-<images/form-html.png, id=656, 629.35126pt x 250.68657pt>
+<images/form-html.png, id=653, 629.35126pt x 250.68657pt>
 File: images/form-html.png Graphic file (type png)
 <use images/form-html.png>
 Package pdftex.def Info: images/form-html.png  used on input line 1161.
 (pdftex.def)             Requested size: 492.95131pt x 196.3533pt.
-<images/form-tella.png, id=657, 1188.44pt x 963.6pt>
+<images/form-tella.png, id=654, 882.14104pt x 715.24948pt>
 File: images/form-tella.png Graphic file (type png)
 <use images/form-tella.png>
 Package pdftex.def Info: images/form-tella.png  used on input line 1168.
-(pdftex.def)             Requested size: 492.95131pt x 399.6954pt.
+(pdftex.def)             Requested size: 492.95131pt x 399.6857pt.
 [45]
 Package cleveref Info: loaded `italian' language definitions on input line 1178.
  [46
@@ -1282,7 +1281,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2}) h
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.1178 \backmatter
-                   <./images/form-html.png> <./images/form-tella.png>] [47] (thesis_Dittaro.bbl
+                   <./images/form-html.png> <./images/form-tella.png (PNG copy)>] [47] (thesis_Dittaro.bbl
 Package cleveref Info: loaded `italian' language definitions on input line 1.
  [48
 
@@ -1307,16 +1306,16 @@ Package rerunfilecheck Info: File `thesis_Dittaro.out' has not changed.
 (\end occurred when \ifx on line 3 was incomplete) 
 Here is how much of TeX's memory you used:
  16868 strings out of 475248
- 277146 string characters out of 5757814
+ 277125 string characters out of 5757814
  1934801 words of memory out of 5000000
  37975 multiletter control sequences out of 15000+600000
  577959 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,9n,83p,948b,2387s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\feded\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/feded/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis_Dittaro.pdf (56 pages, 10928850 bytes).
+Output written on thesis_Dittaro.pdf (56 pages, 14240390 bytes).
 PDF statistics:
- 782 PDF objects out of 1000 (max. 8388607)
+ 779 PDF objects out of 1000 (max. 8388607)
  185 named destinations out of 1000 (max. 500000)
  555 words of extra memory for PDF output out of 10000 (max. 10000000)
 

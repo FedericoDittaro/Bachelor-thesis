@@ -35,12 +35,12 @@
 \contentsline {subsection}{\numberline {4.3.3}Umami}{32}{subsection.4.3.3}%
 \contentsline {section}{\numberline {4.4}Hosting del sito}{34}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Pubblicazione}{34}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Aggiornare il sito}{36}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Risultati ottenuti}{36}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.2}Aggiornare il sito}{35}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Risultati ottenuti}{35}{subsection.4.4.3}%
 \contentsline {section}{\numberline {4.5}Portabilità del sito}{36}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Adattamento della funzione di ricerca}{37}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Adattamento della sezione People}{37}{subsection.4.5.2}%
-\contentsline {section}{\numberline {4.6}Accessibilità del sito}{39}{section.4.6}%
+\contentsline {subsection}{\numberline {4.5.1}Adattamento della funzione di ricerca}{36}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Adattamento della sezione People}{36}{subsection.4.5.2}%
+\contentsline {section}{\numberline {4.6}Accessibilità del sito}{41}{section.4.6}%
 \contentsline {chapter}{\numberline {5}Conclusioni}{45}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Riepilogo}{45}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Possibile implementazione aggiuntiva}{45}{section.5.2}%
